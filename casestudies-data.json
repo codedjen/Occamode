@@ -1,0 +1,267 @@
+[
+  {
+    "slug": "hatch",
+    "logo": "./images/hatch.svg",
+    "logoAlt": "Hatch",
+    "title": "Custom software for a Wall Street brokerage company",
+    "subtitle": "Finsweet has been a wonderful partner to work with. I have been a customer now for the past few months now and I have had nothing but positive experiences!",
+    "heroImage": "./images/casestudy1web.jpg",
+    "mobileImage": "./images/casestudy1mobile.jpg",
+    "heroBg": "#F9E4DE",
+    "tags": ["EV Charging", "Startup", "Global Brand"],
+    "accentColor": "#F05A40",
+    "companyDescription": [
+      "The optle group provides payments services in Europe and Asia through multiple products.",
+      "The latest initiative provides an all-in-one payment and banking solution to e-commerce merchants in the UK with a planned service expansion to mainland Europe in late 2019.",
+      "The platform provides a great variety of ways for merchants to receive payments. From traditional credit cards, payments into to alternative payments methods, such as Google Pay and Apple Pay, and comes with pre-built plugins, check out pages, and its API to support any type of merchant, from a starter to an expert."
+    ],
+    "details": {
+      "company": "HATCH",
+      "country": "UK",
+      "industry": "Fintech",
+      "clientSince": "2013",
+      "timeline": "4-5 Months",
+      "services": "Web Design",
+      "whatWeDid": ["Front-End Implementation", "Back-End Development And Integrations"],
+      "platform": "Fintech",
+      "launchDate": "2015",
+      "duration": "4-5 months"
+    },
+    "stats": [
+      { "value": "86", "suffix": "%", "label": "Boost in Store Performance" },
+      { "value": "204", "suffix": "", "label": "Average New Customers Per Day" },
+      { "value": "70", "suffix": "%", "label": "Increase in New Users" }
+    ],
+    "challenges": {
+      "heading": "Key challenges explaining heading here",
+      "subheading": "KEY CHALLENGES",
+      "description": "We located several areas for improvement within the app.",
+      "items": [
+        {
+          "title": "The negative impact of manually operated requests.",
+          "body": "Hatch had access to the regulatory fiduciary of the company's budget. We estimated that manual onboarding centre required a total of around 40 hours monthly, costing around $5,000 per month per market. Changes to payouts and rates approximately $15 on the salaries involved in Cognito or in the back-end (invoice module only)."
+        },
+        {
+          "title": "Complex, time-consuming update procedures.",
+          "body": "Providing the new and old content side by side so merchants can update or update documents. Data updates required the operations team to confirm new information and manually update it within the Captain's profile."
+        },
+        {
+          "title": "Unclear receipt design.",
+          "body": "At the end of a purchase, a customer receives a sales receipt with details of the trip along with the fees and their final pricing. Most of the Captain's misunderstand the description."
+        }
+      ]
+    },
+    "approach": {
+      "heading": "Our approach and solutions heading here",
+      "description": [
+        "We have divided the automation plan into two main stages.",
+        "In the first stage, we conducted user research, including interviews with Captains and key team members at Careem.",
+        "In the next stage of the process, we created new UI designs for the profile page. We also proposed a new flow for managing the user's phone number and updating their profile picture with the implementation of a facial recognition feature.",
+        "Simultaneously, Netguru worked on improving the ride receipt design. Careem is gradually introducing the new receipt to the Captains. We evaluated our work with usability testing, conducting three sessions with 6-8 users each. Thanks to this, we collected important user feedback that enabled us to improve the app's user experience."
+      ],
+      "steps": [
+        { "title": "Discover", "body": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip created new UI designs." },
+        { "title": "Designing", "body": "App requirement specification, Business & Process flow Competitor Analysis, Tech-specification with usability testing." },
+        { "title": "Development", "body": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore au fugiat nulla pariatur." },
+        { "title": "Testing", "body": "Through True Rich Attended does no end it his and key team members at mother since read had half every him." },
+        { "title": "Deployment", "body": "We aim to attain the greatest satisfaction introducing the new receipt to the for our clients and be one of the prominent." }
+      ]
+    },
+    "techStack": ["Angular", "React", "Vue.js", "Express JS", "Node.js", "Python", "Azure", "AWS", "GitHub", "Cisco"],
+    "results": {
+      "heading": "Results and key takeaways heading here",
+      "description": "The client received an in-depth study of their manual model and its key business and design challenges.",
+      "items": [
+        {
+          "title": "The negative impact of manually operated requests.",
+          "body": "Hatch had access to the regulatory fiduciary of the company's budget. We estimated that manual onboarding centre required a total of around 40 hours monthly, costing around $5,000 per month per market. Changes to payouts and rates approximately $15 on the salaries involved in Cognito or in the back-end (invoice module only)."
+        },
+        {
+          "title": "Complex, time-consuming update procedures.",
+          "body": "Captains had to visit a Careem branch or wait manually to update their profile data or update documents. Data updates required the operations team to confirm new information and manually update it within the Captain's profile."
+        }
+      ],
+      "afterItems": "While our experts dived deep into earning and effective strategies for Fortune World Tops, we also enjoyed being involved in bringing creative the shirt want face the art to absolute level of the impactful results the brand is enjoying while leveraging our pioneering skills, migration, and omnichannel CX capabilities.",
+      "image": "./images/casestudy1web.jpg",
+      "testimonial": {
+        "quote": "Our +380,000 employees all over the world, no matter in which country, must have the same competence profile. Synthesis helps us develop engaging, more relevant & localised training content at scale a of larger company.",
+        "name": "Johnny Andre",
+        "role": "Director, Compence"
+      }
+    }
+  },
+  {
+    "slug": "dotcal",
+    "logo": "./images/doctal.svg",
+    "logoAlt": "Dotcal",
+    "title": "Improving the online web experience for International Hockey Federation",
+    "subtitle": "Dotcal is the only design-first scheduling platform that allows to create beautiful booking pages for everyone. We worked on a strong & outstanding branding.",
+    "heroImage": "./images/casestudy2web.jpg",
+    "mobileImage": "./images/casestudy2mobile.jpg",
+    "heroBg": "#E3EEF6",
+    "tags": ["Sports Tech", "Global Platform", "CMS"],
+    "accentColor": "#2768CE",
+    "companyDescription": [
+      "The International Hockey Federation needed a complete digital overhaul — their existing web platform was outdated, difficult to navigate, and failed to engage the global hockey community.",
+      "They needed a modern, responsive experience that could handle live event schedules, team profiles, and multimedia content at scale across 100+ member nations.",
+      "We adopted a design-first methodology, creating a comprehensive design system that unified the brand across web and mobile while empowering content editors with a headless CMS architecture."
+    ],
+    "details": {
+      "company": "DOTCAL",
+      "services": "UI/UX Design",
+      "whatWeDid": ["Design System", "CMS Architecture", "Front-end Development"],
+      "platform": "Sports / Media",
+      "launchDate": "2021",
+      "duration": "6-8 months"
+    },
+    "stats": [
+      { "value": "3", "suffix": "x", "label": "Increase in User Engagement" },
+      { "value": "45", "suffix": "%", "label": "Faster Page Load Times" },
+      { "value": "100", "suffix": "+", "label": "Nations Using the Platform" }
+    ],
+    "challenges": {
+      "heading": "Modernizing a legacy digital platform at global scale",
+      "subheading": "KEY CHALLENGES",
+      "description": "The existing platform had multiple pain points that limited growth and engagement.",
+      "items": [
+        {
+          "title": "Outdated content management workflow.",
+          "body": "Content editors relied on a monolithic CMS that required developer intervention for even minor updates. Publishing a news article took up to 3 business days from draft to live, severely limiting the federation's ability to cover events in real-time."
+        },
+        {
+          "title": "Inconsistent design across member nation pages.",
+          "body": "Each of the 100+ member nations had evolved their pages independently over the years, resulting in wildly inconsistent branding, broken layouts, and accessibility issues that undermined the federation's credibility."
+        },
+        {
+          "title": "Poor mobile experience for live event tracking.",
+          "body": "Over 65% of traffic came from mobile devices during tournaments, but the existing site was not responsive. Users reported difficulty following live scores, schedules, and standings during critical match days."
+        }
+      ]
+    },
+    "approach": {
+      "heading": "Our approach to transforming digital experiences",
+      "description": [
+        "We began with a comprehensive discovery phase, auditing the existing platform and interviewing stakeholders from 15 member nations.",
+        "Our design team created a unified design system that balanced the federation's brand identity with the need for flexible, nation-specific customization.",
+        "We implemented a headless CMS architecture that empowered content editors to publish in real-time without developer support, reducing time-to-publish from days to minutes.",
+        "The development was conducted in agile sprints, with regular stakeholder demos ensuring alignment throughout the 8-month engagement."
+      ],
+      "steps": [
+        { "title": "Discover", "body": "Stakeholder interviews, platform audit, and competitive analysis across 15 member nations." },
+        { "title": "Designing", "body": "Unified design system creation, component library, and nation-specific theming framework." },
+        { "title": "Development", "body": "Headless CMS integration, front-end development with Next.js, and real-time data pipeline setup." },
+        { "title": "Testing", "body": "Cross-browser testing, load testing during simulated tournament traffic, and accessibility audits." },
+        { "title": "Deployment", "body": "Phased rollout across member nations with dedicated training sessions for content editors." }
+      ]
+    },
+    "techStack": ["React", "Next.js", "Node.js", "GraphQL", "AWS", "Contentful", "TypeScript", "Docker", "Figma", "Vercel"],
+    "results": {
+      "heading": "Delivering measurable impact at global scale",
+      "description": "The new platform transformed how the federation engages with its global community.",
+      "items": [
+        {
+          "title": "Real-time content publishing at scale.",
+          "body": "Content editors across 100+ nations can now publish articles, scores, and updates in real-time. Average time-to-publish dropped from 3 business days to under 15 minutes."
+        },
+        {
+          "title": "Consistent brand experience worldwide.",
+          "body": "The design system ensures visual consistency while allowing nation-specific theming. Brand recognition scores improved by 40% in post-launch surveys."
+        }
+      ],
+      "afterItems": "The federation reported a 3x increase in user engagement within the first quarter after launch, with mobile traffic during tournaments growing by 180% compared to the previous year.",
+      "image": "./images/casestudy2web.jpg",
+      "testimonial": {
+        "quote": "The new platform has completely transformed how we engage with our global hockey community. Content editors love the new CMS, and fans have never been more connected to the sport.",
+        "name": "Sarah Mitchell",
+        "role": "Digital Director, IHF"
+      }
+    }
+  },
+  {
+    "slug": "inszu",
+    "logo": "./images/inszu.svg",
+    "logoAlt": "Inszu",
+    "title": "Discovering UAE's Banking Apps without Compromising Data Security",
+    "subtitle": "A comprehensive digital ecosystem that streamlines insurance workflows, policy management, and claims processing for modern enterprises.",
+    "heroImage": "./images/casestudy3web.jpg",
+    "mobileImage": "./images/casestudy3mobile.jpg",
+    "heroBg": "#EDF3F4",
+    "tags": ["Insurance", "Enterprise", "SaaS"],
+    "accentColor": "#6F8C2E",
+    "companyDescription": [
+      "UAE's banking sector demanded a thorough security audit and UX evaluation of its top mobile banking applications.",
+      "The goal was to uncover usability gaps and potential security vulnerabilities without compromising live user data or violating regulatory frameworks.",
+      "We developed a sandboxed testing environment that replicated real banking workflows without touching production data, conducting penetration testing and UX studies in parallel."
+    ],
+    "details": {
+      "company": "INSZU",
+      "services": "Security Audit & UX",
+      "whatWeDid": ["Penetration Testing", "API Vulnerability Scans", "Usability Studies"],
+      "platform": "Banking / FinTech",
+      "launchDate": "2022",
+      "duration": "3-4 months"
+    },
+    "stats": [
+      { "value": "23", "suffix": "", "label": "Critical Security Fixes Identified" },
+      { "value": "35", "suffix": "%", "label": "Reduction in Support Tickets" },
+      { "value": "40", "suffix": "+", "label": "UX Enhancements Implemented" }
+    ],
+    "challenges": {
+      "heading": "Balancing security depth with data privacy requirements",
+      "subheading": "KEY CHALLENGES",
+      "description": "Testing live banking infrastructure without risking customer data required creative solutions.",
+      "items": [
+        {
+          "title": "Testing without access to production data.",
+          "body": "Regulatory frameworks strictly prohibited the use of real customer data in any testing environment. We had to design synthetic datasets that accurately mimicked real-world transaction patterns while remaining fully compliant."
+        },
+        {
+          "title": "Coordinating across multiple banking institutions.",
+          "body": "Each bank had its own security protocols, approval workflows, and technical stacks. Aligning testing schedules and standardizing reporting formats across institutions required extensive stakeholder management."
+        },
+        {
+          "title": "Identifying UX issues without biasing user research.",
+          "body": "Conducting usability studies on banking apps required careful participant selection and neutral task design to distinguish genuine usability problems from personal preference."
+        }
+      ]
+    },
+    "approach": {
+      "heading": "Our systematic approach to security and UX auditing",
+      "description": [
+        "We established a sandboxed testing environment that replicated real banking workflows using synthetic data, ensuring zero risk to production systems.",
+        "Our security team conducted penetration testing and API vulnerability scans following OWASP guidelines and UAE Central Bank regulations.",
+        "Simultaneously, our UX researchers ran moderated usability studies with 50+ participants across three banking apps, identifying friction points in core banking flows.",
+        "The final phase involved synthesizing findings into actionable recommendations, prioritized by severity and business impact."
+      ],
+      "steps": [
+        { "title": "Discover", "body": "Regulatory framework analysis, stakeholder alignment, and synthetic data environment setup." },
+        { "title": "Designing", "body": "Test plan creation, usability study protocols, and security audit methodology definition." },
+        { "title": "Development", "body": "Sandboxed environment build, automated scanning tools configuration, and test scenario scripting." },
+        { "title": "Testing", "body": "Penetration testing, API vulnerability scans, and moderated usability studies with 50+ participants." },
+        { "title": "Deployment", "body": "Findings report delivery, remediation roadmap, and knowledge transfer sessions with banking IT teams." }
+      ]
+    },
+    "techStack": ["Burp Suite", "OWASP ZAP", "Python", "Selenium", "AWS", "Docker", "Postman", "Figma", "Jira", "Confluence"],
+    "results": {
+      "heading": "Strengthening banking security without compromising user experience",
+      "description": "Our dual approach uncovered critical vulnerabilities while identifying high-impact UX improvements.",
+      "items": [
+        {
+          "title": "Critical vulnerabilities identified before exploitation.",
+          "body": "Our penetration testing uncovered 23 critical security vulnerabilities across three banking apps, including API authentication bypasses and session management flaws, all responsibly disclosed and patched within 30 days."
+        },
+        {
+          "title": "Data-driven UX improvements at scale.",
+          "body": "Usability studies revealed 40+ enhancement opportunities, with the top 10 changes reducing average task completion time by 35% and cutting support ticket volume significantly."
+        }
+      ],
+      "afterItems": "All three banking institutions reported measurable improvements in both security posture and user satisfaction metrics within 90 days of implementing our recommendations.",
+      "image": "./images/casestudy3web.jpg",
+      "testimonial": {
+        "quote": "Occamode's dual security-and-UX approach gave us confidence that our banking apps are both secure and genuinely user-friendly. Their sandboxed testing methodology was particularly innovative.",
+        "name": "Khalid Al-Rashidi",
+        "role": "Head of Digital Banking, UAE National Bank"
+      }
+    }
+  }
+]

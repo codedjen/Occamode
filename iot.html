@@ -1,0 +1,2499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Occamode - IoT Solutions</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <style>
+      /*
+        White → #eaeafe99; stops 20% / 24% / 26% for a CTA + footer shell (~mid-CTA break).
+        productEngineering.html uses the same #peGradientShell stops for its CTA + footer block.
+      */
+      #iotGradientShell {
+        background: linear-gradient(
+          to bottom,
+          #ffffff 0%,
+          #ffffff 20%,
+          #eaeafe99 20%,
+          #eaeafe99 100%
+        );
+      }
+      @media (min-width: 768px) {
+        #iotGradientShell {
+          background: linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 24%,
+            #eaeafe99 24%,
+            #eaeafe99 100%
+          );
+        }
+      }
+      @media (min-width: 1280px) {
+        #iotGradientShell {
+          background: linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 26%,
+            #eaeafe99 26%,
+            #eaeafe99 100%
+          );
+        }
+      }
+    </style>
+  </head>
+  <body class="w-full bg-white text-[#1B2125] antialiased overflow-x-hidden">
+    <!-- Header: white logo + menu below lg; about-style nav lg+ -->
+    <header class="absolute top-0 left-0 z-50 w-full">
+      <div class="relative z-10 mx-auto max-w-[1280px] px-7 py-5 xl:px-0">
+        <nav
+          class="flex items-center justify-between gap-4 rounded-full"
+        >
+          <a href="./index.html" class="shrink-0">
+            <img
+              src="./images/logo.svg"
+              alt="Occamode"
+              class="h-5 w-auto lg:hidden"
+            />
+            <img
+              src="./images/logoblue.svg"
+              alt="Occamode"
+              class="hidden h-5 w-auto lg:block"
+            />
+          </a>
+
+          <ul
+            class="hidden grow items-center justify-between gap-8 rounded-full border border-[#DCE4EF] bg-[#EDF2F8] px-4 py-2 text-sm lg:flex lg:grow-0 lg:px-8 lg:text-base"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="text-[#7B8FA8] transition hover:text-[#2D39F2]"
+                >Home</a
+              >
+            </li>
+            <li>
+              <span class="cursor-pointer font-semibold text-[#2D39F2] transition hover:text-[#2D39F2]"
+                >Services</span
+              >
+            </li>
+            <li>
+              <a href="./approachPage.html" class="text-[#7B8FA8] transition hover:text-[#2D39F2]"
+                >Approach</a
+              >
+            </li>
+            <li>
+              <a href="./casestudies.html" class="text-[#7B8FA8] transition hover:text-[#2D39F2]"
+                >Case-studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="text-[#7B8FA8] transition hover:text-[#2D39F2]"
+                >About Us</a
+              >
+            </li>
+          </ul>
+
+          <a
+            href="./contactus.html"
+            class="hidden rounded-full border border-[#DCE4EF] bg-white px-6 py-2 text-sm font-semibold text-[#2D39F2] transition hover:bg-[#F6F8FC] lg:inline-block lg:text-base"
+          >
+            Contact Us
+          </a>
+
+          <button class="lg:hidden" type="button" aria-label="Open menu">
+            <img
+              src="./images/hamburger.svg"
+              alt=""
+              class="h-6 w-6 brightness-0 invert"
+            />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Main banner: full-bleed bg below lg; 60/40 split lg+ -->
+    <section class="w-full overflow-hidden bg-white">
+      <!-- Mobile + tablet (max-lg / 1023px and below) -->
+      <div class="relative lg:hidden">
+        <div class="absolute inset-0">
+          <img
+            src="./images/iotMobileMainBanner.png"
+            alt=""
+            class="h-full w-full object-cover object-center"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-black/25"
+            aria-hidden="true"
+          ></div>
+        </div>
+        <div
+          class="relative flex min-h-[min(100dvh,720px)] flex-col items-start justify-end px-7 pb-20 pt-28 xl:px-0"
+        >
+          <h1
+            class="max-w-[340px] text-[48px] font-bold leading-[1.15] text-white sm:max-w-md"
+          >
+            Internet of Things Solution
+          </h1>
+          <p
+            class="mt-4 max-w-[340px] text-[14px] leading-[1.55] text-white/95 sm:max-w-md sm:text-[15px]"
+          >
+            Connect your devices to the future, bring data to life, and gain a
+            competitive edge with unparalleled IoT solutions.
+          </p>
+          <a
+            href="#"
+            class="mt-8 inline-flex min-h-11 items-center justify-center rounded-full bg-[#1B19C7] px-8 text-[14px] font-semibold text-white shadow-sm transition hover:bg-[#1515a8]"
+          >
+            Get Expert Advice
+          </a>
+        </div>
+      </div>
+
+      <!-- Desktop (lg+): fixed banner height, strict 60/40 — no text/image overlap -->
+      <div class="hidden lg:block lg:pt-40">
+        <div
+          class="mx-auto flex w-full max-w-[1280px] justify-between overflow-hidden px-7 xl:px-0"
+        >
+          <div
+            class="relative z-10 flex w-[60%] shrink-0 flex-col items-start justify-center bg-white "
+          >
+            <h1
+              class="text-[40px] font-bold leading-[1.12] tracking-tight text-[#010101] xl:text-[48px] 2xl:text-[52px]"
+            >
+              Internet of Things <br />Solution
+            </h1>
+            <p
+              class="mt-5 max-w-[520px] text-[15px] leading-[1.6] text-[#647E9B] xl:text-[16px]"
+            >
+              Connect your devices to the future, bring data to life, and gain a
+              competitive edge with unparalleled IoT solutions.
+            </p>
+            <a
+              href="#"
+              class="mt-8 inline-flex w-fit shrink-0 items-center justify-center rounded-full bg-[#1B19C7] px-9 py-3 text-[15px] font-semibold text-white transition hover:bg-[#1515a8]"
+            >
+              Get Expert Advice
+            </a>
+          </div>
+          <div
+            class="relative isolate aspect-[0.81] max-h-[calc(100dvh-100px)] overflow-hidden"
+          >
+            <img
+              src="./images/iotDeskotpMainBanner.png"
+              alt=""
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Build the Next Big Thing in IoT: image + play (2.13), four static blocks -->
+    <section class="w-full bg-white py-12 text-[#1B2125] md:py-16 lg:py-20">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <div class="text-left">
+          <span
+            class="inline-flex rounded-full border border-[#444CFCCC] bg-[#F5F3FF] px-3 py-1.5 text-[9px] font-semibold uppercase leading-[100%]! tracking-[0.08em] text-[#444CFC] sm:text-[10px] md:px-3.5 md:text-[11px]"
+          >
+            Connectivity, Intelligence, Integration
+          </span>
+          <h2
+            class="mt-4 max-w-[920px] text-[26px] font-bold leading-[1.15] tracking-tight text-[#010101] md:mt-5 md:text-[36px] lg:text-[40px]"
+          >
+            Build the Next Big Thing in IoT
+          </h2>
+          <p
+            class="mt-3 max-w-[640px] text-[14px] leading-[1.65] text-[#647E9B] md:mt-4 md:text-[15px] md:leading-[1.7]"
+          >
+            Our state-of-the-art services are designed for tech enthusiasts,
+            innovators, and forward-thinking enterprises seeking a competitive
+            edge.
+          </p>
+        </div>
+
+        <div
+          class="relative mt-8 w-full overflow-hidden rounded-[6px] bg-[#E8EAF2] md:mt-10"
+          style="aspect-ratio: 2.13 / 1"
+        >
+          <img
+            src="./images/iot-industry/industrial.jpg"
+            alt="Engineers working with connected hardware in a lab"
+            class="absolute inset-0 h-full w-full object-cover object-center"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-black/10"
+            aria-hidden="true"
+          ></div>
+          <button
+            type="button"
+            class="group absolute inset-0 flex items-center justify-center"
+            aria-label="Play video"
+          >
+            <span
+              class="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-lg ring-4 ring-white/40 transition group-hover:scale-105 md:h-16 md:w-16"
+            >
+              <svg
+                class="ml-0.5 h-6 w-6 text-[#1B2125] md:h-7 md:w-7"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M8 5v14l11-7L8 5z" />
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <div
+          class="mt-10 grid grid-cols-1 gap-6 text-left md:mt-12 md:grid-cols-2 md:gap-x-8 md:gap-y-10 lg:gap-x-10"
+        >
+          <article class="flex flex-col gap-3">
+            <div class="flex items-center gap-2">
+              <img
+                src="./images/doubleBlueTick.svg"
+                alt=""
+                width="28"
+                height="28"
+                class="h-6 w-6 shrink-0"
+                aria-hidden="true"
+              />
+              <h3
+                class="min-w-0 flex-1 text-[16px] font-semibold leading-snug text-[#010101] md:text-[17px]"
+              >
+                Innovate and Integrate with IoT
+              </h3>
+            </div>
+            <p class="text-[14px] leading-[1.65] text-[#647E9B] md:leading-[1.7]">
+              IoT solutions offer endless business opportunities. From enhancing
+              operations to gaining valuable customer insights, our IoT product
+              development services are tailored to meet your goals and challenges.
+            </p>
+          </article>
+
+          <article class="flex flex-col gap-3">
+            <div class="flex items-center gap-2">
+              <img
+                src="./images/doubleBlueTick.svg"
+                alt=""
+                width="28"
+                height="28"
+                class="h-6 w-6 shrink-0"
+                aria-hidden="true"
+              />
+              <h3
+                class="min-w-0 flex-1 text-[16px] font-semibold leading-snug text-[#010101] md:text-[17px]"
+              >
+                Seamlessly Connected Devices
+              </h3>
+            </div>
+            <p class="text-[14px] leading-[1.65] text-[#647E9B] md:leading-[1.7]">
+              Experience the convenience and value of seamlessly connected devices
+              that communicate and work together to optimize your business
+              processes, increase productivity, and reduce costs.
+            </p>
+          </article>
+
+          <article class="flex flex-col gap-3">
+            <div class="flex items-center gap-2">
+              <img
+                src="./images/doubleBlueTick.svg"
+                alt=""
+                width="28"
+                height="28"
+                class="h-6 w-6 shrink-0"
+                aria-hidden="true"
+              />
+              <h3
+                class="min-w-0 flex-1 text-[16px] font-semibold leading-snug text-[#010101] md:text-[17px]"
+              >
+                Data-Driven Decisions
+              </h3>
+            </div>
+            <p class="text-[14px] leading-[1.65] text-[#647E9B] md:leading-[1.7]">
+              Dive into advanced decision-making with real-time data. IoT platforms
+              provide intelligent analysis to make informed decisions based on
+              latest insights.
+            </p>
+          </article>
+
+          <article class="flex flex-col gap-3">
+            <div class="flex items-center gap-2">
+              <img
+                src="./images/doubleBlueTick.svg"
+                alt=""
+                width="28"
+                height="28"
+                class="h-6 w-6 shrink-0"
+                aria-hidden="true"
+              />
+              <h3
+                class="min-w-0 flex-1 text-[16px] font-semibold leading-snug text-[#010101] md:text-[17px]"
+              >
+                Custom IoT Products
+              </h3>
+            </div>
+            <p class="text-[14px] leading-[1.65] text-[#647E9B] md:leading-[1.7]">
+              Your business is unique, and so should your IoT products be. We excel
+              in developing custom IoT products to fit your exact business
+              requirements, maximizing the benefits of this tech revolution.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- IoT roadmap: pinned horizontal scroll (GSAP + ScrollTrigger via main.js) -->
+    <section
+      id="webRoadmapSection"
+      class="web-roadmap-section w-full py-12 text-[#171C21] md:py-20"
+    >
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <span
+          class="inline-flex rounded-full border border-[#F4C9BE] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[#FFA28B] md:text-xs"
+        >
+          OUR APPROACH
+        </span>
+        <h2
+          class="mt-4 max-w-[min(100%,720px)] text-[32px] leading-[1.2] font-semibold tracking-[-0.01em] text-[#171C21] lg:text-[40px]"
+        >
+          From Concept to Connected Product: Our IoT Roadmap
+        </h2>
+        <p
+          class="mt-3 max-w-[740px] text-[14px] font-normal leading-7 text-[#647E9B] lg:text-[16px]"
+        >
+          We guide every IoT engagement from discovery through live operations—
+          devices, connectivity, cloud, and data—so your product ships with clarity
+          at each milestone.
+        </p>
+      </div>
+
+      <div class="mt-7 w-full md:mt-10">
+        <div class="mx-auto w-full max-w-[1280px] px-7 xl:px-0">
+          <div id="roadmapProgressWrap" class="relative h-8">
+            <div
+              id="roadmapProgressSegmentsBg"
+              class="pointer-events-none absolute inset-0"
+            ></div>
+            <div
+              id="roadmapProgressSegmentsFill"
+              class="pointer-events-none absolute inset-0"
+            ></div>
+            <div
+              class="absolute inset-x-0 top-1/2 flex -translate-y-1/2 justify-between"
+            >
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 1"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 2"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 3"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 4"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 5"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="roadmapViewport" class="mt-8 w-full overflow-hidden md:mt-9">
+          <div
+            id="roadmapTrack"
+            class="flex w-max gap-4 pl-7 pr-7 md:gap-5 md:pl-[max(1.75rem,calc((100vw-1280px)/2))] md:pr-[max(1.75rem,calc((100vw-1280px)/2))]"
+          >
+              <article
+                class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+              >
+                <button
+                  type="button"
+                  class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                  aria-label="Open phase details"
+                  data-roadmap-detail-open
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 5v14M5 12h14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+                >
+                  01
+                </p>
+                <h3
+                  class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+                >
+                  Discovery &amp; Requirements
+                </h3>
+                <p
+                  class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+                >
+                  We clarify use cases, constraints, and success metrics—sensor
+                  types, power budgets, connectivity, and compliance—so the
+                  architecture fits real-world deployment.
+                </p>
+              </article>
+
+              <article
+                class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+              >
+                <button
+                  type="button"
+                  class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                  aria-label="Open phase details"
+                  data-roadmap-detail-open
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 5v14M5 12h14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+                >
+                  02
+                </p>
+                <h3
+                  class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+                >
+                  System &amp; Solution Design
+                </h3>
+                <p
+                  class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+                >
+                  Blueprint the device stack, protocols, cloud ingestion, and
+                  security model—prototypes and diagrams aligned before hardware
+                  and firmware commitments.
+                </p>
+              </article>
+
+              <article
+                class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+              >
+                <button
+                  type="button"
+                  class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                  aria-label="Open phase details"
+                  data-roadmap-detail-open
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 5v14M5 12h14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+                >
+                  03
+                </p>
+                <h3
+                  class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+                >
+                  Build &amp; Integration
+                </h3>
+                <p
+                  class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+                >
+                  Implement firmware, device management, cloud pipelines, and
+                  dashboards—integrating edge logic with your backends and
+                  identity model.
+                </p>
+              </article>
+
+              <article
+                class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+              >
+                <button
+                  type="button"
+                  class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                  aria-label="Open phase details"
+                  data-roadmap-detail-open
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 5v14M5 12h14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+                >
+                  04
+                </p>
+                <h3
+                  class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+                >
+                  Validation &amp; Pilot
+                </h3>
+                <p
+                  class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+                >
+                  Lab and field testing, OTA flows, and performance tuning—so
+                  reliability and security are proven before scale-out.
+                </p>
+              </article>
+
+              <article
+                class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+              >
+                <button
+                  type="button"
+                  class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                  aria-label="Open phase details"
+                  data-roadmap-detail-open
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 5v14M5 12h14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+                >
+                  05
+                </p>
+                <h3
+                  class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+                >
+                  Launch &amp; Evolve
+                </h3>
+                <p
+                  class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+                >
+                  Production rollout, monitoring, and iteration—feature updates,
+                  fleet analytics, and long-term support as your product grows.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Industry-driven IoT Solutions -->
+    <section class="w-full bg-white py-12 text-[#1B2125] md:py-16 lg:py-20" aria-labelledby="iot-industry-heading">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <!-- Industry-driven IoT Solutions: ladder (intro col1 only; col3 top ~ title) -->
+        <div class="relative w-full pb-12 pt-2 md:pb-16 md:pt-6">
+          <!-- Intro: mobile + tablet; desktop repeats in column 1 only -->
+          <div class="lg:hidden">
+            <span
+              class="inline-block w-fit rounded-full border border-[#2D39F2]/70 px-4 py-1 text-[10px] font-semibold tracking-[0.15em] text-[#2D39F2] uppercase"
+            >
+              PURPOSE-BUILT SOLUTIONS
+            </span>
+            <h2
+              id="iot-industry-heading"
+              class="mt-4 text-[28px] font-bold leading-[1.2] text-[#010101] sm:max-w-lg md:mt-5 md:max-w-xl md:text-[32px] md:leading-[60px] lg:text-[40px]"
+            >
+              Industry-driven IoT Solutions
+            </h2>
+            <p
+              class="mt-3 max-w-sm text-sm font-normal leading-relaxed text-[#647E9B] md:mt-4 md:text-base"
+            >
+              Leverage the power of industrial IoT solutions designed for
+              complex dynamics across a wide range of industries.
+            </p>
+          </div>
+
+          <!-- Mobile: horizontal slider (0.78 frame + peek of next card) -->
+          <div
+            id="iotIndustryScroll"
+            class="mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-1 pl-0 pr-3 -mr-3 md:hidden"
+          >
+            <article
+              class="min-w-[min(86vw,307px)] max-w-[307px] shrink-0 snap-start"
+            >
+              <div class="iot-industry-slider-frame bg-[#E8EDF6]">
+                <img
+                  src="./images/iot-industry/smart-home.jpg"
+                  alt="Smart home living space with connected devices"
+                  class="iot-industry-slider-img"
+                  width="307"
+                  height="390"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mt-4 text-[17px] font-bold leading-snug text-[#010101]">Smart Home</h3>
+              <p class="mt-2 text-[14px] leading-[1.6] text-[#647E9B]">
+                Revolutionize living spaces with intelligent automation for
+                comfort, security, and energy efficiency.
+              </p>
+            </article>
+            <article class="min-w-[min(86vw,307px)] max-w-[307px] shrink-0 snap-start">
+              <div class="iot-industry-slider-frame bg-[#E8EDF6]">
+                <img
+                  src="./images/iot-industry/healthcare.jpg"
+                  alt="Medical imaging and patient care technology"
+                  class="iot-industry-slider-img"
+                  width="307"
+                  height="390"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mt-4 text-[17px] font-bold leading-snug text-[#010101]">Healthcare</h3>
+              <p class="mt-2 text-[14px] leading-[1.6] text-[#647E9B]">
+                Enhance patient care via remote monitoring, advanced
+                diagnostics, and seamless data collection.
+              </p>
+            </article>
+            <article class="min-w-[min(86vw,307px)] max-w-[307px] shrink-0 snap-start">
+              <div class="iot-industry-slider-frame bg-[#E8EDF6]">
+                <img
+                  src="./images/iot-industry/industrial.jpg"
+                  alt="Industrial facility with connected monitoring"
+                  class="iot-industry-slider-img"
+                  width="307"
+                  height="390"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mt-4 text-[17px] font-bold leading-snug text-[#010101]">Industrial IoT</h3>
+              <p class="mt-2 text-[14px] leading-[1.6] text-[#647E9B]">
+                Optimize manufacturing processes, reduce downtime, and
+                increase productivity with industrial-grade IoT.
+              </p>
+            </article>
+            <article class="min-w-[min(86vw,307px)] max-w-[307px] shrink-0 snap-start">
+              <div class="iot-industry-slider-frame bg-[#E8EDF6]">
+                <img
+                  src="./images/iot-industry/agriculture.jpg"
+                  alt="Precision agriculture and field monitoring"
+                  class="iot-industry-slider-img"
+                  width="307"
+                  height="390"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mt-4 text-[17px] font-bold leading-snug text-[#010101]">Agriculture</h3>
+              <p class="mt-2 text-[14px] leading-[1.6] text-[#647E9B]">
+                Empower smart farming through precise monitoring, control
+                systems, and data-driven decision-making.
+              </p>
+            </article>
+            <article class="min-w-[min(86vw,307px)] max-w-[307px] shrink-0 snap-start">
+              <div class="iot-industry-slider-frame bg-[#E8EDF6]">
+                <img
+                  src="./images/iot-industry/logistics.jpg"
+                  alt="Logistics and supply chain operations"
+                  class="iot-industry-slider-img"
+                  width="307"
+                  height="390"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mt-4 text-[17px] font-bold leading-snug text-[#010101]">Logistics</h3>
+              <p class="mt-2 text-[14px] leading-[1.6] text-[#647E9B]">
+                Streamline supply chains with real-time tracking, inventory
+                management, and predictive insights.
+              </p>
+            </article>
+            <article class="min-w-[min(86vw,307px)] max-w-[307px] shrink-0 snap-start">
+              <div class="iot-industry-slider-frame bg-[#E8EDF6]">
+                <img
+                  src="./images/iot-industry/energy.jpg"
+                  alt="Renewable energy and smart grid systems"
+                  class="iot-industry-slider-img"
+                  width="307"
+                  height="390"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mt-4 text-[17px] font-bold leading-snug text-[#010101]">Energy Systems</h3>
+              <p class="mt-2 text-[14px] leading-[1.6] text-[#647E9B]">
+                Transform energy management with smart grids, renewable
+                integration, and usage analytics.
+              </p>
+            </article>
+          </div>
+
+          <div
+            class="mt-6 w-[min(86vw,307px)] md:hidden"
+            aria-hidden="true"
+          >
+            <div
+              class="relative h-[3px] w-full overflow-hidden rounded-full bg-[#D8E2EF]"
+            >
+              <div
+                id="iotIndustryProgressFill"
+                class="absolute left-0 top-0 h-full rounded-full bg-[#2D39F2] transition-[width] duration-100 ease-out will-change-[width]"
+                style="width: 33%"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="hidden overflow-visible md:mt-10 md:block md:rounded-[22px] md:bg-[#EEF1FA] md:px-7 md:py-11 lg:mt-12 lg:bg-transparent lg:p-0"
+          >
+          <!-- Tablet: ladder — right stack higher, left stack lower (pt pushes col1 down) -->
+          <div
+            class="hidden md:grid md:grid-cols-2 md:items-start md:gap-x-8 lg:hidden"
+          >
+            <div class="flex flex-col gap-11 pt-14 md:gap-12 md:pt-16">
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] md:rounded-[14px]">
+                  <img
+                    src="./images/iot-industry/smart-home.jpg"
+                    alt="Smart home living space with connected devices"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="640"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101]">Smart Home</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Revolutionize living spaces with intelligent automation for
+                  comfort, security, and energy efficiency.
+                </p>
+              </article>
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] md:rounded-[14px]">
+                  <img
+                    src="./images/iot-industry/agriculture.jpg"
+                    alt="Precision agriculture and field monitoring"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="640"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101]">Agriculture</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Empower smart farming through precise monitoring, control
+                  systems, and data-driven decision-making.
+                </p>
+              </article>
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] md:rounded-[14px]">
+                  <img
+                    src="./images/iot-industry/logistics.jpg"
+                    alt="Logistics and supply chain operations"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="640"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101]">Logistics</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Streamline supply chains with real-time tracking, inventory
+                  management, and predictive insights.
+                </p>
+              </article>
+            </div>
+            <div class="flex flex-col gap-11 md:gap-12">
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] md:rounded-[14px]">
+                  <img
+                    src="./images/iot-industry/healthcare.jpg"
+                    alt="Medical imaging and patient care technology"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="640"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101]">Healthcare</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Enhance patient care via remote monitoring, advanced
+                  diagnostics, and seamless data collection.
+                </p>
+              </article>
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] md:rounded-[14px]">
+                  <img
+                    src="./images/iot-industry/industrial.jpg"
+                    alt="Industrial facility with connected monitoring"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="760"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101]">Industrial IoT</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Optimize manufacturing processes, reduce downtime, and
+                  increase productivity with industrial-grade IoT.
+                </p>
+              </article>
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] md:rounded-[14px]">
+                  <img
+                    src="./images/iot-industry/energy.jpg"
+                    alt="Renewable energy and smart grid systems"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="760"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101]">Energy Systems</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Transform energy management with smart grids, renewable
+                  integration, and usage analytics.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Desktop lg+: intro col1 is absolute (no flow squeeze); cards use pt; col2/col3 step via pt -->
+          <div
+            class="hidden items-start gap-7 lg:flex xl:gap-10"
+          >
+            <div class="relative flex min-w-0 flex-1 flex-col translate-y-[0px]">
+              <div
+                class="pointer-events-none hidden lg:pointer-events-auto lg:absolute lg:left-0 lg:top-0 lg:z-10 lg:flex w-full min-w-[48rem] lg:flex-col lg:gap-4 lg:pr-4"
+              >
+                <span
+                  class="inline-block w-fit rounded-full border border-[#2D39F2]/70 px-4 py-1 text-[10px] font-semibold tracking-[0.15em] text-[#2D39F2] uppercase"
+                >
+                  PURPOSE-BUILT SOLUTIONS
+                </span>
+                <h2
+                  class="text-[32px] font-bold leading-[60px] text-[#010101] lg:text-[40px]"
+                >
+                  Industry-driven IoT Solutions
+                </h2>
+                <p
+                  class="max-w-sm text-sm font-normal text-[#647E9B] lg:text-base"
+                >
+                  Leverage the power of industrial IoT solutions designed for
+                  complex dynamics across a wide range of industries.
+                </p>
+              </div>
+              <div
+                class="flex flex-col gap-10 xl:gap-12 lg:pt-[clamp(20.5rem,30vw,25.5rem)]"
+              >
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] lg:rounded-[14px] xl:rounded-[16px] max-w-[390px] max-h-[480px]">
+                  <img
+                    src="./images/iot-industry/smart-home.jpg"
+                    alt="Smart home living space with connected devices"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="640"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101] xl:text-[19px]">Smart Home</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Revolutionize living spaces with intelligent automation for
+                  comfort, security, and energy efficiency.
+                </p>
+              </article>
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] lg:rounded-[14px] xl:rounded-[16px] max-w-[390px] max-h-[480px]">
+                  <img
+                    src="./images/iot-industry/agriculture.jpg"
+                    alt="Precision agriculture and field monitoring"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="640"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101] xl:text-[19px]">Agriculture</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Empower smart farming through precise monitoring, control
+                  systems, and data-driven decision-making.
+                </p>
+              </article>
+              </div>
+            </div>
+            <div
+              class="flex min-w-0 flex-1 flex-col gap-10 self-start xl:gap-12 lg:pt-[clamp(7.5rem,18vw,14.5rem)]"
+            >
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] lg:rounded-[14px] xl:rounded-[16px] max-w-[390px] max-h-[480px]">
+                  <img
+                    src="./images/iot-industry/healthcare.jpg"
+                    alt="Medical imaging and patient care technology"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="640"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101] xl:text-[19px]">Healthcare</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Enhance patient care via remote monitoring, advanced
+                  diagnostics, and seamless data collection.
+                </p>
+              </article>
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] lg:rounded-[14px] xl:rounded-[16px] max-w-[390px] max-h-[480px]">
+                  <img
+                    src="./images/iot-industry/logistics.jpg"
+                    alt="Logistics and supply chain operations"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="640"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101] xl:text-[19px]">Logistics</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Streamline supply chains with real-time tracking, inventory
+                  management, and predictive insights.
+                </p>
+              </article>
+            </div>
+            <div
+              class="flex min-w-0 flex-1 flex-col gap-10 self-start xl:gap-12 lg:pt-[clamp(2.75rem,5vw,3.75rem)]"
+            >
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] lg:rounded-[14px] xl:rounded-[16px] max-w-[390px] max-h-[480px]">
+                  <img
+                    src="./images/iot-industry/industrial.jpg"
+                    alt="Industrial facility with connected monitoring"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="760"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101] xl:text-[19px]">Industrial IoT</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Optimize manufacturing processes, reduce downtime, and
+                  increase productivity with industrial-grade IoT.
+                </p>
+              </article>
+              <article>
+                <div class="overflow-hidden rounded-[12px] bg-[#E8EDF6] lg:rounded-[14px] xl:rounded-[16px] max-w-[390px] max-h-[480px]">
+                  <img
+                    src="./images/iot-industry/energy.jpg"
+                    alt="Renewable energy and smart grid systems"
+                    class="iot-industry-card-img"
+                    width="560"
+                    height="760"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mt-4 text-[18px] font-bold leading-snug text-[#010101] xl:text-[19px]">Energy Systems</h3>
+                <p class="mt-2.5 text-[15px] leading-[1.6] text-[#647E9B]">
+                  Transform energy management with smart grids, renewable
+                  integration, and usage analytics.
+                </p>
+              </article>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- What Sets Us Apart: GSAP pin + stack cards behind card 1 -->
+    <section
+      id="iotStackSection"
+      class="relative w-full py-14 text-[#1B2125] md:py-20 lg:py-28"
+      style="background: linear-gradient(180deg, #F0F9F6 0%, #e2f5ef 70%, #c5eee0 100%)"
+    >
+      <div
+        class="pointer-events-none absolute inset-x-0 bottom-0 h-[3px]"
+        style="background: linear-gradient(90deg, #3FDFCF, #49C4A8, #3FDFCF)"
+        aria-hidden="true"
+      ></div>
+
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <div
+          class="grid grid-cols-1 gap-10 lg:grid-cols-[42%_1fr] lg:items-start lg:gap-16 xl:gap-20"
+        >
+          <div class="max-w-[480px] text-left lg:sticky lg:top-28">
+            <span
+              class="inline-flex rounded-full border border-[#7DC9A8] bg-white px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#0d4f38] md:text-[11px]"
+            >
+              Our commitment
+            </span>
+            <h2
+              class="mt-5 text-[28px] font-bold leading-[1.15] tracking-tight text-[#010101] md:text-[34px] lg:text-[38px]"
+            >
+              What Sets Us Apart
+            </h2>
+            <p
+              class="mt-4 text-[14px] leading-[1.7] text-[#3d564e] md:text-[15px]"
+            >
+              We boost businesses in all IoT sectors with custom solutions and
+              top security, offering scalable architectures to match your
+              business's growth, big or small.
+            </p>
+          </div>
+
+          <div id="iotStackCards" class="relative">
+            <article class="iot-stack-card rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:px-8 md:py-6">
+              <div class="flex items-start gap-4">
+                <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]">
+                  <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]">
+                    Simplified Solutions
+                  </h3>
+                  <p class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]">
+                    Complete sustainable technology stacks to meet business and
+                    organizational needs. We bring transparency &amp;
+                    quality-oriented process that lets you focus on what you do
+                    best.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="iot-stack-card mt-4 rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:mt-5 md:px-8 md:py-6">
+              <div class="flex items-start gap-4">
+                <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]">
+                  <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]">
+                    Proactive Risk Mitigation
+                  </h3>
+                  <p class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]">
+                    From your initial strategic kick-off, we focus on identifying
+                    potential risks, ensuring development is risk-free &amp;
+                    maintaining full control of your product journey.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="iot-stack-card mt-4 rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:mt-5 md:px-8 md:py-6">
+              <div class="flex items-start gap-4">
+                <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]">
+                  <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]">
+                    Absolute Clarity and Transparency
+                  </h3>
+                  <p class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]">
+                    We prioritize the highest standards for your project, using
+                    our expertise to develop a refined, comprehensive test suite
+                    around the right technologies.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="iot-stack-card mt-4 rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:mt-5 md:px-8 md:py-6">
+              <div class="flex items-start gap-4">
+                <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]">
+                  <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]">
+                    Secure and Resilient Solutions
+                  </h3>
+                  <p class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]">
+                    In our secure infrastructure built on well-founded
+                    principles, we prioritize data integrity. Our proactive
+                    cybersecurity frameworks ensure your digital assets remain
+                    protected.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="iot-stack-card mt-4 rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:mt-5 md:px-8 md:py-6">
+              <div class="flex items-start gap-4">
+                <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]">
+                  <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]">
+                    Extensible and Reusable Frameworks
+                  </h3>
+                  <p class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]">
+                    Our architecture and infrastructure is built for future
+                    growth. Using rapid prototyping and agile development
+                    methodologies, iteratively refining the solution.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="iot-stack-card mt-4 rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:mt-5 md:px-8 md:py-6">
+              <div class="flex items-start gap-4">
+                <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]">
+                  <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                    <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]">
+                    Highly Competitive Solutions
+                  </h3>
+                  <p class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]">
+                    Our expertise enables us to implement, expand, and even
+                    refurbish digital products on a fast cycle. We optimize
+                    cost-effectively ensuring you get the best value.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Technology Expertise (same structure as webservice.html) -->
+    <section class="w-full bg-white py-12 text-[#171C21] md:py-20">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <span
+          class="inline-flex rounded-full border border-[#8D95FF] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[#3D4BFF] md:text-xs"
+        >
+          TECHNOLOGY
+        </span>
+        <h2
+          class="mt-4 text-[48px] font-semibold leading-[1.13] tracking-[-0.01em] max-md:text-[56px]"
+        >
+          Technology Expertise
+        </h2>
+        <p
+          class="mt-4 max-w-[640px] text-[15px] leading-7 text-[#647E9B] max-md:text-[24px] max-md:leading-[1.45]"
+        >
+          At Occamode, we skillfully use advanced sensor tech, connectivity
+          protocols, and data analytics to empower businesses with reliable and
+          efficient IoT ecosystems.
+        </p>
+        <div
+          class="mt-8 flex flex-col gap-4 md:mt-10 md:flex-row md:items-start justify-between md:gap-6"
+        >
+          <div
+            id="techStackTabs"
+            class="flex w-full items-center justify-center gap-5 overflow-x-auto pb-1 whitespace-nowrap [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:w-[170px] md:shrink-0 md:flex-col md:items-stretch md:justify-start md:gap-3 md:overflow-visible md:whitespace-normal md:pb-0 md:pt-2"
+          >
+            <button
+              type="button"
+              data-tech-tab="frontend"
+              class="shrink-0 border-b-2 border-b-[#3D4BFF] pb-1 text-left text-[13px] font-semibold text-[#3D4BFF] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-[#3D4BFF] md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              Front-end
+            </button>
+            <button
+              type="button"
+              data-tech-tab="backend"
+              class="shrink-0 border-b-2 border-b-transparent pb-1 text-left text-[13px] font-semibold text-[#171C21] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-transparent md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              Back-end
+            </button>
+            <button
+              type="button"
+              data-tech-tab="cloud"
+              class="shrink-0 border-b-2 border-b-transparent pb-1 text-left text-[13px] font-semibold text-[#171C21] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-transparent md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              Cloud
+            </button>
+            <button
+              type="button"
+              data-tech-tab="devops"
+              class="shrink-0 border-b-2 border-b-transparent pb-1 text-left text-[13px] font-semibold text-[#171C21] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-transparent md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              DevOps
+            </button>
+          </div>
+
+          <div
+            class="min-w-0 w-fit max-w-full overflow-x-auto rounded-[4px] border border-[#E6E9EF] bg-white"
+          >
+            <div
+              id="techStackGrid"
+              class="grid w-max max-w-full grid-cols-[repeat(3,160px)] md:grid-cols-[repeat(6,160px)]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services: same accordion + timer progress as devops.html -->
+    <section class="w-full bg-[#F2F2FE] py-14 text-[#1B2125] md:py-20 lg:py-24">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <span
+          class="inline-flex rounded-full border border-[#C7CFDA] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[#647E9B] sm:text-xs"
+        >
+          OUR SERVICES
+        </span>
+        <h2
+          class="mt-4 max-w-[min(100%,920px)] text-[28px] font-bold leading-[1.12] tracking-[-0.02em] text-[#010101] md:mt-5 md:text-[38px] lg:text-[42px]"
+        >
+          Comprehensive Services for All Your IoT Needs
+        </h2>
+
+        <div
+          class="mt-10 grid grid-cols-1 gap-0 lg:mt-12 lg:grid-cols-2 lg:items-start lg:gap-16"
+        >
+          <div
+            class="relative order-1 mb-8 aspect-[1.15] w-full overflow-hidden rounded-[3px] bg-[#E8EAF2] lg:order-2 lg:mb-0 lg:aspect-square lg:max-h-[min(100vw,520px)]"
+          >
+            <img
+              src="./images/webserviceaccordian.png"
+              alt="IoT services illustration"
+              class="absolute inset-0 h-full w-full object-cover object-center"
+            />
+          </div>
+
+          <div
+            id="iotServicesAccordion"
+            class="order-2 flex w-full flex-col lg:order-1 lg:max-w-none"
+          >
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="0"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >End-to-End IoT solution</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body open">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Whether you're at the Proof of Concept (PoC) stage,
+                    developing a Minimum Viable Product (MVP), or scaling up to a
+                    full-fledged product, our services cover every step of the
+                    IoT journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="1"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >IoT Consulting Services</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    From architecture reviews to vendor selection and security
+                    posture, we help you make confident decisions before you
+                    commit hardware or cloud spend.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="2"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >IoT Cloud Development</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    We design ingestion pipelines, device registries, and scalable
+                    APIs so your fleet data lands reliably and stays actionable
+                    in the cloud.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="3"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >IoT Hardware and Firmware Engineering</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Boards, sensors, BSPs, and OTA-ready firmware—built for power
+                    budgets, connectivity constraints, and long field life.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="4"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >IoT Data Solutions</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Streaming analytics, time-series storage, and ML-ready features
+                    so telemetry turns into alerts, trends, and operational
+                    insight.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="5"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >Research &amp; Prototyping Support</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Rapid lab bring-up, proof rigs, and iteration loops to
+                    de-risk sensors, radios, and edge logic before production.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="6"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >IoT Dashboard &amp; Application Development</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Operator consoles, mobile companion apps, and customer-facing
+                    UIs with role-based access and real-time device health.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Our Transformational Work -->
+    <section class="w-full bg-[#F8F8FB] py-12 text-[#010101] md:py-20">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <div class="mx-auto max-w-[760px] text-center max-md:text-left">
+          <h2 class="text-[28px] leading-[100%]! font-semibold md:text-[40px]">
+            Explore Our Transformational Work
+          </h2>
+          <p class="mt-3 text-[14px] leading-7 text-[#7A92AE] md:text-[15px]">
+            Browse our UI/UX portfolio and see how our custom solutions drive
+            measurable outcomes.
+          </p>
+        </div>
+
+        <!-- Desktop stack -->
+        <div class="mt-8 hidden flex-col gap-6 md:flex md:mt-10">
+          <article
+            class="relative aspect-[2.13] overflow-hidden rounded-[4px] bg-cover bg-center bg-no-repeat"
+            style="
+              background-image: url(&quot;./images/casestudy1web.jpg&quot;);
+            "
+          >
+            <div
+              class="absolute inset-y-0 left-0 z-10 flex w-[42%] flex-col items-start justify-center p-6 lg:p-8"
+            >
+              <img src="./images/hatch.svg" alt="hatch" class="h-8 w-auto" />
+              <h3 class="mt-5 text-[18px] lg:text-[22px] leading-[100%]! font-bold text-[#232536]">
+                Custom software that matches your brand vision
+              </h3>
+              <p class="mt-3 text-[14px] lg:text-[16px] leading-[1.55] line-clamp-2 lg:line-clamp-none text-[#232536]">
+                We turn complex requirements into clean, usable experiences that
+                support growth.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full border border-[#CECFD7] px-3 py-1 text-[12px] text-[#232536]"
+                  >EV Charging</span
+                >
+                <span
+                  class="rounded-full border border-[#CECFD7] px-3 py-1 text-[12px] text-[#232536]"
+                  >Startup</span
+                >
+                <span
+                  class="rounded-full border border-[#CECFD7] px-3 py-1 text-[12px] text-[#232536]"
+                  >Global Brand</span
+                >
+              </div>
+              <a
+                href="./casestudy.html#hatch"
+                class="mt-8 inline-block text-[14px] font-semibold text-[#F05A40]"
+                >View more</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="relative aspect-[2.13] overflow-hidden rounded-[4px] bg-cover bg-center bg-no-repeat"
+            style="
+              background-image: url(&quot;./images/casestudy2web.jpg&quot;);
+            "
+          >
+            <div
+              class="absolute inset-y-0 left-0 z-10 flex w-[42%] flex-col items-start justify-center p-6 text-white lg:p-8"
+            >
+              <img src="./images/doctal.svg" alt="doctal" class="h-8 w-auto" />
+              <h3 class="mt-5 text-[18px] lg:text-[22px] leading-[100%]! font-bold text-white">
+                Improving the user journey across devices
+              </h3>
+              <p class="mt-3 text-[14px] lg:text-[16px] leading-[1.55] line-clamp-2 lg:line-clamp-none text-white/85">
+                A design-first workflow that delivers consistent UI quality with
+                faster iteration.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full border border-white/40 px-3 py-1 text-[12px] text-white/85"
+                  >EV Charging</span
+                >
+                <span
+                  class="rounded-full border border-white/40 px-3 py-1 text-[12px] text-white/85"
+                  >Startup</span
+                >
+                <span
+                  class="rounded-full border border-white/40 px-3 py-1 text-[12px] text-white/85"
+                  >Global Brand</span
+                >
+              </div>
+              <a
+                href="./casestudy.html#dotcal"
+                class="mt-8 inline-block text-[14px] font-semibold text-[#EAF826]"
+                >View more</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="relative aspect-[2.13] overflow-hidden rounded-[4px] bg-cover bg-center bg-no-repeat"
+            style="
+              background-image: url(&quot;./images/casestudy3web.jpg&quot;);
+            "
+          >
+            <div
+              class="absolute inset-y-0 left-0 z-10 flex w-[42%] flex-col items-start justify-center p-6 lg:p-8"
+            >
+              <img src="./images/inszu.svg" alt="inszu" class="h-8 w-auto" />
+              <h3 class="mt-5 text-[18px] lg:text-[22px] leading-[100%]! font-bold text-[#232536]">
+                UX that improves retention and trust
+              </h3>
+              <p class="mt-3 text-[14px] lg:text-[16px] leading-[1.55] line-clamp-2 lg:line-clamp-none text-[#7A92AE]">
+                User-centric research and careful UI craft to keep the
+                experience smooth and reliable.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full border border-[#D3D9E4] px-3 py-1 text-[12px] text-[#647E9B]"
+                  >EV Charging</span
+                >
+                <span
+                  class="rounded-full border border-[#D3D9E4] px-3 py-1 text-[12px] text-[#647E9B]"
+                  >Startup</span
+                >
+                <span
+                  class="rounded-full border border-[#D3D9E4] px-3 py-1 text-[12px] text-[#647E9B]"
+                  >Global Brand</span
+                >
+              </div>
+              <a
+                href="./casestudy.html#inszu"
+                class="mt-8 inline-block text-[14px] font-semibold text-[#6F8C2E]"
+                >View more</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <!-- Mobile slider -->
+        <div class="mt-7 md:hidden">
+          <div class="overflow-hidden rounded-[4px]">
+            <div
+              id="webAppsTrack"
+              class="flex transition-transform duration-400 ease-out"
+            >
+              <article class="w-full shrink-0 bg-[#FDF7F6] p-4">
+                <div>
+                  <img
+                    src="./images/hatch.svg"
+                    alt="hatch"
+                    class="h-6 w-auto"
+                  />
+                  <h3 class="mt-3 text-[18px] leading-[100%]! font-semibold">
+                    Concept-first UI that turns ideas into usable products
+                  </h3>
+                  <p class="mt-2 text-[12px] leading-5 text-[#7A92AE]">
+                    We listen, refine, and ship design systems that scale
+                    without losing quality.
+                  </p>
+                  <div class="mt-3 flex flex-wrap gap-1.5">
+                    <span
+                      class="rounded-full border border-[#D3D9E4] px-2 py-0.5 text-[10px] text-[#647E9B]"
+                      >EV Charging</span
+                    >
+                    <span
+                      class="rounded-full border border-[#D3D9E4] px-2 py-0.5 text-[10px] text-[#647E9B]"
+                      >Startup</span
+                    >
+                    <span
+                      class="rounded-full border border-[#D3D9E4] px-2 py-0.5 text-[10px] text-[#647E9B]"
+                      >Global Brand</span
+                    >
+                  </div>
+                  <div
+                    class="mt-3 grid grid-cols-[88px_minmax(0,1fr)] items-end gap-2"
+                  >
+                    <a href="./casestudy.html#hatch" class="text-[12px] font-semibold text-[#F05A40]"
+                      >View more</a
+                    >
+                    <div
+                      class="h-[96px] w-full rounded-[3px] bg-cover bg-right bg-no-repeat"
+                      style="
+                        background-image: url(&quot;./images/casestudy1mobile.jpg&quot;);
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="w-full shrink-0 bg-[#2768CE] p-4 text-white">
+                <div>
+                  <img
+                    src="./images/doctal.svg"
+                    alt="doctal"
+                    class="h-6 w-auto"
+                  />
+                  <h3 class="mt-3 text-[18px] leading-[100%]! font-semibold">
+                    UX improvements that make journeys effortless
+                  </h3>
+                  <p class="mt-2 text-[12px] leading-5 text-white/85">
+                    A smooth, consistent experience across screens with quick
+                    iterations.
+                  </p>
+                  <div class="mt-3 flex flex-wrap gap-1.5">
+                    <span
+                      class="rounded-full border border-white/35 px-2 py-0.5 text-[10px] text-white/85"
+                      >EV Charging</span
+                    >
+                    <span
+                      class="rounded-full border border-white/35 px-2 py-0.5 text-[10px] text-white/85"
+                      >Startup</span
+                    >
+                  </div>
+                  <div
+                    class="mt-3 grid grid-cols-[88px_minmax(0,1fr)] items-end gap-2"
+                  >
+                    <a href="./casestudy.html#dotcal" class="text-[12px] font-semibold text-[#EAF826]"
+                      >View more</a
+                    >
+                    <div
+                      class="h-[96px] w-full rounded-[3px] bg-cover bg-right bg-no-repeat"
+                      style="
+                        background-image: url(&quot;./images/casestudy2mobile.jpg&quot;);
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="w-full shrink-0 bg-[#EDF3F4] p-4">
+                <div>
+                  <img
+                    src="./images/inszu.svg"
+                    alt="inszu"
+                    class="h-6 w-auto"
+                  />
+                  <h3 class="mt-3 text-[18px] leading-[100%]! font-semibold">
+                    Retention-focused UX with trustworthy interactions
+                  </h3>
+                  <p class="mt-2 text-[12px] leading-5 text-[#7A92AE]">
+                    Clean UI patterns and careful UX research to improve
+                    confidence and clarity.
+                  </p>
+                  <div class="mt-3 flex flex-wrap gap-1.5">
+                    <span
+                      class="rounded-full border border-[#D3D9E4] px-2 py-0.5 text-[10px] text-[#647E9B]"
+                      >EV Charging</span
+                    >
+                    <span
+                      class="rounded-full border border-[#D3D9E4] px-2 py-0.5 text-[10px] text-[#647E9B]"
+                      >Startup</span
+                    >
+                  </div>
+                  <div
+                    class="mt-3 grid grid-cols-[88px_minmax(0,1fr)] items-end gap-2"
+                  >
+                    <a href="./casestudy.html#inszu" class="text-[12px] font-semibold text-[#6F8C2E]"
+                      >View more</a
+                    >
+                    <div
+                      class="h-[96px] w-full rounded-[3px] bg-cover bg-right bg-no-repeat"
+                      style="
+                        background-image: url(&quot;./images/casestudy3mobile.jpg&quot;);
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="mt-4 flex items-center justify-center gap-4">
+            <button
+              id="webAppsPrev"
+              aria-label="Previous app"
+              class="flex h-6 w-6 items-center justify-center rounded-full border border-[#BFC9D8] text-[#647E9B]"
+            >
+              ‹
+            </button>
+            <div id="webAppsDots" class="flex items-center gap-2">
+              <button
+                class="webapps-dot h-1.5 w-1.5 rounded-full bg-[#2D39F2]"
+                data-slide="0"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                class="webapps-dot h-1.5 w-1.5 rounded-full bg-[#C4CCDA]"
+                data-slide="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                class="webapps-dot h-1.5 w-1.5 rounded-full bg-[#C4CCDA]"
+                data-slide="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <button
+              id="webAppsNext"
+              aria-label="Next app"
+              class="flex h-6 w-6 items-center justify-center rounded-full border border-[#BFC9D8] text-[#647E9B]"
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="w-full bg-[#fff] py-14 text-gray-900 md:py-27">
+      <div class="mx-auto max-w-[1280px] px-[28px] min-[1280px]:px-0">
+        <div class="mb-8 md:mb-10">
+          <span
+            class="mb-4 inline-block rounded-full border border-[#647E9BB2] px-3 py-1 text-[9px] font-semibold tracking-[0.12em] text-[#647E9B] uppercase"
+            >Testimonials</span
+          >
+          <h2 class="text-[46px] leading-[60px] font-bold md:text-[56px]">
+            Clients' success:<br />In their own words
+          </h2>
+          <p
+            class="mt-3 max-w-[480px] text-lg leading-[28px] text-[#111111]"
+          >
+            Discover how we've exceeded expectations, straight from the source
+          </p>
+          <p
+            class="mt-3 max-w-[520px] text-[16px] leading-[26px] text-[#647E9B]"
+          >
+            Our clients have seen remarkable success and satisfaction through
+            our innovative solutions that transform challenges into
+            opportunities and drive growth.
+          </p>
+        </div>
+
+        <!-- Desktop card -->
+        <div class="hidden md:block">
+          <div
+            class="relative flex md:gap-5 lg:gap-10 xl:gap-12 items-stretch justify-between rounded-md border border-[#E9EDF2] bg-white p-11 shadow-[0_2px_10px_rgba(16,24,40,0.06)]"
+          >
+            <div class="w-[58%] max-w-[654px]">
+              <p
+                class="text-[18px] leading-[36px] font-semibold text-[#1B2125] lg:text-[24px]"
+              >
+                Our +380.000 employees all over the world, no matter in which
+                country, must have the same competence profile. Synthesia helps
+                us develop engaging, more relevant &amp; localised training
+                content at scale a of larger company.
+              </p>
+              <div class="mt-7 flex items-center gap-3">
+                <img
+                  src="./images/firstprofile.jpg"
+                  alt="Johnny Andro"
+                  class="h-10 w-10 rounded-full object-cover"
+                />
+                <div>
+                  <p
+                    class="text-[13px] leading-[100%]! font-semibold text-[#1B2125]"
+                  >
+                    Johnny Andro
+                  </p>
+                  <p class="mt-1 text-[11px] leading-[100%]! text-[#6F7F95]">
+                    Director, Company
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative w-[42%] max-w-[450px]">
+              <img
+                src="./images/videoimage.jpg"
+                alt="Video testimonial"
+                class="h-full w-full rounded-[2px] object-cover"
+              />
+              <button
+                class="absolute left-4 bottom-4 flex h-8 w-8 items-center justify-center rounded-full bg-black/45 ring-1 ring-white/70"
+                aria-label="Play video"
+              >
+                <img
+                  src="./images/playtestimonial.svg"
+                  alt=""
+                  class="h-3.5 w-3.5"
+                />
+              </button>
+            </div>
+
+            <img
+              src="./images/quotetestimonial.svg"
+              alt=""
+              class="absolute -top-2 right-8 h-7 w-7"
+            />
+          </div>
+        </div>
+
+        <!-- Mobile card -->
+        <div class="md:hidden">
+          <div
+            class="relative rounded-md border border-[#E9EDF2] bg-white p-3 shadow-[0_2px_10px_rgba(16,24,40,0.06)]"
+          >
+            <img
+              src="./images/quotetestimonial.svg"
+              alt=""
+              class="absolute top-2 right-3 h-6 w-6"
+            />
+            <div class="relative overflow-hidden rounded-[3px]">
+              <img
+                src="./images/videoimage.jpg"
+                alt="Video testimonial"
+                class="h-full w-full object-cover"
+              />
+              <button
+                class="absolute left-2.5 bottom-2.5 flex h-7 w-7 items-center justify-center rounded-full bg-black/45 ring-1 ring-white/70"
+                aria-label="Play video"
+              >
+                <img
+                  src="./images/playtestimonial.svg"
+                  alt=""
+                  class="h-3 w-3"
+                />
+              </button>
+            </div>
+
+            <p
+              class="mt-4 text-[16px] leading-[1.45] font-semibold text-[#1B2125]"
+            >
+              Our +380.000 employees all over the world, no matter in which
+              country, must have the same competence profile. Synthesia helps us
+              develop engaging, more relevant &amp; localised training content
+              at scale a of larger company.
+            </p>
+
+            <div class="mt-4 flex items-center gap-2.5">
+              <img
+                src="./images/firstprofile.jpg"
+                alt="Johnny Andro"
+                class="h-8 w-8 rounded-full object-cover"
+              />
+              <div>
+                <p
+                  class="text-[12px] leading-[100%]! font-semibold text-[#1B2125]"
+                >
+                  Johnny Andro
+                </p>
+                <p class="mt-0.5 text-[10px] leading-[100%]! text-[#6F7F95]">
+                  Director, Company
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-8 flex flex-wrap items-center justify-between gap-x-7 gap-y-4 md:mt-8 md:justify-center md:gap-14"
+        >
+          <img
+            src="./images/xerox.jpg"
+            alt="Xerox"
+            class="h-7 w-auto object-contain"
+          />
+          <img
+            src="./images/nestle.jpg"
+            alt="Nestle"
+            class="h-5 w-auto object-contain opacity-80"
+          />
+          <img
+            src="./images/tele.jpg"
+            alt="Teleperformance"
+            class="h-[18px] w-auto object-contain opacity-80"
+          />
+          <img
+            src="./images/dupont.jpg"
+            alt="DuPont"
+            class="h-5 w-auto object-contain opacity-80"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Ease Your IoT Development Journey -->
+    <section class="w-full bg-white py-12 text-[#1B2125] md:py-16">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <div class="w-full pb-10 md:pb-14">
+          <h2
+            class="text-left  text-[26px] font-bold text-[#010101] md:text-[26px]"
+          >
+            Ease Your IoT Development Journey
+          </h2>
+
+          <!-- Desktop: 2×2 grid (+ dividers, no outer frame) -->
+          <div
+            class="relative mx-auto mt-8 hidden md:mt-10 md:grid md:grid-cols-2"
+          >
+            <div
+              class="pointer-events-none absolute inset-0 z-0"
+              aria-hidden="true"
+            >
+              <div
+                class="absolute left-0 right-0 top-1/2 h-px -translate-y-1/2"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    rgba(206, 207, 215, 0) 0.96%,
+                    #cecfd7 40.58%,
+                    rgba(206, 207, 215, 0) 100%
+                  );
+                "
+              ></div>
+              <div
+                class="absolute bottom-0 left-1/2 top-0 w-px -translate-x-1/2"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    rgba(206, 207, 215, 0) 0.96%,
+                    #cecfd7 40.58%,
+                    rgba(206, 207, 215, 0) 100%
+                  );
+                "
+              ></div>
+            </div>
+            <div class="relative z-10 p-6 md:p-8 lg:p-10">
+              <h3
+                class="text-[17px] font-semibold leading-snug text-[#010101] lg:text-[18px]"
+              >
+                Are you tangled in uncertainty when it comes to sensor
+                integration or network security?
+              </h3>
+              <p
+                class="mt-3 text-[14px] leading-[1.65] text-[#647E9B] lg:text-[15px]"
+              >
+                Whether you're at the Proof of Concept (PoC) stage or scaling
+                production deployments, our services cover every step of the
+                IoT journey with architecture you can trust.
+              </p>
+            </div>
+            <div class="relative z-10 p-6 md:p-8 lg:p-10">
+              <h3
+                class="text-[17px] font-semibold leading-snug text-[#010101] lg:text-[18px]"
+              >
+                Looking for exceptional customer support throughout your IoT
+                journey?
+              </h3>
+              <p
+                class="mt-3 text-[14px] leading-[1.65] text-[#647E9B] lg:text-[15px]"
+              >
+                Occamode provides ongoing assistance to guarantee your
+                success—from integration troubleshooting to long-term
+                maintenance and optimisation.
+              </p>
+            </div>
+            <div class="relative z-10 p-6 md:p-8 lg:p-10">
+              <h3
+                class="text-[17px] font-semibold leading-snug text-[#010101] lg:text-[18px]"
+              >
+                Does the race to innovate keep your deadlines tight?
+              </h3>
+              <p
+                class="mt-3 text-[14px] leading-[1.65] text-[#647E9B] lg:text-[15px]"
+              >
+                We align delivery with your roadmap using proven IoT patterns
+                and reusable components, so you ship faster without cutting
+                corners on quality or compliance.
+              </p>
+            </div>
+            <div class="relative z-10 p-6 md:p-8 lg:p-10">
+              <h3
+                class="text-[17px] font-semibold leading-snug text-[#010101] lg:text-[18px]"
+              >
+                Does the complexity of IoT development leave you puzzled?
+              </h3>
+              <p
+                class="mt-3 text-[14px] leading-[1.65] text-[#647E9B] lg:text-[15px]"
+              >
+                Our team breaks down device connectivity, cloud pipelines, and
+                edge logic into clear milestones—so you always know what ships
+                next and why it matters.
+              </p>
+            </div>
+          </div>
+
+          <!-- Mobile: stack + View more -->
+          <div class="mx-auto mt-8 max-w-[520px] md:hidden">
+            <div class="border-b border-[#D9DDEA] pb-6">
+              <h3
+                class="text-[16px] font-semibold leading-snug text-[#010101]"
+              >
+                Are you tangled in uncertainty when it comes to sensor
+                integration or network security?
+              </h3>
+              <p class="mt-3 text-[14px] leading-[1.65] text-[#647E9B]">
+                Whether you're at the Proof of Concept (PoC) stage or scaling
+                production deployments, our services cover every step of the
+                IoT journey.
+              </p>
+            </div>
+            <div class="border-b border-[#D9DDEA] py-6">
+              <h3
+                class="text-[16px] font-semibold leading-snug text-[#010101]"
+              >
+                Looking for exceptional customer support throughout your IoT
+                journey?
+              </h3>
+              <p class="mt-3 text-[14px] leading-[1.65] text-[#647E9B]">
+                Occamode provides ongoing assistance to guarantee your
+                success.
+              </p>
+            </div>
+            <div id="iotJourneyExtra" class="hidden space-y-0">
+              <div class="border-b border-[#D9DDEA] py-6">
+                <h3
+                  class="text-[16px] font-semibold leading-snug text-[#010101]"
+                >
+                  Does the race to innovate keep your deadlines tight?
+                </h3>
+                <p class="mt-3 text-[14px] leading-[1.65] text-[#647E9B]">
+                  We align delivery with your roadmap using proven IoT
+                  patterns and reusable components, so you ship faster without
+                  cutting corners on quality or compliance.
+                </p>
+              </div>
+              <div class="pt-6">
+                <h3
+                  class="text-[16px] font-semibold leading-snug text-[#010101]"
+                >
+                  Does the complexity of IoT development leave you puzzled?
+                </h3>
+                <p class="mt-3 text-[14px] leading-[1.65] text-[#647E9B]">
+                  Our team breaks down device connectivity, cloud pipelines,
+                  and edge logic into clear milestones.
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              id="iotJourneyToggle"
+              class="mt-4 text-left text-[14px] font-semibold text-[#2D39F2] transition hover:text-[#1B19C7]"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Horizontal CTA + Footer (gradient full-bleed; content max-w 1280 + gutters) -->
+    <section class="w-full pt-12 text-[#1B2125] md:pt-16 lg:pt-20">
+      <div id="iotGradientShell" class="w-full">
+        <div class="relative z-10 mx-auto max-w-[1280px] px-7 xl:px-0">
+          <div class="pb-10 md:pb-12">
+            <div
+              class="relative isolate mx-auto max-h-[310px] w-full overflow-hidden rounded-[6px] md:max-h-none md:rounded-[3px]"
+              aria-label="Consultation call to action"
+            >
+              <img
+                src="./images/iotMobileMainBanner.png"
+                alt="IoT consulting team"
+                class="absolute inset-0 h-full w-full object-cover object-right"
+              />
+              <div
+                class="absolute inset-0"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #121178 54.59%,
+                    rgba(18, 17, 120, 0) 88.07%
+                  );
+                "
+              ></div>
+              <div
+                class="relative z-10 flex h-full min-h-[200px] flex-col justify-center px-5 py-6 md:min-h-[240px] md:px-8 lg:px-12"
+              >
+                <div class="sm:max-w-[70%]">
+                  <h3
+                    class="text-[28px] font-bold leading-[1.2] text-white lg:text-[36px]"
+                  >
+                    Step into a Smarter Future Now
+                  </h3>
+                  <p
+                    class="mt-3 text-[14px] leading-[1.55] text-white/90 md:mt-4 md:max-w-[480px] md:text-[18px]"
+                  >
+                    Connect with Occamode and transform your business with
+                    leading-edge IoT solutions tailored to your operations—from
+                    connected products to secure, scalable cloud backends.
+                  </p>
+                  <a
+                    href="#"
+                    class="mt-5 inline-flex w-fit items-center justify-center rounded-full bg-[#FF2F78] px-6 py-3 text-[14px] font-semibold text-white transition hover:bg-[#ff4b8a] md:mt-6 md:w-auto md:text-[18px] lg:px-8 lg:py-3.5"
+                  >
+                    Arrange Your Consultation
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pb-6 pt-2 md:pt-4">
+            <div class="grid gap-7 md:grid-cols-[1.25fr_1fr_1fr]">
+              <div>
+                <img
+                  src="./images/logoblue.svg"
+                  alt="occamode"
+                  class="h-8 w-auto"
+                />
+                <p class="mt-1 text-[11px] leading-[100%]! text-[#5D2ED9]">
+                  Dream. Develop. Deliver.
+                </p>
+                <p
+                  class="mt-4 hidden max-w-[420px] text-[13px] leading-[1.55] text-[#647E9B] md:block"
+                >
+                  At Occamode, we embrace a deep tech philosophy, combining
+                  innovative methods and advanced technology to provide
+                  solutions that meet today's needs and address future
+                  challenges.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-6 md:col-span-2 md:grid-cols-3">
+                <div class="space-y-3 text-[13px] font-semibold text-[#1B2125]">
+                  <p><a href="./index.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Home</a></p>
+                  <p><a href="./approachPage.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Approach</a></p>
+                  <p><a href="./casestudies.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Case Studies</a></p>
+                  <p><a href="./about.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">About Us</a></p>
+                </div>
+                <div class="space-y-3 text-[12px] text-[#1B2125]">
+                  <p class="font-semibold">Service</p>
+                  <p><a href="./webservice.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Web Development</a></p>
+                  <p><a href="./mobile-app-service.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Mobile Development</a></p>
+                  <p><a href="./ui-ux.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">UI/UX Designing</a></p>
+                  <p class="md:hidden"><a href="./productEngineering.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Product Engineering</a></p>
+                  <p class="md:hidden">
+                    <a href="./iot.html" class="font-semibold text-[#2D39F2] no-underline" aria-current="page">IOT Solutions</a>
+                  </p>
+                  <p class="md:hidden"><a href="./devops.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">DevOps</a></p>
+                </div>
+                <div class="space-y-3 text-[12px] text-[#1B2125] max-md:hidden">
+                  <p class="opacity-0">Service</p>
+                  <p><a href="./productEngineering.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Product Engineering</a></p>
+                  <p>
+                    <a href="./iot.html" class="font-semibold text-[#2D39F2] no-underline" aria-current="page">IOT Solutions</a>
+                  </p>
+                  <p><a href="./devops.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">DevOps</a></p>
+                </div>
+              </div>
+            </div>
+
+            <p
+              class="mt-6 max-w-[420px] text-[13px] leading-[1.55] text-[#647E9B] md:hidden"
+            >
+              At Occamode, we embrace a deep tech philosophy, combining
+              innovative methods and advanced technology to provide solutions
+              that meet today's needs and address future challenges.
+            </p>
+
+            <div
+              class="mt-6 flex flex-col gap-4 border-t border-[#D9DDEA] pt-5 md:mt-7 md:flex-row md:items-end md:justify-between"
+            >
+              <div
+                class="grid w-full grid-cols-2 gap-x-6 gap-y-4 text-left sm:gap-x-10 md:max-w-[min(520px,46%)]"
+              >
+                <div class="min-w-0">
+                  <img src="./images/email.svg" alt="" class="h-4 w-4" />
+                  <p class="mt-1 text-xs font-semibold text-[#1B2125]">
+                    Email us
+                  </p>
+                  <p class="mt-1 text-[11px] text-[#1B2125]">
+                    <a href="mailto:hello@occamode.com" class="text-inherit no-underline transition hover:text-[#2D39F2]">hello@occamode.com</a>
+                  </p>
+                </div>
+                <div class="min-w-0">
+                  <img src="./images/map.svg" alt="" class="h-4 w-4" />
+                  <p class="mt-1 text-xs font-semibold text-[#1B2125]">
+                    Visit us
+                  </p>
+                  <p
+                    class="mt-1 max-w-[280px] text-[11px] leading-[1.4] text-[#1B2125]"
+                  >
+                    Occamode, Dholvich Walo, Givice, Ahmedabad, India, 329942
+                  </p>
+                </div>
+              </div>
+              <a
+                href="./contactus.html"
+                class="inline-flex h-10 w-full shrink-0 items-center justify-center rounded-full bg-[#1B19C7] px-10 text-xs font-semibold text-white no-underline transition hover:bg-[#1514a8] md:w-auto"
+              >
+                Contact Us
+              </a>
+            </div>
+
+            <div
+              class="mt-6 flex items-center justify-center gap-10 text-[#4D52E3] md:hidden"
+            >
+              <a href="#" aria-label="Facebook" class="opacity-95">
+                <img src="./images/facebook.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="Twitter" class="opacity-95">
+                <img src="./images/twitter.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="Instagram" class="opacity-95">
+                <img src="./images/instagram.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="LinkedIn" class="opacity-95">
+                <img src="./images/linkedin.svg" alt="" class="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#121178]">
+          <div
+            class="mx-auto flex max-w-[1280px] items-center justify-between px-7 py-2.5 text-[11px] text-white xl:px-0"
+          >
+            <div class="flex items-center gap-6">
+              <span>Privacy Policy</span>
+              <span class="text-white/70"
+                >©<span id="copyrightYear"></span> Occamode</span
+              >
+            </div>
+            <div class="hidden items-center gap-4 md:flex">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/facebook.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/twitter.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/instagram.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/linkedin.svg" alt="" class="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./megamenu.js"></script>
+  </body>
+</html>

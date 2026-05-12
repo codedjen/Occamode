@@ -1,0 +1,21 @@
+{
+  "name": "occamodev2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build:html": "copyfiles -u 0 *.html dist",
+    "build:images": "copyfiles -u 1 src/images/**/* dist/images",
+    "build": "npm run build:css && npm run build:html && npm run build:images"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "copyfiles": "^2.4.1",
+    "tailwindcss": "^4.2.1"
+  }
+}

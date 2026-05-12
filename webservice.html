@@ -1,0 +1,2396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Occamode - Web App Development</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="w-full bg-white text-white antialiased overflow-x-hidden">
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full z-50">
+      <div class="relative z-10 mx-auto max-w-[1280px] px-7 py-5 xl:px-0">
+        <nav class="flex gap-4 items-center justify-between rounded-full">
+          <!-- Logo -->
+          <a href="./index.html" class="shrink-0">
+            <img src="./images/logo.svg" alt="Occamode" class="h-5 w-auto" />
+          </a>
+
+          <!-- Nav Links -->
+          <ul
+            class="hidden grow lg:grow-0 lg:gap-8 items-center justify-between text-sm lg:text-base md:flex border border-[#647E9B66] rounded-full px-4 lg:px-8 py-2 backdrop-blur-[5px]"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="text-white/70 transition hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <span
+                class="cursor-pointer font-semibold text-white transition hover:text-white"
+                >Services</span
+              >
+            </li>
+            <li>
+              <a
+                href="./approachPage.html"
+                class="text-white/70 transition hover:text-white"
+                >Approach</a
+              >
+            </li>
+            <li>
+              <a
+                href="./casestudies.html"
+                class="text-white/70 transition hover:text-white"
+                >Case-studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="text-white/70 transition hover:text-white"
+                >About Us</a
+              >
+            </li>
+          </ul>
+
+          <!-- Contact Button -->
+          <a
+            href="./contactus.html"
+            class="hidden border border-[#647E9B66] rounded-full px-6 py-2 text-sm lg:text-base text-white transition md:inline-block backdrop-blur-[5px]"
+          >
+            Contact Us
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button class="md:hidden" aria-label="Open menu">
+            <img src="./images/hamburger.svg" alt="Menu" class="h-6 w-6" />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="w-full overflow-hidden">
+      <div class="w-full">
+        <!-- Desktop -->
+        <div class="relative hidden aspect-[2.17] overflow-hidden md:block">
+          <img
+            src="./images/webbg.jpg"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div class="absolute inset-0 bg-[#050B5D]/35"></div>
+          <div
+            class="absolute inset-x-0 bottom-10 lg:bottom-16 xl:bottom-36 z-10 flex items-center"
+          >
+            <div class="mx-auto w-full max-w-[1280px] px-7 xl:px-0">
+              <div class="max-w-xl">
+                <h1 class="text-[48px] leading-[100%]! font-bold lg:text-[64px]">
+                  Web App
+                  <br />
+                  Development
+                </h1>
+                <p
+                  class="mt-2 lg:mt-6 max-w-md text-xl leading-relaxed text-white/70"
+                >
+                  Clarity, simplicity, and transparency - Experience the new era
+                  of web app development
+                </p>
+                <a
+                  href="#"
+                  class="mt-3 lg:mt-8 inline-block rounded-full bg-[#0E23FF] px-8 py-3.5 text-base font-semibold text-white transition hover:bg-[#172EFF]"
+                >
+                  Set up a Consultation
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="relative aspect-[0.56] overflow-hidden md:hidden">
+          <img
+            src="./images/webmarketingbgmobile.jpg"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div class="absolute inset-0 bg-[#050B5D]/40"></div>
+
+          <div class="absolute inset-x-0 bottom-36 z-10 px-7 xl:px-0">
+            <h1
+              class="text-[48px] leading-[100%]! font-bold lg:text-[2.8rem] xl:text-[3.5rem]"
+            >
+              Web App
+              <br />
+              Development
+            </h1>
+            <p class="mt-4 max-w-[270px] text-sm leading-relaxed text-white/80">
+              Clarity, simplicity, and transparency - Experience the new era of
+              web app development
+            </p>
+            <a
+              href="#"
+              class="mt-6 inline-flex rounded-full bg-[#0E23FF] px-7 py-3 text-xs font-semibold text-white"
+            >
+              Set up a Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="w-full bg-[#F2F2F2] py-12 text-[#171C21] md:py-20">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <span
+          class="inline-flex rounded-full border border-[#C7CFDA] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[] md:text-xs"
+        >
+          OUR SERVICES
+        </span>
+        <h2
+          class="mt-4 max-w-[690px] text-[32px] leading-[1.17] font-semibold tracking-[-0.02em] lg:text-[40px]"
+        >
+          Expertly Engineered Web Development Solutions
+        </h2>
+
+        <div
+          class="mt-8 grid grid-cols-1 gap-0 md:mt-10 lg:mt-12 lg:grid-cols-2 lg:items-start lg:gap-16"
+        >
+          <div
+            class="relative order-1 mb-8 aspect-[1.15] w-full overflow-hidden rounded-[3px] bg-[#E8EAF2] lg:order-2 lg:mb-0 lg:aspect-square lg:max-h-[min(100vw,520px)]"
+          >
+            <img
+              src="./images/webserviceaccordian.png"
+              alt="Team collaborating on web development"
+              class="absolute inset-0 h-full w-full object-cover object-center"
+            />
+          </div>
+
+          <div
+            id="webServicesAccordion"
+            class="order-2 w-full lg:order-1 lg:max-w-none"
+          >
+            <article
+              data-web-acc-item
+              class="group border-b border-[#D3D9E4] py-3 md:py-3.5"
+            >
+              <button
+                type="button"
+                data-web-acc-trigger
+                aria-expanded="true"
+                class="flex w-full items-center justify-between gap-4 text-left"
+              >
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <svg
+                    data-icon-open
+                    class="h-2.5 w-auto shrink-0 text-[#444CFC] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8 0.0664701C7.82222 0.0664701 7.65556 0.0942478 7.5 0.149803C7.34445 0.205359 7.2 0.299804 7.06667 0.433137L0.933334 6.56647C0.68889 6.81092 0.566668 7.12203 0.566668 7.4998C0.566668 7.87758 0.68889 8.18869 0.933334 8.43314C1.17778 8.67758 1.48889 8.7998 1.86667 8.7998C2.24445 8.7998 2.55556 8.67758 2.8 8.43314L8 3.23314L13.2 8.43314C13.4444 8.67758 13.7556 8.7998 14.1333 8.7998C14.5111 8.7998 14.8222 8.67758 15.0667 8.43314C15.3111 8.18869 15.4333 7.87758 15.4333 7.4998C15.4333 7.12203 15.3111 6.81092 15.0667 6.56647L8.93333 0.433137C8.8 0.299804 8.65556 0.205359 8.5 0.149803C8.34445 0.0942478 8.17778 0.0664701 8 0.0664701Z"
+                    />
+                  </svg>
+                  <svg
+                    data-icon-closed
+                    class="hidden h-3.5 w-auto shrink-0 text-[#647E9B] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8.93334 7.99977C8.93334 8.17755 8.90556 8.34422 8.85 8.49977C8.79445 8.65533 8.7 8.79977 8.56667 8.9331L2.43334 15.0664C2.18889 15.3109 1.87778 15.4331 1.5 15.4331C1.12223 15.4331 0.811114 15.3109 0.566669 15.0664C0.322225 14.822 0.200003 14.5109 0.200003 14.1331C0.200003 13.7553 0.322225 13.4442 0.566669 13.1998L5.76667 7.99977L0.566669 2.79977C0.322225 2.55533 0.200003 2.24422 0.200003 1.86644C0.200003 1.48866 0.322225 1.17755 0.566669 0.933105C0.811114 0.688661 1.12223 0.566438 1.5 0.566438C1.87778 0.566438 2.18889 0.688661 2.43334 0.933105L8.56667 7.06644C8.7 7.19977 8.79445 7.34422 8.85 7.49977C8.90556 7.65533 8.93334 7.82199 8.93334 7.99977Z"
+                    />
+                  </svg>
+                  <h3
+                    data-web-acc-title
+                    class="text-[20px] font-medium leading-[100%]! transition-colors duration-200 group-hover:text-[#444CFC] lg:text-[26px]"
+                  >
+                    User-Centric Front-end Development
+                  </h3>
+                </div>
+              </button>
+              <div data-web-acc-panel class="accordion-body open pt-2.5">
+                <div>
+                  <p
+                    class="max-w-[690px] text-[14px] font-normal leading-7 text-[#647E9B] lg:text-[16px]"
+                  >
+                    With a focus on user experience, cutting-edge technologies,
+                    and optimized performance, we create seamless and engaging
+                    interfaces. From responsive design to accessibility
+                    compliance, we ensure a captivating and accessible
+                    experience for all users.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              data-web-acc-item
+              class="group border-b border-[#D3D9E4] py-3 md:py-3.5"
+            >
+              <button
+                type="button"
+                data-web-acc-trigger
+                aria-expanded="false"
+                class="flex w-full items-center justify-between gap-4 text-left"
+              >
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <svg
+                    data-icon-open
+                    class="hidden h-2.5 w-auto shrink-0 text-[#444CFC] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8 0.0664701C7.82222 0.0664701 7.65556 0.0942478 7.5 0.149803C7.34445 0.205359 7.2 0.299804 7.06667 0.433137L0.933334 6.56647C0.68889 6.81092 0.566668 7.12203 0.566668 7.4998C0.566668 7.87758 0.68889 8.18869 0.933334 8.43314C1.17778 8.67758 1.48889 8.7998 1.86667 8.7998C2.24445 8.7998 2.55556 8.67758 2.8 8.43314L8 3.23314L13.2 8.43314C13.4444 8.67758 13.7556 8.7998 14.1333 8.7998C14.5111 8.7998 14.8222 8.67758 15.0667 8.43314C15.3111 8.18869 15.4333 7.87758 15.4333 7.4998C15.4333 7.12203 15.3111 6.81092 15.0667 6.56647L8.93333 0.433137C8.8 0.299804 8.65556 0.205359 8.5 0.149803C8.34445 0.0942478 8.17778 0.0664701 8 0.0664701Z"
+                    />
+                  </svg>
+                  <svg
+                    data-icon-closed
+                    class="h-3.5 w-auto shrink-0 text-[#647E9B] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8.93334 7.99977C8.93334 8.17755 8.90556 8.34422 8.85 8.49977C8.79445 8.65533 8.7 8.79977 8.56667 8.9331L2.43334 15.0664C2.18889 15.3109 1.87778 15.4331 1.5 15.4331C1.12223 15.4331 0.811114 15.3109 0.566669 15.0664C0.322225 14.822 0.200003 14.5109 0.200003 14.1331C0.200003 13.7553 0.322225 13.4442 0.566669 13.1998L5.76667 7.99977L0.566669 2.79977C0.322225 2.55533 0.200003 2.24422 0.200003 1.86644C0.200003 1.48866 0.322225 1.17755 0.566669 0.933105C0.811114 0.688661 1.12223 0.566438 1.5 0.566438C1.87778 0.566438 2.18889 0.688661 2.43334 0.933105L8.56667 7.06644C8.7 7.19977 8.79445 7.34422 8.85 7.49977C8.90556 7.65533 8.93334 7.82199 8.93334 7.99977Z"
+                    />
+                  </svg>
+                  <h3
+                    data-web-acc-title
+                    class="text-[20px] font-medium leading-[100%]! transition-colors duration-200 group-hover:text-[#444CFC] lg:text-[26px]"
+                  >
+                    Robust Back-end Development
+                  </h3>
+                </div>
+              </button>
+              <div data-web-acc-panel class="accordion-body pt-2.5">
+                <div>
+                  <p
+                    class="max-w-[690px] text-[14px] font-normal leading-7 text-[#647E9B] lg:text-[16px]"
+                  >
+                    Power your platform with robust back-end solutions. Our
+                    developers are proficient in server-side languages and
+                    frameworks that lay the groundwork for secure, scalable, and
+                    high-performance applications.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              data-web-acc-item
+              class="group border-b border-[#D3D9E4] py-3 md:py-3.5"
+            >
+              <button
+                type="button"
+                data-web-acc-trigger
+                aria-expanded="false"
+                class="flex w-full items-center justify-between gap-4 text-left"
+              >
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <svg
+                    data-icon-open
+                    class="hidden h-2.5 w-auto shrink-0 text-[#444CFC] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8 0.0664701C7.82222 0.0664701 7.65556 0.0942478 7.5 0.149803C7.34445 0.205359 7.2 0.299804 7.06667 0.433137L0.933334 6.56647C0.68889 6.81092 0.566668 7.12203 0.566668 7.4998C0.566668 7.87758 0.68889 8.18869 0.933334 8.43314C1.17778 8.67758 1.48889 8.7998 1.86667 8.7998C2.24445 8.7998 2.55556 8.67758 2.8 8.43314L8 3.23314L13.2 8.43314C13.4444 8.67758 13.7556 8.7998 14.1333 8.7998C14.5111 8.7998 14.8222 8.67758 15.0667 8.43314C15.3111 8.18869 15.4333 7.87758 15.4333 7.4998C15.4333 7.12203 15.3111 6.81092 15.0667 6.56647L8.93333 0.433137C8.8 0.299804 8.65556 0.205359 8.5 0.149803C8.34445 0.0942478 8.17778 0.0664701 8 0.0664701Z"
+                    />
+                  </svg>
+                  <svg
+                    data-icon-closed
+                    class="h-3.5 w-auto shrink-0 text-[#647E9B] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8.93334 7.99977C8.93334 8.17755 8.90556 8.34422 8.85 8.49977C8.79445 8.65533 8.7 8.79977 8.56667 8.9331L2.43334 15.0664C2.18889 15.3109 1.87778 15.4331 1.5 15.4331C1.12223 15.4331 0.811114 15.3109 0.566669 15.0664C0.322225 14.822 0.200003 14.5109 0.200003 14.1331C0.200003 13.7553 0.322225 13.4442 0.566669 13.1998L5.76667 7.99977L0.566669 2.79977C0.322225 2.55533 0.200003 2.24422 0.200003 1.86644C0.200003 1.48866 0.322225 1.17755 0.566669 0.933105C0.811114 0.688661 1.12223 0.566438 1.5 0.566438C1.87778 0.566438 2.18889 0.688661 2.43334 0.933105L8.56667 7.06644C8.7 7.19977 8.79445 7.34422 8.85 7.49977C8.90556 7.65533 8.93334 7.82199 8.93334 7.99977Z"
+                    />
+                  </svg>
+                  <h3
+                    data-web-acc-title
+                    class="text-[20px] font-medium leading-[100%]! transition-colors duration-200 group-hover:text-[#444CFC] lg:text-[26px]"
+                  >
+                    Intuitive UX/UI and Prototyping
+                  </h3>
+                </div>
+              </button>
+              <div data-web-acc-panel class="accordion-body pt-2.5">
+                <div>
+                  <p
+                    class="max-w-[690px] text-[14px] font-normal leading-7 text-[#647E9B] lg:text-[16px]"
+                  >
+                    Designing with the user in mind, we create immersive UX/UI
+                    designs that resonate with your target audience. Our
+                    prototyping process paves the way for clear, interactive
+                    user interfaces that drive user satisfaction and retention.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              data-web-acc-item
+              class="group border-b border-[#D3D9E4] py-3 md:py-3.5"
+            >
+              <button
+                type="button"
+                data-web-acc-trigger
+                aria-expanded="false"
+                class="flex w-full items-center justify-between gap-4 text-left"
+              >
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <svg
+                    data-icon-open
+                    class="hidden h-2.5 w-auto shrink-0 text-[#444CFC] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8 0.0664701C7.82222 0.0664701 7.65556 0.0942478 7.5 0.149803C7.34445 0.205359 7.2 0.299804 7.06667 0.433137L0.933334 6.56647C0.68889 6.81092 0.566668 7.12203 0.566668 7.4998C0.566668 7.87758 0.68889 8.18869 0.933334 8.43314C1.17778 8.67758 1.48889 8.7998 1.86667 8.7998C2.24445 8.7998 2.55556 8.67758 2.8 8.43314L8 3.23314L13.2 8.43314C13.4444 8.67758 13.7556 8.7998 14.1333 8.7998C14.5111 8.7998 14.8222 8.67758 15.0667 8.43314C15.3111 8.18869 15.4333 7.87758 15.4333 7.4998C15.4333 7.12203 15.3111 6.81092 15.0667 6.56647L8.93333 0.433137C8.8 0.299804 8.65556 0.205359 8.5 0.149803C8.34445 0.0942478 8.17778 0.0664701 8 0.0664701Z"
+                    />
+                  </svg>
+                  <svg
+                    data-icon-closed
+                    class="h-3.5 w-auto shrink-0 text-[#647E9B] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8.93334 7.99977C8.93334 8.17755 8.90556 8.34422 8.85 8.49977C8.79445 8.65533 8.7 8.79977 8.56667 8.9331L2.43334 15.0664C2.18889 15.3109 1.87778 15.4331 1.5 15.4331C1.12223 15.4331 0.811114 15.3109 0.566669 15.0664C0.322225 14.822 0.200003 14.5109 0.200003 14.1331C0.200003 13.7553 0.322225 13.4442 0.566669 13.1998L5.76667 7.99977L0.566669 2.79977C0.322225 2.55533 0.200003 2.24422 0.200003 1.86644C0.200003 1.48866 0.322225 1.17755 0.566669 0.933105C0.811114 0.688661 1.12223 0.566438 1.5 0.566438C1.87778 0.566438 2.18889 0.688661 2.43334 0.933105L8.56667 7.06644C8.7 7.19977 8.79445 7.34422 8.85 7.49977C8.90556 7.65533 8.93334 7.82199 8.93334 7.99977Z"
+                    />
+                  </svg>
+                  <h3
+                    data-web-acc-title
+                    class="text-[20px] font-medium leading-[100%]! transition-colors duration-200 group-hover:text-[#444CFC] lg:text-[26px]"
+                  >
+                    MVP Launchpads
+                  </h3>
+                </div>
+              </button>
+              <div data-web-acc-panel class="accordion-body pt-2.5">
+                <div>
+                  <p
+                    class="max-w-[690px] text-[14px] font-normal leading-7 text-[#647E9B] lg:text-[16px]"
+                  >
+                    Launch your product swiftly and efficiently with our MVP app
+                    development services. We focus on delivering products with
+                    core functionalities, enabling you to hit the market faster
+                    and gather valuable user feedback.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              data-web-acc-item
+              class="group border-b border-[#D3D9E4] py-3 md:py-3.5"
+            >
+              <button
+                type="button"
+                data-web-acc-trigger
+                aria-expanded="false"
+                class="flex w-full items-center justify-between gap-4 text-left"
+              >
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <svg
+                    data-icon-open
+                    class="hidden h-2.5 w-auto shrink-0 text-[#444CFC] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8 0.0664701C7.82222 0.0664701 7.65556 0.0942478 7.5 0.149803C7.34445 0.205359 7.2 0.299804 7.06667 0.433137L0.933334 6.56647C0.68889 6.81092 0.566668 7.12203 0.566668 7.4998C0.566668 7.87758 0.68889 8.18869 0.933334 8.43314C1.17778 8.67758 1.48889 8.7998 1.86667 8.7998C2.24445 8.7998 2.55556 8.67758 2.8 8.43314L8 3.23314L13.2 8.43314C13.4444 8.67758 13.7556 8.7998 14.1333 8.7998C14.5111 8.7998 14.8222 8.67758 15.0667 8.43314C15.3111 8.18869 15.4333 7.87758 15.4333 7.4998C15.4333 7.12203 15.3111 6.81092 15.0667 6.56647L8.93333 0.433137C8.8 0.299804 8.65556 0.205359 8.5 0.149803C8.34445 0.0942478 8.17778 0.0664701 8 0.0664701Z"
+                    />
+                  </svg>
+                  <svg
+                    data-icon-closed
+                    class="h-3.5 w-auto shrink-0 text-[#647E9B] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8.93334 7.99977C8.93334 8.17755 8.90556 8.34422 8.85 8.49977C8.79445 8.65533 8.7 8.79977 8.56667 8.9331L2.43334 15.0664C2.18889 15.3109 1.87778 15.4331 1.5 15.4331C1.12223 15.4331 0.811114 15.3109 0.566669 15.0664C0.322225 14.822 0.200003 14.5109 0.200003 14.1331C0.200003 13.7553 0.322225 13.4442 0.566669 13.1998L5.76667 7.99977L0.566669 2.79977C0.322225 2.55533 0.200003 2.24422 0.200003 1.86644C0.200003 1.48866 0.322225 1.17755 0.566669 0.933105C0.811114 0.688661 1.12223 0.566438 1.5 0.566438C1.87778 0.566438 2.18889 0.688661 2.43334 0.933105L8.56667 7.06644C8.7 7.19977 8.79445 7.34422 8.85 7.49977C8.90556 7.65533 8.93334 7.82199 8.93334 7.99977Z"
+                    />
+                  </svg>
+                  <h3
+                    data-web-acc-title
+                    class="text-[20px] font-medium leading-[100%]! transition-colors duration-200 group-hover:text-[#444CFC] lg:text-[26px]"
+                  >
+                    Progressive Web App Development
+                  </h3>
+                </div>
+              </button>
+              <div data-web-acc-panel class="accordion-body pt-2.5">
+                <div>
+                  <p
+                    class="max-w-[690px] text-[14px] font-normal leading-7 text-[#647E9B] lg:text-[16px]"
+                  >
+                    Stay ahead of the curve with progressive web apps that
+                    combine the best of web and mobile applications. Expect
+                    fast, reliable, and engaging web solutions that work
+                    seamlessly across all platforms.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              data-web-acc-item
+              class="group border-b border-[#D3D9E4] py-3 md:py-3.5"
+            >
+              <button
+                type="button"
+                data-web-acc-trigger
+                aria-expanded="false"
+                class="flex w-full items-center justify-between gap-4 text-left"
+              >
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <svg
+                    data-icon-open
+                    class="hidden h-2.5 w-auto shrink-0 text-[#444CFC] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8 0.0664701C7.82222 0.0664701 7.65556 0.0942478 7.5 0.149803C7.34445 0.205359 7.2 0.299804 7.06667 0.433137L0.933334 6.56647C0.68889 6.81092 0.566668 7.12203 0.566668 7.4998C0.566668 7.87758 0.68889 8.18869 0.933334 8.43314C1.17778 8.67758 1.48889 8.7998 1.86667 8.7998C2.24445 8.7998 2.55556 8.67758 2.8 8.43314L8 3.23314L13.2 8.43314C13.4444 8.67758 13.7556 8.7998 14.1333 8.7998C14.5111 8.7998 14.8222 8.67758 15.0667 8.43314C15.3111 8.18869 15.4333 7.87758 15.4333 7.4998C15.4333 7.12203 15.3111 6.81092 15.0667 6.56647L8.93333 0.433137C8.8 0.299804 8.65556 0.205359 8.5 0.149803C8.34445 0.0942478 8.17778 0.0664701 8 0.0664701Z"
+                    />
+                  </svg>
+                  <svg
+                    data-icon-closed
+                    class="h-3.5 w-auto shrink-0 text-[#647E9B] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8.93334 7.99977C8.93334 8.17755 8.90556 8.34422 8.85 8.49977C8.79445 8.65533 8.7 8.79977 8.56667 8.9331L2.43334 15.0664C2.18889 15.3109 1.87778 15.4331 1.5 15.4331C1.12223 15.4331 0.811114 15.3109 0.566669 15.0664C0.322225 14.822 0.200003 14.5109 0.200003 14.1331C0.200003 13.7553 0.322225 13.4442 0.566669 13.1998L5.76667 7.99977L0.566669 2.79977C0.322225 2.55533 0.200003 2.24422 0.200003 1.86644C0.200003 1.48866 0.322225 1.17755 0.566669 0.933105C0.811114 0.688661 1.12223 0.566438 1.5 0.566438C1.87778 0.566438 2.18889 0.688661 2.43334 0.933105L8.56667 7.06644C8.7 7.19977 8.79445 7.34422 8.85 7.49977C8.90556 7.65533 8.93334 7.82199 8.93334 7.99977Z"
+                    />
+                  </svg>
+                  <h3
+                    data-web-acc-title
+                    class="text-[20px] font-medium leading-[100%]! transition-colors duration-200 group-hover:text-[#444CFC] lg:text-[26px]"
+                  >
+                    Sustainable Support &amp; Maintenance
+                  </h3>
+                </div>
+              </button>
+              <div data-web-acc-panel class="accordion-body pt-2.5">
+                <div>
+                  <p
+                    class="max-w-[690px] text-[14px] font-normal leading-7 text-[#647E9B] lg:text-[16px]"
+                  >
+                    Reliable after-launch services to ensure your web
+                    applications remain updated, secure, and performing at its
+                    peak. Our support and maintenance team is dedicated to
+                    addressing your needs round-the-clock.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              data-web-acc-item
+              class="group border-b border-[#D3D9E4] py-3 md:py-3.5"
+            >
+              <button
+                type="button"
+                data-web-acc-trigger
+                aria-expanded="false"
+                class="flex w-full items-center justify-between gap-4 text-left"
+              >
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <svg
+                    data-icon-open
+                    class="hidden h-2.5 w-auto shrink-0 text-[#444CFC] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8 0.0664701C7.82222 0.0664701 7.65556 0.0942478 7.5 0.149803C7.34445 0.205359 7.2 0.299804 7.06667 0.433137L0.933334 6.56647C0.68889 6.81092 0.566668 7.12203 0.566668 7.4998C0.566668 7.87758 0.68889 8.18869 0.933334 8.43314C1.17778 8.67758 1.48889 8.7998 1.86667 8.7998C2.24445 8.7998 2.55556 8.67758 2.8 8.43314L8 3.23314L13.2 8.43314C13.4444 8.67758 13.7556 8.7998 14.1333 8.7998C14.5111 8.7998 14.8222 8.67758 15.0667 8.43314C15.3111 8.18869 15.4333 7.87758 15.4333 7.4998C15.4333 7.12203 15.3111 6.81092 15.0667 6.56647L8.93333 0.433137C8.8 0.299804 8.65556 0.205359 8.5 0.149803C8.34445 0.0942478 8.17778 0.0664701 8 0.0664701Z"
+                    />
+                  </svg>
+                  <svg
+                    data-icon-closed
+                    class="h-3.5 w-auto shrink-0 text-[#647E9B] transition-colors group-hover:text-[#444CFC]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8.93334 7.99977C8.93334 8.17755 8.90556 8.34422 8.85 8.49977C8.79445 8.65533 8.7 8.79977 8.56667 8.9331L2.43334 15.0664C2.18889 15.3109 1.87778 15.4331 1.5 15.4331C1.12223 15.4331 0.811114 15.3109 0.566669 15.0664C0.322225 14.822 0.200003 14.5109 0.200003 14.1331C0.200003 13.7553 0.322225 13.4442 0.566669 13.1998L5.76667 7.99977L0.566669 2.79977C0.322225 2.55533 0.200003 2.24422 0.200003 1.86644C0.200003 1.48866 0.322225 1.17755 0.566669 0.933105C0.811114 0.688661 1.12223 0.566438 1.5 0.566438C1.87778 0.566438 2.18889 0.688661 2.43334 0.933105L8.56667 7.06644C8.7 7.19977 8.79445 7.34422 8.85 7.49977C8.90556 7.65533 8.93334 7.82199 8.93334 7.99977Z"
+                    />
+                  </svg>
+                  <h3
+                    data-web-acc-title
+                    class="text-[20px] font-medium leading-[100%]! transition-colors duration-200 group-hover:text-[#444CFC] lg:text-[26px]"
+                  >
+                    Rigorous Testing Services
+                  </h3>
+                </div>
+              </button>
+              <div data-web-acc-panel class="accordion-body pt-2.5">
+                <div>
+                  <p
+                    class="max-w-[690px] text-[14px] font-normal leading-7 text-[#647E9B] lg:text-[16px]"
+                  >
+                    Delivering quality is our ethos. We conduct thorough testing
+                    to identify and fix issues before they impact your users.
+                    From unit testing to integration and performance testing, we
+                    ensure your product meets the highest standards.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future-Proof CTA Banner -->
+    <section class="w-full bg-white py-8 md:py-12">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <div
+          class="relative isolate overflow-hidden rounded-[3px] aspect-[1.70/1] md:aspect-[5.245/1]"
+        >
+          <img
+            src="./images/webappservicemobile.jpg"
+            alt="Web application consulting team"
+            class="absolute inset-0 h-full w-full object-cover object-right"
+          />
+
+          <div
+            class="absolute inset-0"
+            style="
+              background: linear-gradient(
+                90deg,
+                #010002 55%,
+                rgba(1, 0, 2, 0) 88%
+              );
+            "
+          ></div>
+
+          <div class="relative z-10 flex h-full items-center px-6 py-5 md:px-8">
+            <div class="w-full max-w-[620px]">
+              <h3
+                class="text-[28px] leading-[1.18] font-semibold text-white max-md:text-[20px]"
+              >
+                Future-Proof your Web Application, <br />
+                brimming with Potential
+              </h3>
+              <a
+                href="#"
+                class="mt-6 inline-flex rounded-full bg-[#FF2F78] px-8 py-3 text-[16px] lg:text-lg leading-none font-semibold text-white transition hover:bg-[#ff4b8a] max-md:mt-3 max-md:w-full max-md:justify-center max-md:px-6 max-md:py-3"
+              >
+                Describe your Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap (Pinned Horizontal Scroll) -->
+    <section
+      id="webRoadmapSection"
+      class="web-roadmap-section w-full py-12 text-[#171C21] md:py-20"
+    >
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <span
+          class="inline-flex rounded-full border border-[#FD5B2DB2] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[#FD5B2DE5] md:text-xs"
+        >
+          OUR APPROACH
+        </span>
+        <h2
+          class="mt-4 max-w-[min(100%,720px)] text-[32px] leading-[1.2] font-semibold tracking-[-0.01em] text-[#171C21] lg:text-[40px]"
+        >
+          From Idea to Execution: Our Web Dev Roadmap
+        </h2>
+        <p
+          class="mt-3 max-w-[740px] text-[14px] font-normal leading-7 text-[#647E9B] lg:text-[16px]"
+        >
+          By putting each element under the microscope, Occamode fortifies web
+          development with detailed precision, delivering exceptional,
+          high-performance web apps for the digital age.
+        </p>
+      </div>
+
+      <div class="mt-7 w-full md:mt-10">
+        <div class="mx-auto w-full max-w-[1280px] px-7 xl:px-0">
+          <div id="roadmapProgressWrap" class="relative h-8">
+            <div
+              id="roadmapProgressSegmentsBg"
+              class="pointer-events-none absolute inset-0"
+            ></div>
+            <div
+              id="roadmapProgressSegmentsFill"
+              class="pointer-events-none absolute inset-0"
+            ></div>
+            <div
+              class="absolute inset-x-0 top-1/2 flex -translate-y-1/2 justify-between"
+            >
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 1"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 2"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 3"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 4"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 5"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="roadmapViewport" class="mt-8 w-full overflow-hidden md:mt-9">
+          <div
+            id="roadmapTrack"
+            class="flex w-max gap-4 pl-7 pr-7 md:gap-5 md:pl-[max(1.75rem,calc((100vw-1280px)/2))] md:pr-[max(1.75rem,calc((100vw-1280px)/2))]"
+          >
+            <article
+              class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+            >
+              <button
+                type="button"
+                class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                aria-label="Open phase details"
+                data-roadmap-detail-open
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 5v14M5 12h14"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <p
+                class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+              >
+                01
+              </p>
+              <h3
+                class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+              >
+                Research &amp; Discovery
+              </h3>
+              <p
+                class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+              >
+                This phase involves in-depth investigation to gather insights
+                and information to guide the project's direction effectively.
+              </p>
+            </article>
+
+            <article
+              class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+            >
+              <button
+                type="button"
+                class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                aria-label="Open phase details"
+                data-roadmap-detail-open
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 5v14M5 12h14"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <p
+                class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+              >
+                02
+              </p>
+              <h3
+                class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+              >
+                Designing
+              </h3>
+              <p
+                class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+              >
+                Designing process includes creating project structure,
+                wireframes, UX/UI design, prototypes, tech-stack selection, and
+                project estimation for budget planning.
+              </p>
+            </article>
+
+            <article
+              class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+            >
+              <button
+                type="button"
+                class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                aria-label="Open phase details"
+                data-roadmap-detail-open
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 5v14M5 12h14"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <p
+                class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+              >
+                03
+              </p>
+              <h3
+                class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+              >
+                Development
+              </h3>
+              <p
+                class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+              >
+                This phase involves creating and refining the project's features
+                and functionalities to meet user requirements and project goals.
+                It focuses on coding, testing, and iteration.
+              </p>
+            </article>
+
+            <article
+              class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+            >
+              <button
+                type="button"
+                class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                aria-label="Open phase details"
+                data-roadmap-detail-open
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 5v14M5 12h14"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <p
+                class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+              >
+                04
+              </p>
+              <h3
+                class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+              >
+                Delivery &amp; Deployment
+              </h3>
+              <p
+                class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+              >
+                This phase involves final quality checks before the project goes
+                live, including testing, debugging, quality assurance, and
+                optimization for efficient user interaction.
+              </p>
+            </article>
+
+            <article
+              class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+            >
+              <button
+                type="button"
+                class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                aria-label="Open phase details"
+                data-roadmap-detail-open
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 5v14M5 12h14"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <p
+                class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+              >
+                05
+              </p>
+              <h3
+                class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+              >
+                Evaluation &amp; Support
+              </h3>
+              <p
+                class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+              >
+                Our dedication to excellence extends beyond launch. We monitor
+                system performance, resolve improvements, and maintain seamless
+                tech support.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Expertise -->
+    <section class="w-full bg-white py-12 text-[#171C21] md:py-20">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <span
+          class="inline-flex rounded-full border border-[#8D95FF] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[#3D4BFF] md:text-xs"
+        >
+          TECH STACK
+        </span>
+        <h2
+          class="mt-4 text-[48px] leading-[1.13] font-semibold tracking-[-0.01em] max-md:text-[56px]"
+        >
+          Technology Expertise
+        </h2>
+        <p
+          class="mt-4 max-w-[420px] text-[15px] leading-7 text-[#647E9B] max-md:text-[24px] max-md:leading-[1.45]"
+        >
+          Whether you’re a budding startup or an e-commerce giant looking to
+          expand, we have the technology expertise to develop custom web apps
+          that will set you apart.
+        </p>
+        <div
+          class="mt-8 flex flex-col gap-4 md:mt-10 md:flex-row md:items-start justify-between md:gap-6"
+        >
+          <div
+            id="techStackTabs"
+            class="flex w-full items-center justify-center gap-5 overflow-x-auto pb-1 whitespace-nowrap [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:w-[170px] md:shrink-0 md:flex-col md:items-stretch md:justify-start md:gap-3 md:overflow-visible md:whitespace-normal md:pb-0 md:pt-2"
+          >
+            <button
+              type="button"
+              data-tech-tab="frontend"
+              class="shrink-0 border-b-2 border-b-[#3D4BFF] pb-1 text-left text-[13px] font-semibold text-[#3D4BFF] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-[#3D4BFF] md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              Front-end
+            </button>
+            <button
+              type="button"
+              data-tech-tab="backend"
+              class="shrink-0 border-b-2 border-b-transparent pb-1 text-left text-[13px] font-semibold text-[#171C21] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-transparent md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              Back-end
+            </button>
+            <button
+              type="button"
+              data-tech-tab="cloud"
+              class="shrink-0 border-b-2 border-b-transparent pb-1 text-left text-[13px] font-semibold text-[#171C21] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-transparent md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              Cloud
+            </button>
+            <button
+              type="button"
+              data-tech-tab="devops"
+              class="shrink-0 border-b-2 border-b-transparent pb-1 text-left text-[13px] font-semibold text-[#171C21] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-transparent md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              DevOps
+            </button>
+          </div>
+
+          <div
+            class="min-w-0 w-fit max-w-full overflow-x-auto rounded-[4px] border border-[#E6E9EF] bg-white"
+          >
+            <div
+              id="techStackGrid"
+              class="grid w-max max-w-full grid-cols-[repeat(3,160px)] md:grid-cols-[repeat(6,160px)]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our commitment: GSAP pin + stack cards (mirrors iot.html) -->
+    <section
+      id="webCommitmentSection"
+      class="relative w-full py-14 text-[#1B2125] md:py-20 lg:py-28"
+      style="
+        background: linear-gradient(
+          180deg,
+          #f0f9f6 0%,
+          #e2f5ef 70%,
+          #c5eee0 100%
+        );
+      "
+    >
+      <div
+        class="pointer-events-none absolute inset-x-0 bottom-0 h-[3px]"
+        style="background: linear-gradient(90deg, #3fdfcf, #49c4a8, #3fdfcf)"
+        aria-hidden="true"
+      ></div>
+
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <div
+          class="grid grid-cols-1 gap-10 lg:grid-cols-[42%_1fr] lg:items-start lg:gap-16 xl:gap-20"
+        >
+          <div class="max-w-[480px] text-left lg:sticky lg:top-28">
+            <span
+              class="inline-flex rounded-full border border-[#009965B2] bg-white px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#009965] md:text-[11px]"
+            >
+              Our commitment
+            </span>
+            <h2
+              class="mt-5 text-[28px] font-bold leading-[1.15] tracking-tight text-[#010101] md:text-[34px] lg:text-[38px]"
+            >
+              Redefine Your Web Experience with
+              <span class="text-[#1B7D52]">occamode</span>
+            </h2>
+            <p
+              class="mt-4 text-[14px] leading-[1.7] text-[#3d564e] md:text-[15px]"
+            >
+              Occamode specializes in streamlined web app development with a
+              focus on seamless user experiences and simple, expertly crafted
+              solutions for clients.
+            </p>
+          </div>
+
+          <div id="webCommitmentCards" class="relative">
+            <article
+              class="iot-stack-card rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:px-8 md:py-6"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]"
+                >
+                  <svg
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3
+                    class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]"
+                  >
+                    Simplified Solutions
+                  </h3>
+                  <p
+                    class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]"
+                  >
+                    We believe sophisticated technology shouldn&apos;t mean
+                    complexity. Our approach simplifies web application
+                    development, providing streamlined solutions that let you
+                    focus on business, not deciphering technical jargon.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="iot-stack-card mt-4 rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:mt-5 md:px-8 md:py-6"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]"
+                >
+                  <svg
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3
+                    class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]"
+                  >
+                    Proactive Risk Mitigation
+                  </h3>
+                  <p
+                    class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]"
+                  >
+                    Every project carries its own set of risks, but our
+                    foresight in identifying and addressing these risks head-on
+                    ensures a smoother development. With our expertise in
+                    anticipating challenges, we provide heightened security,
+                    stability, and peace of mind for your enterprise.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="iot-stack-card mt-4 rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:mt-5 md:px-8 md:py-6"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]"
+                >
+                  <svg
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3
+                    class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]"
+                  >
+                    Absolute Clarity and Transparency
+                  </h3>
+                  <p
+                    class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]"
+                  >
+                    We&apos;re committed to earning your trust through complete
+                    transparency. Expect concise roadmaps and consistent updates
+                    for full visibility over your project&apos;s progress. With
+                    our guidance, you&apos;ll always have a clear vision of the
+                    path towards your goals.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="iot-stack-card mt-4 rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:mt-5 md:px-8 md:py-6"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]"
+                >
+                  <svg
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3
+                    class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]"
+                  >
+                    Secure and Resilient Solutions
+                  </h3>
+                  <p
+                    class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]"
+                  >
+                    In an era where data breaches are a constant threat, we
+                    reinforce your business applications with robust security
+                    measures. Our resilient solutions stand firm against
+                    threats, safeguarding your valuable data and protecting your
+                    reputation.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="iot-stack-card mt-4 rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:mt-5 md:px-8 md:py-6"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]"
+                >
+                  <svg
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3
+                    class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]"
+                  >
+                    Extendable and Reusable Frameworks
+                  </h3>
+                  <p
+                    class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]"
+                  >
+                    As your business evolves, so should your applications. We
+                    architect our web applications with future growth in mind,
+                    ensuring extendable and reusable frameworks that easily
+                    adapt to your ever-changing needs without the need to start
+                    from scratch.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="iot-stack-card mt-4 rounded-2xl border border-[#E3EFE9] bg-white px-6 py-5 shadow-[0_4px_24px_rgba(15,80,50,0.08)] md:mt-5 md:px-8 md:py-6"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B7D52]"
+                >
+                  <svg
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="min-w-0">
+                  <h3
+                    class="text-[16px] font-bold leading-snug text-[#0a0a0a] md:text-[17px]"
+                  >
+                    Highly Competitive Solutions
+                  </h3>
+                  <p
+                    class="mt-2 text-[13px] leading-[1.7] text-[#4a5f59] md:text-[14px]"
+                  >
+                    Our expertise is crafted through excellence and refined by
+                    staying updated on the latest technologies. By leveraging
+                    our knowledge, you gain access to web applications that not
+                    only meet industry standards but also set new benchmarks.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Web Apps -->
+    <section class="w-full bg-[#F8F8FB] py-12 text-[#171C21] md:py-20">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <div class="mx-auto max-w-[720px] text-center max-md:text-left">
+          <h2 class="text-[28px] leading-[100%]! font-bold md:text-[40px]">
+            Explore Our Best Web Apps
+          </h2>
+          <p class="mt-3 text-[14px] leading-7 text-[#647E9B] md:text-[15px]">
+            Browse our top-tier portfolio and see how our custom solutions drive
+            business success for startups, enterprises, and innovators alike.
+          </p>
+        </div>
+
+        <!-- Desktop stack: text over background image -->
+        <div class="mt-8 hidden flex-col gap-6 md:flex md:mt-10">
+          <article
+            class="relative aspect-[2.13] overflow-hidden rounded-[4px] bg-cover bg-center bg-no-repeat"
+            style="
+              background-image: url(&quot;./images/casestudy1web.jpg&quot;);
+            "
+          >
+            <div
+              class="absolute inset-y-0 left-0 z-10 flex w-[42%] flex-col items-start justify-center p-6 lg:p-8"
+            >
+              <img src="./images/hatch.svg" alt="hatch" class="h-8 w-auto" />
+              <h3
+                class="mt-5 text-[18px] lg:text-[22px] leading-[100%]! font-bold text-[#232536]"
+              >
+                Custom software for a Wall Street brokerage company
+              </h3>
+              <p
+                class="mt-3 text-[14px] lg:text-[16px] leading-[1.55] line-clamp-2 lg:line-clamp-none text-[#232536]"
+              >
+                Frisnews has been a wonderful partner to work with. I have been
+                a customer now for the past five months now and I have had
+                nothing but positive experiences.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full border border-[#CECFD7] px-3 py-1 text-[12px] text-[#232536]"
+                  >EV Charging</span
+                >
+                <span
+                  class="rounded-full border border-[#CECFD7] px-3 py-1 text-[12px] text-[#232536]"
+                  >Startup</span
+                >
+                <span
+                  class="rounded-full border border-[#CECFD7] px-3 py-1 text-[12px] text-[#232536]"
+                  >Global Brand</span
+                >
+              </div>
+              <a
+                href="./casestudy.html#hatch"
+                class="mt-8 inline-block text-[14px] font-semibold text-[#F05A40]"
+                >View more</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="relative aspect-[2.13] overflow-hidden rounded-[4px] bg-cover bg-center bg-no-repeat"
+            style="
+              background-image: url(&quot;./images/casestudy2web.jpg&quot;);
+            "
+          >
+            <div
+              class="absolute inset-y-0 left-0 z-10 flex w-[42%] flex-col items-start justify-center p-6 text-white lg:p-8"
+            >
+              <img src="./images/doctal.svg" alt="doctal" class="h-8 w-auto" />
+              <h3
+                class="mt-5 text-[18px] lg:text-[22px] leading-[100%]! font-bold text-white"
+              >
+                Improving the online web experience for International Hockey
+                Federation
+              </h3>
+              <p
+                class="mt-3 text-[14px] lg:text-[16px] leading-[1.55] line-clamp-2 lg:line-clamp-none text-white/85"
+              >
+                Doctal is the only design-first loremsd scheduling platform that
+                allows to create beautiful booking pages for everyone. We worked
+                on a strong & outstanding branding.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full border border-white/40 px-3 py-1 text-[12px] text-white/85"
+                  >EV Charging</span
+                >
+                <span
+                  class="rounded-full border border-white/40 px-3 py-1 text-[12px] text-white/85"
+                  >Startup</span
+                >
+                <span
+                  class="rounded-full border border-white/40 px-3 py-1 text-[12px] text-white/85"
+                  >Global Brand</span
+                >
+              </div>
+              <a
+                href="./casestudy.html#dotcal"
+                class="mt-8 inline-block text-[14px] font-semibold text-[#EAF826]"
+                >View more</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="relative aspect-[2.13] overflow-hidden rounded-[4px] bg-cover bg-center bg-no-repeat"
+            style="
+              background-image: url(&quot;./images/casestudy3web.jpg&quot;);
+            "
+          >
+            <div
+              class="absolute inset-y-0 left-0 z-10 flex w-[42%] flex-col items-start justify-center p-6 lg:p-8"
+            >
+              <img src="./images/inszu.svg" alt="inszu" class="h-8 w-auto" />
+              <h3
+                class="mt-5 text-[18px] lg:text-[22px] leading-[100%]! font-bold text-[#232536]"
+              >
+                Showcasing USA's Banking Apps without Compromising Data Security
+              </h3>
+              <p
+                class="mt-3 text-[14px] lg:text-[16px] leading-[1.55] line-clamp-2 lg:line-clamp-none text-[#7A92AE]"
+              >
+                Not your everyday web-based frontend but mission UIs were
+                crafted around their essential functions while revealing only
+                essential data. This made it easier for patients.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full border border-[#D3D9E4] px-3 py-1 text-[12px] text-[#647E9B]"
+                  >EV Charging</span
+                >
+                <span
+                  class="rounded-full border border-[#D3D9E4] px-3 py-1 text-[12px] text-[#647E9B]"
+                  >Startup</span
+                >
+                <span
+                  class="rounded-full border border-[#D3D9E4] px-3 py-1 text-[12px] text-[#647E9B]"
+                  >Global Brand</span
+                >
+              </div>
+              <a
+                href="./casestudy.html#inszu"
+                class="mt-8 inline-block text-[14px] font-semibold text-[#6F8C2E]"
+                >View more</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <!-- Mobile slider: text over mobile background image -->
+        <div class="mt-7 md:hidden">
+          <div class="overflow-hidden rounded-[4px]">
+            <div
+              id="webAppsTrack"
+              class="flex transition-transform duration-400 ease-out"
+            >
+              <article class="w-full shrink-0 bg-[#FDF7F6] p-4">
+                <div>
+                  <img
+                    src="./images/hatch.svg"
+                    alt="hatch"
+                    class="h-6 w-auto"
+                  />
+                  <h3 class="mt-3 text-[18px] leading-[100%]! font-semibold">
+                    Custom software for a Wall Street brokerage company
+                  </h3>
+                  <p class="mt-2 text-[12px] leading-5 text-[#647E9B]">
+                    Frisnews has been a wonderful partner to work with. I have
+                    been a customer now for the past five months now and I have
+                    had nothing but positive experiences.
+                  </p>
+                  <div class="mt-3 flex flex-wrap gap-1.5">
+                    <span
+                      class="rounded-full border border-[#D3D9E4] px-2 py-0.5 text-[10px] text-[#647E9B]"
+                      >EV Charging</span
+                    >
+                    <span
+                      class="rounded-full border border-[#D3D9E4] px-2 py-0.5 text-[10px] text-[#647E9B]"
+                      >Startup</span
+                    >
+                    <span
+                      class="rounded-full border border-[#D3D9E4] px-2 py-0.5 text-[10px] text-[#647E9B]"
+                      >Global Brand</span
+                    >
+                  </div>
+                  <div
+                    class="mt-3 grid grid-cols-[88px_minmax(0,1fr)] items-end gap-2"
+                  >
+                    <a
+                      href="./casestudy.html#hatch"
+                      class="text-[12px] font-semibold text-[#F05A40]"
+                      >View more</a
+                    >
+                    <div
+                      class="h-[96px] w-full rounded-[3px] bg-cover bg-right bg-no-repeat"
+                      style="
+                        background-image: url(&quot;./images/casestudy1mobile.jpg&quot;);
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="w-full shrink-0 bg-[#2768CE] p-4 text-white">
+                <div>
+                  <img
+                    src="./images/doctal.svg"
+                    alt="doctal"
+                    class="h-6 w-auto"
+                  />
+                  <h3 class="mt-3 text-[18px] leading-[100%]! font-semibold">
+                    Improving the online web experience for International Hockey
+                    Federation
+                  </h3>
+                  <p class="mt-2 text-[12px] leading-5 text-white/85">
+                    Doctal is the only design-first loremsd scheduling platform
+                    that allows to create beautiful booking pages for everyone.
+                  </p>
+                  <div class="mt-3 flex flex-wrap gap-1.5">
+                    <span
+                      class="rounded-full border border-white/35 px-2 py-0.5 text-[10px] text-white/85"
+                      >EV Charging</span
+                    >
+                    <span
+                      class="rounded-full border border-white/35 px-2 py-0.5 text-[10px] text-white/85"
+                      >Startup</span
+                    >
+                  </div>
+                  <div
+                    class="mt-3 grid grid-cols-[88px_minmax(0,1fr)] items-end gap-2"
+                  >
+                    <a
+                      href="./casestudy.html#dotcal"
+                      class="text-[12px] font-semibold text-[#EAF826]"
+                      >View more</a
+                    >
+                    <div
+                      class="h-[96px] w-full rounded-[3px] bg-cover bg-right bg-no-repeat"
+                      style="
+                        background-image: url(&quot;./images/casestudy2mobile.jpg&quot;);
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="w-full shrink-0 bg-[#EDF3F4] p-4">
+                <div>
+                  <img
+                    src="./images/inszu.svg"
+                    alt="inszu"
+                    class="h-6 w-auto"
+                  />
+                  <h3 class="mt-3 text-[18px] leading-[100%]! font-semibold">
+                    Showcasing USA's Banking Apps without Compromising Data
+                    Security
+                  </h3>
+                  <p class="mt-2 text-[12px] leading-5 text-[#647E9B]">
+                    Not your everyday web-based frontend but mission UIs were
+                    crafted around their essential functions while revealing
+                    only essential data.
+                  </p>
+                  <div class="mt-3 flex flex-wrap gap-1.5">
+                    <span
+                      class="rounded-full border border-[#D3D9E4] px-2 py-0.5 text-[10px] text-[#647E9B]"
+                      >EV Charging</span
+                    >
+                    <span
+                      class="rounded-full border border-[#D3D9E4] px-2 py-0.5 text-[10px] text-[#647E9B]"
+                      >Startup</span
+                    >
+                  </div>
+                  <div
+                    class="mt-3 grid grid-cols-[88px_minmax(0,1fr)] items-end gap-2"
+                  >
+                    <a
+                      href="./casestudy.html#inszu"
+                      class="text-[12px] font-semibold text-[#6F8C2E]"
+                      >View more</a
+                    >
+                    <div
+                      class="h-[96px] w-full rounded-[3px] bg-cover bg-right bg-no-repeat"
+                      style="
+                        background-image: url(&quot;./images/casestudy3mobile.jpg&quot;);
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="mt-4 flex items-center justify-center gap-4">
+            <button
+              id="webAppsPrev"
+              aria-label="Previous app"
+              class="flex h-6 w-6 items-center justify-center rounded-full border border-[#BFC9D8] text-[#647E9B]"
+            >
+              ‹
+            </button>
+            <div id="webAppsDots" class="flex items-center gap-2">
+              <button
+                class="webapps-dot h-1.5 w-1.5 rounded-full bg-[#2D39F2]"
+                data-slide="0"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                class="webapps-dot h-1.5 w-1.5 rounded-full bg-[#C4CCDA]"
+                data-slide="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                class="webapps-dot h-1.5 w-1.5 rounded-full bg-[#C4CCDA]"
+                data-slide="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <button
+              id="webAppsNext"
+              aria-label="Next app"
+              class="flex h-6 w-6 items-center justify-center rounded-full border border-[#BFC9D8] text-[#647E9B]"
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="w-full bg-[#fff] py-14 text-gray-900 md:py-27">
+      <div class="mx-auto max-w-[1280px] px-[28px] min-[1280px]:px-0">
+        <div class="mb-8 md:mb-10">
+          <span
+            class="mb-4 inline-block rounded-full border border-[#647E9BB2] px-3 py-1 text-[9px] font-semibold tracking-[0.12em] text-[#647E9B] uppercase"
+            >Testimonials</span
+          >
+          <h2 class="text-[46px] leading-[60px] font-bold md:text-[56px]">
+            Clients' success:<br />In their own words
+          </h2>
+          <p
+            class="mt-3 max-w-[480px] text-lg leading-[28px] text-[#111111]"
+          >
+            Discover how we've exceeded expectations, straight from the source
+          </p>
+          <p
+            class="mt-3 max-w-[520px] text-[16px] leading-[26px] text-[#647E9B]"
+          >
+            Our clients have seen remarkable success and satisfaction through
+            our innovative solutions that transform challenges into
+            opportunities and drive growth.
+          </p>
+        </div>
+
+        <!-- Desktop card -->
+        <div class="hidden md:block">
+          <div
+            class="relative flex md:gap-5 lg:gap-10 xl:gap-12 items-stretch justify-between rounded-md border border-[#E9EDF2] bg-white p-11 shadow-[0_2px_10px_rgba(16,24,40,0.06)]"
+          >
+            <div class="w-[58%] max-w-[654px]">
+              <p
+                class="text-[18px] leading-[36px] font-semibold text-[#1B2125] lg:text-[24px]"
+              >
+                Our +380.000 employees all over the world, no matter in which
+                country, must have the same competence profile. Synthesia helps
+                us develop engaging, more relevant &amp; localised training
+                content at scale a of larger company.
+              </p>
+              <div class="mt-7 flex items-center gap-3">
+                <img
+                  src="./images/firstprofile.jpg"
+                  alt="Johnny Andro"
+                  class="h-10 w-10 rounded-full object-cover"
+                />
+                <div>
+                  <p
+                    class="text-[13px] leading-[100%]! font-semibold text-[#1B2125]"
+                  >
+                    Johnny Andro
+                  </p>
+                  <p class="mt-1 text-[11px] leading-[100%]! text-[#6F7F95]">
+                    Director, Company
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative w-[42%] max-w-[450px]">
+              <img
+                src="./images/videoimage.jpg"
+                alt="Video testimonial"
+                class="h-full w-full rounded-[2px] object-cover"
+              />
+              <button
+                class="absolute left-4 bottom-4 flex h-8 w-8 items-center justify-center rounded-full bg-black/45 ring-1 ring-white/70"
+                aria-label="Play video"
+              >
+                <img
+                  src="./images/playtestimonial.svg"
+                  alt=""
+                  class="h-3.5 w-3.5"
+                />
+              </button>
+            </div>
+
+            <img
+              src="./images/quotetestimonial.svg"
+              alt=""
+              class="absolute -top-2 right-8 h-7 w-7"
+            />
+          </div>
+        </div>
+
+        <!-- Mobile card -->
+        <div class="md:hidden">
+          <div
+            class="relative rounded-md border border-[#E9EDF2] bg-white p-3 shadow-[0_2px_10px_rgba(16,24,40,0.06)]"
+          >
+            <img
+              src="./images/quotetestimonial.svg"
+              alt=""
+              class="absolute top-2 right-3 h-6 w-6"
+            />
+            <div class="relative overflow-hidden rounded-[3px]">
+              <img
+                src="./images/videoimage.jpg"
+                alt="Video testimonial"
+                class="h-full w-full object-cover"
+              />
+              <button
+                class="absolute left-2.5 bottom-2.5 flex h-7 w-7 items-center justify-center rounded-full bg-black/45 ring-1 ring-white/70"
+                aria-label="Play video"
+              >
+                <img
+                  src="./images/playtestimonial.svg"
+                  alt=""
+                  class="h-3 w-3"
+                />
+              </button>
+            </div>
+
+            <p
+              class="mt-4 text-[16px] leading-[1.45] font-semibold text-[#1B2125]"
+            >
+              Our +380.000 employees all over the world, no matter in which
+              country, must have the same competence profile. Synthesia helps us
+              develop engaging, more relevant &amp; localised training content
+              at scale a of larger company.
+            </p>
+
+            <div class="mt-4 flex items-center gap-2.5">
+              <img
+                src="./images/firstprofile.jpg"
+                alt="Johnny Andro"
+                class="h-8 w-8 rounded-full object-cover"
+              />
+              <div>
+                <p
+                  class="text-[12px] leading-[100%]! font-semibold text-[#1B2125]"
+                >
+                  Johnny Andro
+                </p>
+                <p class="mt-0.5 text-[10px] leading-[100%]! text-[#6F7F95]">
+                  Director, Company
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-8 flex flex-wrap items-center justify-between gap-x-7 gap-y-4 md:mt-8 md:justify-center md:gap-14"
+        >
+          <img
+            src="./images/xerox.jpg"
+            alt="Xerox"
+            class="h-7 w-auto object-contain"
+          />
+          <img
+            src="./images/nestle.jpg"
+            alt="Nestle"
+            class="h-5 w-auto object-contain opacity-80"
+          />
+          <img
+            src="./images/tele.jpg"
+            alt="Teleperformance"
+            class="h-[18px] w-auto object-contain opacity-80"
+          />
+          <img
+            src="./images/dupont.jpg"
+            alt="DuPont"
+            class="h-5 w-auto object-contain opacity-80"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact + Footer Section -->
+    <section class="w-full pt-[110px] text-[#1B2125]">
+      <div
+        class="w-full"
+        style="
+          background: linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 40%,
+            #eaeafe99 40%,
+            #eaeafe99 100%
+          );
+        "
+      >
+        <div class="relative z-10 mx-auto max-w-[1280px] px-7 xl:px-0">
+          <!-- Contact card (no negative margin — avoids eating testimonials padding) -->
+          <div class="relative z-10">
+            <div
+              class="flex flex-col overflow-hidden rounded-md w-full bg-[#15198F] p-[24px] text-white shadow-[0_16px_40px_rgba(11,14,80,0.35)] lg:min-h-[650px] lg:p-[80px]"
+              style="
+                background-image:
+                  radial-gradient(
+                    circle at 10% 100%,
+                    rgba(255, 255, 255, 0.12) 0px,
+                    rgba(255, 255, 255, 0) 220px
+                  ),
+                  radial-gradient(
+                    circle at 92% 95%,
+                    rgba(255, 255, 255, 0.12) 0px,
+                    rgba(255, 255, 255, 0) 240px
+                  ),
+                  url('./images/contactusBg.png');
+                background-size: auto, auto, cover;
+                background-position: 10% 100%, 92% 95%, right 10% top 10%;
+                background-repeat: no-repeat;
+              "
+            >
+              <div
+                class="flex flex-1 flex-col gap-6 md:justify-between md:gap-10 lg:flex-row lg:items-stretch"
+              >
+                <!-- Left content -->
+                <div class="max-w-[490px]">
+                  <h3
+                    class="text-3xl leading-[54px] font-semibold md:text-[42px]"
+                  >
+                    From Possibility to<br />Reality
+                  </h3>
+                  <p
+                    class="mt-3 max-w-[420px] text-sm leading-[24px] text-white/75 md:text-[15px]"
+                  >
+                    Contact our team to explore your business needs, discuss
+                    your project, and discover how we can assist in reaching
+                    your goal.
+                  </p>
+
+                  <ul
+                    class="contact-card-step-list mt-5 text-[13px] md:text-sm"
+                  >
+                    <li class="contact-card-step-list__item">
+                      <span
+                        class="contact-card-step-list__track"
+                        aria-hidden="true"
+                      >
+                        <span class="contact-card-step-list__dot">
+                          <svg
+                            class="h-2.5 w-2.5 text-white"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M2.5 6L5 8.5L9.5 3.5"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="contact-card-step-list__label"
+                        >Initial Contact</span
+                      >
+                    </li>
+                    <li class="contact-card-step-list__item">
+                      <span
+                        class="contact-card-step-list__track"
+                        aria-hidden="true"
+                      >
+                        <span class="contact-card-step-list__dot">
+                          <svg
+                            class="h-2.5 w-2.5 text-white"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M2.5 6L5 8.5L9.5 3.5"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="contact-card-step-list__label"
+                        >Confidentiality Assurance</span
+                      >
+                    </li>
+                    <li class="contact-card-step-list__item">
+                      <span
+                        class="contact-card-step-list__track"
+                        aria-hidden="true"
+                      >
+                        <span class="contact-card-step-list__dot">
+                          <svg
+                            class="h-2.5 w-2.5 text-white"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M2.5 6L5 8.5L9.5 3.5"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="contact-card-step-list__label"
+                        >Consultation</span
+                      >
+                    </li>
+                    <li class="contact-card-step-list__item">
+                      <span
+                        class="contact-card-step-list__track"
+                        aria-hidden="true"
+                      >
+                        <span class="contact-card-step-list__dot">
+                          <svg
+                            class="h-2.5 w-2.5 text-white"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M2.5 6L5 8.5L9.5 3.5"
+                              stroke="currentColor"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="contact-card-step-list__label"
+                        >Project Kick-Off</span
+                      >
+                    </li>
+                  </ul>
+
+                  <div
+                    class="mt-30 hidden max-w-[430px] border-t border-white/15 pt-3 md:block"
+                  >
+                    <div
+                      class="relative h-[58px] w-[92px] overflow-hidden rounded-sm"
+                    >
+                      <img
+                        src="./images/videothumbnail.jpg"
+                        alt=""
+                        class="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right form (desktop only) -->
+                <form
+                  class="hidden w-full max-w-[454px] flex-col gap-[22px] md:flex"
+                >
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="w-full rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  />
+                  <input
+                    type="email"
+                    placeholder="email@any.com"
+                    class="w-full rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  />
+                  <div
+                    class="flex items-center gap-2 rounded-md bg-white px-[20px] py-[16px]"
+                  >
+                    <span class="text-sm text-[#1B2125]">+91</span>
+                    <span class="text-[#D5DCE6]">-</span>
+                    <input
+                      type="tel"
+                      placeholder="Phone number"
+                      class="min-h-0 min-w-0 w-full flex-1 border-0 bg-transparent py-0 text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                    />
+                    <span class="text-xs text-[#6A7380]">🇮🇳</span>
+                  </div>
+                  <textarea
+                    rows="3"
+                    placeholder="Tell us more about your project"
+                    class="w-full resize-none rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  ></textarea>
+                  <div class="w-full">
+                    <input
+                      id="webserviceContactFileDesktop"
+                      type="file"
+                      class="sr-only"
+                      multiple
+                    />
+                    <label
+                      for="webserviceContactFileDesktop"
+                      class="flex w-full cursor-pointer items-center gap-2 text-[16px] font-medium text-white/85"
+                    >
+                      <img
+                        src="./images/pin.svg"
+                        alt=""
+                        class="h-7 w-7 shrink-0 opacity-90"
+                        aria-hidden="true"
+                      />
+                      Attach your files
+                    </label>
+                  </div>
+                  <div class="w-full border-t border-white/15 pt-[22px]">
+                    <label
+                      class="flex items-center gap-2 text-xs text-white/65"
+                    >
+                      <input
+                        type="checkbox"
+                        class="h-3.5 w-3.5 rounded border-white/40 bg-transparent"
+                      />
+                      I agree to Terms &amp; Conditions of occamode
+                    </label>
+                  </div>
+                  <button
+                    type="button"
+                    class="h-11 w-full rounded-full bg-[#FF2C78] text-sm font-semibold text-white transition hover:bg-[#ff3f85]"
+                  >
+                    Schedule a Call
+                  </button>
+                </form>
+
+                <!-- Mobile CTA -->
+                <button
+                  type="button"
+                  data-contact-toggle="#homeMobileContactForm"
+                  class="mt-2 h-10 w-full shrink-0 rounded-full bg-[#FF2C78] text-sm font-semibold text-white md:hidden"
+                >
+                  Schedule a Call
+                </button>
+
+                <!-- Mobile form (opens on click) -->
+                <form
+                  id="homeMobileContactForm"
+                  class="hidden w-full max-w-[454px] flex flex-col gap-[22px] md:hidden"
+                >
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="w-full rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  />
+                  <input
+                    type="email"
+                    placeholder="email@any.com"
+                    class="w-full rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  />
+                  <div
+                    class="flex items-center gap-2 rounded-md bg-white px-[20px] py-[16px]"
+                  >
+                    <span class="text-sm text-[#1B2125]">+91</span>
+                    <span class="text-[#D5DCE6]">-</span>
+                    <input
+                      type="tel"
+                      placeholder="Phone number"
+                      class="min-h-0 min-w-0 w-full flex-1 border-0 bg-transparent py-0 text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                    />
+                    <span class="text-xs text-[#6A7380]">🇮🇳</span>
+                  </div>
+                  <textarea
+                    rows="3"
+                    placeholder="Tell us more about your project"
+                    class="w-full resize-none rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  ></textarea>
+                  <div class="w-full">
+                    <input
+                      id="webserviceContactFileMobile"
+                      type="file"
+                      class="sr-only"
+                      multiple
+                    />
+                    <label
+                      for="webserviceContactFileMobile"
+                      class="flex w-full cursor-pointer items-center gap-2 text-[16px] font-medium text-white/85"
+                    >
+                      <img
+                        src="./images/pin.svg"
+                        alt=""
+                        class="h-7 w-7 shrink-0 opacity-90"
+                        aria-hidden="true"
+                      />
+                      Attach your files
+                    </label>
+                  </div>
+                  <div class="w-full border-t border-white/15 pt-[22px]">
+                    <label
+                      class="flex items-center gap-2 text-xs text-white/65"
+                    >
+                      <input
+                        type="checkbox"
+                        class="h-3.5 w-3.5 rounded border-white/40 bg-transparent"
+                      />
+                      I agree to Terms &amp; Conditions of occamode
+                    </label>
+                  </div>
+                  <button
+                    type="button"
+                    class="h-11 w-full rounded-full bg-[#FF2C78] text-sm font-semibold text-white"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer content -->
+          <div class="pb-6 pt-10 md:pt-11">
+            <div class="grid gap-7 md:grid-cols-[1.25fr_1fr_1fr]">
+              <div>
+                <img
+                  src="./images/logoblue.svg"
+                  alt="occamode"
+                  class="h-8 w-auto"
+                />
+                <p class="mt-1 text-[11px] leading-[100%]! text-[#5D2ED9]">
+                  Dream. Develop. Deliver.
+                </p>
+                <p
+                  class="mt-4 hidden max-w-[420px] text-[13px] leading-[1.55] text-[#647E9B] md:block"
+                >
+                  At Occamode, we embrace a deep tech philosophy, combining
+                  innovative methods and advanced technology to provide
+                  solutions that meet today's needs and address future
+                  challenges.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-6 md:col-span-2 md:grid-cols-3">
+                <div class="space-y-3 text-[13px] font-semibold text-[#1B2125]">
+                  <p>
+                    <a
+                      href="./index.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Home</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./approachPage.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Approach</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./casestudies.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Case Studies</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./about.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >About Us</a
+                    >
+                  </p>
+                </div>
+                <div class="space-y-3 text-[12px] text-[#1B2125]">
+                  <p class="font-semibold">Service</p>
+                  <p>
+                    <a
+                      href="./webservice.html"
+                      class="font-semibold text-[#2D39F2] no-underline"
+                      aria-current="page"
+                      >Web Development</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./mobile-app-service.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Mobile Development</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./ui-ux.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >UI/UX Designing</a
+                    >
+                  </p>
+                  <p class="md:hidden">
+                    <a
+                      href="./productEngineering.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Product Engineering</a
+                    >
+                  </p>
+                  <p class="md:hidden">
+                    <a
+                      href="./iot.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >IOT Solutions</a
+                    >
+                  </p>
+                  <p class="md:hidden">
+                    <a
+                      href="./devops.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >DevOps</a
+                    >
+                  </p>
+                </div>
+                <div class="space-y-3 text-[12px] text-[#1B2125] max-md:hidden">
+                  <p class="opacity-0">Service</p>
+                  <p>
+                    <a
+                      href="./productEngineering.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Product Engineering</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./iot.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >IOT Solutions</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./devops.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >DevOps</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p
+              class="mt-6 max-w-[420px] text-[13px] leading-[1.55] text-[#647E9B] md:hidden"
+            >
+              At Occamode, we embrace a deep tech philosophy, combining
+              innovative methods and advanced technology to provide solutions
+              that meet today's needs and address future challenges.
+            </p>
+
+            <div
+              class="mt-6 flex flex-col gap-4 border-t border-[#D9DDEA] pt-5 md:mt-7 md:flex-row md:items-end md:justify-between"
+            >
+              <div
+                class="grid w-full grid-cols-2 gap-x-6 gap-y-4 text-left sm:gap-x-10 md:max-w-[min(520px,46%)]"
+              >
+                <div class="min-w-0">
+                  <img src="./images/email.svg" alt="" class="h-4 w-4" />
+                  <p class="mt-1 text-xs font-semibold text-[#1B2125]">
+                    Email us
+                  </p>
+                  <p class="mt-1 text-[11px] text-[#1B2125]">
+                    <a
+                      href="mailto:hello@occamode.com"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >hello@occamode.com</a
+                    >
+                  </p>
+                </div>
+                <div class="min-w-0">
+                  <img src="./images/map.svg" alt="" class="h-4 w-4" />
+                  <p class="mt-1 text-xs font-semibold text-[#1B2125]">
+                    Visit us
+                  </p>
+                  <p
+                    class="mt-1 max-w-[280px] text-[11px] leading-[1.4] text-[#1B2125]"
+                  >
+                    Occamode, Dholvich Walo, Givice, Ahmedabad, India, 329942
+                  </p>
+                </div>
+              </div>
+              <a
+                href="./contactus.html"
+                class="inline-flex h-10 w-full shrink-0 items-center justify-center rounded-full bg-[#1B19C7] px-10 text-xs font-semibold text-white no-underline transition hover:bg-[#1514a8] md:w-auto"
+              >
+                Contact Us
+              </a>
+            </div>
+
+            <div
+              class="mt-6 flex items-center justify-center gap-10 text-[#4D52E3] md:hidden"
+            >
+              <a href="#" aria-label="Facebook" class="opacity-95">
+                <img src="./images/facebook.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="Twitter" class="opacity-95">
+                <img src="./images/twitter.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="Instagram" class="opacity-95">
+                <img src="./images/instagram.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="LinkedIn" class="opacity-95">
+                <img src="./images/linkedin.svg" alt="" class="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom legal bar -->
+        <div class="bg-[#120F96]">
+          <div
+            class="mx-auto flex max-w-[1280px] items-center justify-between px-7 py-2.5 text-[11px] text-white xl:px-0"
+          >
+            <div class="flex items-center gap-6">
+              <span>Privacy Policy</span>
+              <span class="text-white/70"
+                >©<span id="copyrightYear"></span> Occamode</span
+              >
+            </div>
+            <div class="hidden items-center gap-4 md:flex">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/facebook.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/twitter.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/instagram.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/linkedin.svg" alt="" class="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./megamenu.js"></script>
+  </body>
+</html>

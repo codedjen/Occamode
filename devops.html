@@ -1,0 +1,1809 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Occamode - DevOps Services</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <!-- 2×3 grid is taller than IoT’s 2×2: push lavender start down so break sits ~mid-CTA -->
+    <style>
+      #devopsGradientShell {
+        background: linear-gradient(
+          to bottom,
+          #ffffff 0%,
+          #ffffff 46%,
+          #eaeafe99 46%,
+          #eaeafe99 100%
+        );
+      }
+      @media (min-width: 768px) {
+        #devopsGradientShell {
+          background: linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 61%,
+            #eaeafe99 61%,
+            #eaeafe99 100%
+          );
+        }
+      }
+      @media (min-width: 1280px) {
+        #devopsGradientShell {
+          background: linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 63%,
+            #eaeafe99 63%,
+            #eaeafe99 100%
+          );
+        }
+      }
+      /* Hero: one full-area background per breakpoint (no absolute img stack) */
+      #devopsHeroDesk {
+        background-color: #000;
+        background-image: url("./images/devopsMainBannerDesk.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+      }
+      #devopsHeroMobile {
+        background-color: #000;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.7),
+            #000
+          ),
+          url("./images/devopsMainBannerMobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+      }
+    </style>
+  </head>
+  <body class="w-full bg-white text-white antialiased overflow-x-hidden">
+    <!-- Header (same as index.html) -->
+    <header class="absolute top-0 left-0 w-full z-50">
+      <div class="relative z-10 mx-auto max-w-[1280px] px-7 py-5 xl:px-0">
+        <nav
+          class="flex gap-4 items-center justify-between rounded-full"
+        >
+          <a href="./index.html" class="shrink-0">
+            <img src="./images/logo.svg" alt="Occamode" class="h-5 w-auto" />
+          </a>
+
+          <ul
+            class="hidden grow-1 lg:grow-0 lg:gap-8 items-center justify-between text-sm lg:text-base md:flex border border-[#647E9B66] rounded-full px-4 lg:px-8 py-2 backdrop-blur-[5px]"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="text-white/70 transition hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <span
+                class="cursor-pointer border-b border-white pb-0.5 text-sm font-semibold text-white transition hover:text-white md:text-base"
+                >Services</span
+              >
+            </li>
+            <li>
+              <a href="./approachPage.html" class="text-white/70 transition hover:text-white"
+                >Approach</a
+              >
+            </li>
+            <li>
+              <a href="./casestudies.html" class="text-white/70 transition hover:text-white"
+                >Case-studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="text-white/70 transition hover:text-white"
+                >About Us</a
+              >
+            </li>
+          </ul>
+
+          <a
+            href="./contactus.html"
+            class="hidden border border-[#647E9B66] rounded-full px-6 py-2 text-sm lg:text-base text-white transition md:inline-block backdrop-blur-[5px]"
+          >
+            Contact Us
+          </a>
+
+          <button class="md:hidden" type="button" aria-label="Open menu">
+            <img src="./images/hamburger.svg" alt="Menu" class="h-6 w-6" />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero: dark DevOps (desktop 2-col / mobile stack — assets: desk + mobile PNG) -->
+    <section class="w-full overflow-hidden bg-black">
+      <!-- Desktop: background covers full hero; copy stays in normal flow -->
+      <div
+        id="devopsHeroDesk"
+        class="relative hidden min-h-[min(100dvh,880px)] lg:flex lg:items-center lg:pt-20"
+      >
+        <div
+          class="relative z-10 mx-auto flex w-full max-w-[1280px] flex-row items-center px-7 xl:px-0"
+        >
+          <div class="max-w-xl shrink-0 lg:max-w-[min(100%,440px)] xl:max-w-lg">
+            <h1
+              class="text-[48px] font-bold leading-[1.1] tracking-tight text-white lg:text-[64px]"
+            >
+              DevOps <br /> Services
+            </h1>
+            <p
+              class="mt-5 text-[15px] leading-[1.65] text-white/85 xl:text-base"
+            >
+              Streamline your workflows, boost productivity, and catalyse
+              innovation, ensuring that your business remains at the forefront of
+              efficiency and growth.
+            </p>
+            <a
+              href="#"
+              class="mt-8 inline-flex rounded-full bg-[#0033FF] px-9 py-3.5 text-[15px] font-semibold text-white transition hover:bg-[#0028cc]"
+            >
+              Book a Call
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile: same idea — bg on the section-sized div, no absolute layers -->
+      <div
+        id="devopsHeroMobile"
+        class="relative flex min-h-[min(100dvh,820px)] flex-col items-center px-7 pb-16 pt-28 text-center lg:hidden"
+      >
+        <div class="relative z-10 mt-4 flex flex-1 flex-col justify-end">
+          <h1
+            class="text-[2.25rem] font-bold leading-[1.12] tracking-tight text-white sm:text-4xl"
+          >
+            DevOps Services
+          </h1>
+          <p
+            class="mx-auto mt-5 max-w-[340px] text-[14px] leading-[1.6] text-white/90 sm:max-w-md sm:text-[15px]"
+          >
+            Streamline your workflows, boost productivity, and catalyse
+            innovation, ensuring that your business remains at the forefront of
+            efficiency and growth.
+          </p>
+          <a
+            href="#"
+            class="mx-auto mt-8 inline-flex rounded-full bg-[#0033FF] px-8 py-3 text-[14px] font-semibold text-white transition hover:bg-[#0028cc]"
+          >
+            Book a Call
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our commitment: collage + six outcomes -->
+    <section class="w-full bg-white py-14 text-[#1B2125] md:py-20 lg:py-24">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <span
+          class="inline-flex rounded-full border border-[#444CFCCC] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[#444CFC] md:text-xs"
+        >
+          OUR COMMITMENT
+        </span>
+        <h2
+          class="mt-4 max-w-[720px] text-[32px] font-bold leading-[1.12] tracking-[-0.02em] text-[#010101] md:mt-5 lg:text-[40px]"
+        >
+          Our skills, your success
+        </h2>
+        <p
+          class="mt-4 max-w-[640px] text-[14px]  text-[#647E9B]"
+        >
+          We embed reliability, security, and speed into how you build and run
+          software—so your teams ship confidently and your customers stay on a
+          stable, scalable platform.
+        </p>
+
+        <div
+          class="mx-auto mt-10 flex w-full max-w-[1212px] flex-col gap-10 lg:mt-14 lg:flex-row lg:items-start lg:gap-[80px]"
+        >
+          <!-- Collage: mobile = tall left + two stacked right; desktop = hero row + two-up -->
+          <div class="w-full max-w-[516px]">
+            <div
+              class="grid grid-cols-5 gap-2 sm:gap-3 lg:hidden"
+              style="min-height: 220px"
+            >
+              <div
+                class="relative col-span-3 row-span-2 overflow-hidden rounded-[3px] bg-[#EEF1F6]"
+              >
+                <img
+                  src="./images/webserviceaccordian.png"
+                  alt="Team collaborating in the office"
+                  class="h-full min-h-[220px] w-full object-cover"
+                />
+              </div>
+              <div
+                class="relative col-span-2 overflow-hidden rounded-[3px] bg-[#EEF1F6]"
+              >
+                <img
+                  src="./images/webappservicemobile.jpg"
+                  alt="Team meeting"
+                  class="h-full min-h-[104px] w-full object-cover object-center"
+                />
+              </div>
+              <div
+                class="relative col-span-2 overflow-hidden rounded-[3px] bg-[#EEF1F6]"
+              >
+                <img
+                  src="./images/iotMobileMainBanner.png"
+                  alt="Partners shaking hands"
+                  class="h-full min-h-[104px] w-full object-cover object-center"
+                />
+              </div>
+            </div>
+            <div class="hidden flex-col gap-3 lg:flex">
+              <div
+                class="relative aspect-[1.85] w-full overflow-hidden rounded-[3px] bg-[#EEF1F6]"
+              >
+                <img
+                  src="./images/webserviceaccordian.png"
+                  alt="Team collaborating in the office"
+                  class="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div
+                  class="relative aspect-[1.25] overflow-hidden rounded-[3px] bg-[#EEF1F6]"
+                >
+                  <img
+                    src="./images/webappservicemobile.jpg"
+                    alt="Team meeting"
+                    class="absolute inset-0 h-full w-full object-cover object-center"
+                  />
+                </div>
+                <div
+                  class="relative aspect-[1.25] overflow-hidden rounded-[3px] bg-[#EEF1F6]"
+                >
+                  <img
+                    src="./images/iotMobileMainBanner.png"
+                    alt="Partners shaking hands"
+                    class="absolute inset-0 h-full w-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative mx-auto w-full max-w-[596px] lg:pt-1">
+            <ul
+              class="relative z-[1] flex flex-col gap-y-8 md:gap-y-9"
+            >
+            <li
+              class="relative z-[1] flex gap-4 last:[&_.devops-benefit-connector]:hidden"
+            >
+              <div
+                class="relative z-[1] flex w-6 shrink-0 flex-col items-center self-stretch md:w-7"
+              >
+                <img
+                  src="./images/blueTickIc.svg"
+                  alt=""
+                  width="28"
+                  height="28"
+                  class="relative z-10 mt-0.5 h-6 w-6 shrink-0 ring-4 ring-white ring-offset-0 md:h-7 md:w-7"
+                />
+                <div
+                  class="devops-benefit-connector pointer-events-none absolute left-1/2 top-[2.125rem] z-0 w-px -translate-x-1/2 bg-[#C7D5E5] bottom-[-2rem] md:top-[2.375rem] md:bottom-[-2.25rem]"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <div class="min-w-0 flex-1">
+                <p
+                  class="text-[17px] leading-snug text-[#010101] md:text-[18px]"
+                >
+                  <span class="font-medium">Improved </span
+                  ><span class="font-bold">Scalability &amp; Flexibility</span>
+                </p>
+                <p
+                  class="mt-2 text-[14px] leading-[1.65] text-[#647E9B] md:text-[15px]"
+                >
+                  Architect for growth with elastic pipelines and environments
+                  that adapt as traffic, teams, and product scope expand.
+                </p>
+              </div>
+            </li>
+            <li
+              class="relative z-[1] flex gap-4 last:[&_.devops-benefit-connector]:hidden"
+            >
+              <div
+                class="relative z-[1] flex w-6 shrink-0 flex-col items-center self-stretch md:w-7"
+              >
+                <img
+                  src="./images/blueTickIc.svg"
+                  alt=""
+                  width="28"
+                  height="28"
+                  class="relative z-10 mt-0.5 h-6 w-6 shrink-0 ring-4 ring-white ring-offset-0 md:h-7 md:w-7"
+                />
+                <div
+                  class="devops-benefit-connector pointer-events-none absolute left-1/2 top-[2.125rem] z-0 w-px -translate-x-1/2 bg-[#C7D5E5] bottom-[-2rem] md:top-[2.375rem] md:bottom-[-2.25rem]"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <div class="min-w-0 flex-1">
+                <p
+                  class="text-[17px] leading-snug text-[#010101] md:text-[18px]"
+                >
+                  <span class="font-bold">Robust </span
+                  ><span class="font-medium">Security &amp; Reliability</span>
+                </p>
+                <p
+                  class="mt-2 text-[14px] leading-[1.65] text-[#647E9B] md:text-[15px]"
+                >
+                  Bake in guardrails, secrets hygiene, and resilient releases so
+                  production stays trustworthy under real-world load.
+                </p>
+              </div>
+            </li>
+            <li
+              class="relative z-[1] flex gap-4 last:[&_.devops-benefit-connector]:hidden"
+            >
+              <div
+                class="relative z-[1] flex w-6 shrink-0 flex-col items-center self-stretch md:w-7"
+              >
+                <img
+                  src="./images/blueTickIc.svg"
+                  alt=""
+                  width="28"
+                  height="28"
+                  class="relative z-10 mt-0.5 h-6 w-6 shrink-0 ring-4 ring-white ring-offset-0 md:h-7 md:w-7"
+                />
+                <div
+                  class="devops-benefit-connector pointer-events-none absolute left-1/2 top-[2.125rem] z-0 w-px -translate-x-1/2 bg-[#C7D5E5] bottom-[-2rem] md:top-[2.375rem] md:bottom-[-2.25rem]"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <div class="min-w-0 flex-1">
+                <p
+                  class="text-[17px] leading-snug text-[#010101] md:text-[18px]"
+                >
+                  <span class="font-medium">Enhanced </span
+                  ><span class="font-bold">Performance &amp; Operation</span>
+                </p>
+                <p
+                  class="mt-2 text-[14px] leading-[1.65] text-[#647E9B] md:text-[15px]"
+                >
+                  Observability, SLOs, and automation that keep latency low and
+                  incidents short—before users feel the pain.
+                </p>
+              </div>
+            </li>
+            <li
+              class="relative z-[1] flex gap-4 last:[&_.devops-benefit-connector]:hidden"
+            >
+              <div
+                class="relative z-[1] flex w-6 shrink-0 flex-col items-center self-stretch md:w-7"
+              >
+                <img
+                  src="./images/blueTickIc.svg"
+                  alt=""
+                  width="28"
+                  height="28"
+                  class="relative z-10 mt-0.5 h-6 w-6 shrink-0 ring-4 ring-white ring-offset-0 md:h-7 md:w-7"
+                />
+                <div
+                  class="devops-benefit-connector pointer-events-none absolute left-1/2 top-[2.125rem] z-0 w-px -translate-x-1/2 bg-[#C7D5E5] bottom-[-2rem] md:top-[2.375rem] md:bottom-[-2.25rem]"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <div class="min-w-0 flex-1">
+                <p
+                  class="text-[17px] leading-snug text-[#010101] md:text-[18px]"
+                >
+                  <span class="font-bold">Optimised </span
+                  ><span class="font-medium">Infra Cost</span>
+                </p>
+                <p
+                  class="mt-2 text-[14px] leading-[1.65] text-[#647E9B] md:text-[15px]"
+                >
+                  Right-size cloud usage, spot waste early, and align spend with
+                  actual workload patterns—not peak anxiety.
+                </p>
+              </div>
+            </li>
+            <li
+              class="relative z-[1] flex gap-4 last:[&_.devops-benefit-connector]:hidden"
+            >
+              <div
+                class="relative z-[1] flex w-6 shrink-0 flex-col items-center self-stretch md:w-7"
+              >
+                <img
+                  src="./images/blueTickIc.svg"
+                  alt=""
+                  width="28"
+                  height="28"
+                  class="relative z-10 mt-0.5 h-6 w-6 shrink-0 ring-4 ring-white ring-offset-0 md:h-7 md:w-7"
+                />
+                <div
+                  class="devops-benefit-connector pointer-events-none absolute left-1/2 top-[2.125rem] z-0 w-px -translate-x-1/2 bg-[#C7D5E5] bottom-[-2rem] md:top-[2.375rem] md:bottom-[-2.25rem]"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <div class="min-w-0 flex-1">
+                <p
+                  class="text-[17px] leading-snug text-[#010101] md:text-[18px]"
+                >
+                  <span class="font-medium">Increased </span
+                  ><span class="font-bold">Agility &amp; Innovation</span>
+                </p>
+                <p
+                  class="mt-2 text-[14px] leading-[1.65] text-[#647E9B] md:text-[15px]"
+                >
+                  Shorten feedback loops so experiments ship safely and ideas
+                  reach customers without weeks of manual coordination.
+                </p>
+              </div>
+            </li>
+            <li
+              class="relative z-[1] flex gap-4 last:[&_.devops-benefit-connector]:hidden"
+            >
+              <div
+                class="relative z-[1] flex w-6 shrink-0 flex-col items-center self-stretch md:w-7"
+              >
+                <img
+                  src="./images/blueTickIc.svg"
+                  alt=""
+                  width="28"
+                  height="28"
+                  class="relative z-10 mt-0.5 h-6 w-6 shrink-0 ring-4 ring-white ring-offset-0 md:h-7 md:w-7"
+                />
+                <div
+                  class="devops-benefit-connector pointer-events-none absolute left-1/2 top-[2.125rem] z-0 w-px -translate-x-1/2 bg-[#C7D5E5] bottom-[-2rem] md:top-[2.375rem] md:bottom-[-2.25rem]"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <div class="min-w-0 flex-1">
+                <p
+                  class="text-[17px] leading-snug text-[#010101] md:text-[18px]"
+                >
+                  <span class="font-medium">Faster </span
+                  ><span class="font-bold">Time to Market</span>
+                </p>
+                <p
+                  class="mt-2 text-[14px] leading-[1.65] text-[#647E9B] md:text-[15px]"
+                >
+                  CI/CD, automation, and clear ownership models that turn
+                  roadmap items into live value on a predictable rhythm.
+                </p>
+              </div>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do: image + auto accordion (mobile: image first; desktop: accordion | image) -->
+    <section class="w-full bg-[#F2F2FE] py-14 text-[#1B2125] md:py-20 lg:py-24">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <span
+          class="inline-flex rounded-full border border-[#C7CFDA] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[#647E9B] sm:text-xs md:hidden"
+        >
+          OUR SERVICES
+        </span>
+        <span
+          class="hidden rounded-full border border-[#C7CFDA] px-3 py-1 text-xs font-medium tracking-[0.04em] text-[#647E9B] md:inline-flex"
+        >
+          WHAT WE DO
+        </span>
+        <h2
+          class="mt-4 max-w-[min(100%,920px)] text-[28px] font-bold leading-[1.12] tracking-[-0.02em] text-[#010101] md:mt-5 md:text-[38px] lg:text-[42px]"
+        >
+          DevOps solutions that redefine possibilities
+        </h2>
+
+        <div
+          class="mt-10 grid grid-cols-1 gap-0 lg:mt-12 lg:grid-cols-2 lg:items-start lg:gap-16"
+        >
+          <div
+            class="relative order-1 mb-8 aspect-[1.15] w-full overflow-hidden rounded-[3px] bg-[#E8EAF2] lg:order-2 lg:mb-0 lg:aspect-square lg:max-h-[min(100vw,520px)]"
+          >
+            <img
+              src="./images/webappservicemobile.jpg"
+              alt="DevOps consultants collaborating"
+              class="absolute inset-0 h-full w-full object-cover object-center"
+            />
+          </div>
+
+          <div
+            id="devopsServicesAccordion"
+            class="order-2 flex w-full flex-col lg:order-1 lg:max-w-none"
+          >
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="0"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >Consulting</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body open">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Assess maturity, align stakeholders, and define a practical
+                    DevOps roadmap—from toolchain choices to governance—so every
+                    investment maps to measurable delivery outcomes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="1"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >Infrastructure as a Code (IaC)</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Codify environments with Terraform, Ansible, or Pulumi so
+                    infrastructure is repeatable, reviewable, and consistent
+                    from development through production.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="2"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >CI/CD</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Automated build, test, and deploy pipelines with quality
+                    gates, approvals, and rollback paths that keep releases fast
+                    without sacrificing safety.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="3"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >DevOps Automation</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Orchestrate provisioning, configuration drift checks, and
+                    operational runbooks so toil drops and engineers focus on
+                    product work.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="4"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >Cloud Infra Management</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Operate AWS, Azure, or GCP with tagging, cost controls,
+                    backups, and observability wired in—so scale never outpaces
+                    visibility.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item relative border-b border-[#D3D9E4] py-4 md:py-5"
+              data-index="5"
+            >
+              <div class="accordion-progress"></div>
+              <button
+                type="button"
+                class="accordion-trigger flex w-full items-center justify-between gap-4 text-left"
+              >
+                <span
+                  class="devops-acc-title text-[20px] font-medium leading-snug text-[#232A31] transition-colors duration-200 lg:text-[26px]"
+                  >Containerisation</span
+                >
+                <svg
+                  class="devops-acc-chevron h-5 w-5 shrink-0 transition-colors duration-200 md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 9l6 6 6-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion-body">
+                <div>
+                  <p
+                    class="max-w-[560px] pt-2 text-[14px] font-normal leading-[1.65] text-[#647E9B] lg:text-[16px] lg:leading-[1.7]"
+                  >
+                    Dockerise services, harden images, and adopt Kubernetes or
+                    managed orchestration for portable workloads that deploy the
+                    same way everywhere.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DevOps phases: pinned horizontal scroll (GSAP + ScrollTrigger via main.js) -->
+    <section
+      id="webRoadmapSection"
+      class="web-roadmap-section w-full py-12 text-[#171C21] md:py-20"
+    >
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <span
+          class="inline-flex rounded-full border border-[#F4C9BE] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[#FFA28B] md:text-xs"
+        >
+          DEVOPS PHASES
+        </span>
+        <h2
+          class="mt-4 max-w-[min(100%,720px)] text-[32px] leading-[1.2] font-semibold tracking-[-0.01em] text-[#171C21] lg:text-[40px]"
+        >
+          A Glimpse Into Our DevOps Phases
+        </h2>
+        <p
+          class="mt-3 max-w-[740px] text-[14px] font-normal leading-7 text-[#647E9B] lg:text-[16px]"
+        >
+          From assessment to ongoing support, we align people, platforms, and
+          practices so delivery stays fast, observable, and secure at every
+          stage.
+        </p>
+      </div>
+
+      <div class="mt-7 w-full md:mt-10">
+        <div class="mx-auto w-full max-w-[1280px] px-7 xl:px-0">
+          <div id="roadmapProgressWrap" class="relative h-8">
+            <div
+              id="roadmapProgressSegmentsBg"
+              class="pointer-events-none absolute inset-0"
+            ></div>
+            <div
+              id="roadmapProgressSegmentsFill"
+              class="pointer-events-none absolute inset-0"
+            ></div>
+            <div
+              class="absolute inset-x-0 top-1/2 flex -translate-y-1/2 justify-between"
+            >
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 1"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 2"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 3"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 4"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+              <button
+                type="button"
+                data-roadmap-checkpoint
+                class="relative opacity-40 transition duration-300"
+                aria-label="Roadmap checkpoint 5"
+              >
+                <img
+                  data-roadmap-check-icon
+                  src="./images/checkcircle.svg"
+                  alt=""
+                  class="h-6 w-6 rounded-full md:h-8 md:w-8"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="roadmapViewport" class="mt-8 w-full overflow-hidden md:mt-9">
+          <div
+            id="roadmapTrack"
+            class="flex w-max gap-4 pl-7 pr-7 md:gap-5 md:pl-[max(1.75rem,calc((100vw-1280px)/2))] md:pr-[max(1.75rem,calc((100vw-1280px)/2))]"
+          >
+              <article
+                class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+              >
+                <button
+                  type="button"
+                  class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                  aria-label="Open phase details"
+                  data-roadmap-detail-open
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 5v14M5 12h14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+                >
+                  01
+                </p>
+                <h3
+                  class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+                >
+                  Assessment &amp; Strategy Development
+                </h3>
+                <p
+                  class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+                >
+                  We review your current operations, toolchain, and culture,
+                  then define a practical roadmap that ties DevOps goals to
+                  business outcomes.
+                </p>
+              </article>
+
+              <article
+                class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+              >
+                <button
+                  type="button"
+                  class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                  aria-label="Open phase details"
+                  data-roadmap-detail-open
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 5v14M5 12h14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+                >
+                  02
+                </p>
+                <h3
+                  class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+                >
+                  Cloud Architecture &amp; Tools Selection
+                </h3>
+                <p
+                  class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+                >
+                  Design cloud-native or hybrid reference architectures and pick
+                  the right CI/CD, registry, and observability stack for your
+                  teams.
+                </p>
+              </article>
+
+              <article
+                class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+              >
+                <button
+                  type="button"
+                  class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                  aria-label="Open phase details"
+                  data-roadmap-detail-open
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 5v14M5 12h14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+                >
+                  03
+                </p>
+                <h3
+                  class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+                >
+                  Cloud Infrastructure Implementation
+                </h3>
+                <p
+                  class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+                >
+                  Provision and wire up scalable infrastructure as code—networks,
+                  identities, environments, and pipelines—ready for production
+                  traffic.
+                </p>
+              </article>
+
+              <article
+                class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+              >
+                <button
+                  type="button"
+                  class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                  aria-label="Open phase details"
+                  data-roadmap-detail-open
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 5v14M5 12h14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+                >
+                  04
+                </p>
+                <h3
+                  class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+                >
+                  Infrastructure Testing &amp; Continuous Monitoring
+                </h3>
+                <p
+                  class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+                >
+                  Validate resilience with automated tests, SLOs, and alerting so
+                  performance issues surface early—not after users do.
+                </p>
+              </article>
+
+              <article
+                class="relative min-h-[188px] w-[86vw] max-w-[290px] rounded-[8px] bg-white p-5 md:max-w-none md:p-6"
+              >
+                <button
+                  type="button"
+                  class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-sky-50 text-[#171C21] shadow-sm transition hover:border-sky-300 hover:bg-sky-100 md:right-4 md:top-4"
+                  aria-label="Open phase details"
+                  data-roadmap-detail-open
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 5v14M5 12h14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="text-[42px] leading-none font-semibold text-[#FF6633] md:text-[44px]"
+                >
+                  05
+                </p>
+                <h3
+                  class="mt-3 text-[20px] font-medium leading-[100%]! text-[#171C21] lg:text-[26px]"
+                >
+                  Maintenance &amp; Support
+                </h3>
+                <p
+                  class="mt-3 text-[14px] font-normal leading-6 text-[#647E9B] lg:text-[16px] lg:leading-7"
+                >
+                  Ongoing tuning, upgrades, and runbooks so your platform stays
+                  secure, cost-aware, and aligned as your product evolves.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Technology stack (tab UI + grid rendered by main.js) -->
+    <section class="w-full bg-white py-12 text-[#171C21] md:py-20">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <span
+          class="inline-flex rounded-full border border-[#8D95FF] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[#3D4BFF] md:text-xs"
+        >
+          TECH STACK
+        </span>
+        <h2
+          class="mt-4 text-[36px] font-semibold leading-[1.13] tracking-[-0.01em] md:text-[48px]"
+        >
+          Leading with Technology
+        </h2>
+        <p
+          class="mt-4 max-w-[520px] text-[15px] leading-7 text-[#7A92AE] md:max-w-[560px]"
+        >
+          Whether you are modernising legacy systems or scaling a cloud-native
+          platform, we bring the tooling and practices that keep delivery
+          reliable end to end.
+        </p>
+        <div
+          class="mt-8 flex flex-col gap-4 md:mt-10 md:flex-row md:items-start justify-between md:gap-6"
+        >
+          <div
+            id="techStackTabs"
+            class="flex w-full items-center justify-center gap-5 overflow-x-auto pb-1 whitespace-nowrap [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:w-[170px] md:shrink-0 md:flex-col md:items-stretch md:justify-start md:gap-3 md:overflow-visible md:whitespace-normal md:pb-0 md:pt-2"
+          >
+            <button
+              type="button"
+              data-tech-tab="frontend"
+              class="shrink-0 border-b-2 border-b-[#3D4BFF] pb-1 text-left text-[13px] font-semibold text-[#3D4BFF] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-[#3D4BFF] md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              Front-end
+            </button>
+            <button
+              type="button"
+              data-tech-tab="backend"
+              class="shrink-0 border-b-2 border-b-transparent pb-1 text-left text-[13px] font-semibold text-[#171C21] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-transparent md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              Back-end
+            </button>
+            <button
+              type="button"
+              data-tech-tab="cloud"
+              class="shrink-0 border-b-2 border-b-transparent pb-1 text-left text-[13px] font-semibold text-[#171C21] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-transparent md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              Cloud
+            </button>
+            <button
+              type="button"
+              data-tech-tab="devops"
+              class="shrink-0 border-b-2 border-b-transparent pb-1 text-left text-[13px] font-semibold text-[#171C21] transition hover:text-[#3D4BFF] md:w-full md:border-b-0 md:border-l-4 md:border-l-transparent md:pb-0 md:pl-3.5 md:text-[15px]"
+            >
+              DevOps
+            </button>
+          </div>
+
+          <div
+            class="min-w-0 w-fit max-w-full overflow-x-auto rounded-[4px] border border-[#E6E9EF] bg-white"
+          >
+            <div
+              id="techStackGrid"
+              class="grid w-max max-w-full grid-cols-[repeat(3,160px)] md:grid-cols-[repeat(6,160px)]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA: same pattern as webservice “Future-Proof” banner — image + left fade to black -->
+    <section class="w-full bg-white py-8 text-[#171C21] md:py-12 lg:py-14">
+      <div class="mx-auto max-w-[1280px] px-7 xl:px-0">
+        <div
+          class="relative isolate aspect-[1.7/1] overflow-hidden rounded-[3px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:aspect-[5.245/1]"
+        >
+          <img
+            src="./images/webserviceaccordian.png"
+            alt="DevOps team collaborating at a laptop"
+            class="absolute inset-0 h-full w-full object-cover object-center md:object-right"
+          />
+          <div
+            class="absolute inset-0"
+            style="
+              background: linear-gradient(
+                90deg,
+                #010002 50%,
+                rgba(1, 0, 2, 0.45) 70%,
+                rgba(1, 0, 2, 0) 88%
+              );
+            "
+            aria-hidden="true"
+          ></div>
+          <div
+            class="relative z-10 flex h-full min-h-[200px] items-center px-5 py-8 md:min-h-0 md:px-8 lg:px-12"
+          >
+            <div class="w-full max-w-[min(100%,640px)]">
+              <h2
+                class="text-[1.35rem] font-bold leading-[1.2] tracking-tight text-white sm:text-2xl md:text-[26px] md:leading-[1.18] lg:text-[28px]"
+              >
+                Make our team of expert DevOps engineers become an extension of
+                yours.
+              </h2>
+              <a
+                href="#"
+                class="mt-5 inline-flex rounded-full bg-[#FF2F78] px-8 py-3 text-[15px] font-semibold leading-none text-white transition hover:bg-[#ff4b8a] md:mt-6 md:px-8 md:py-3 md:text-[16px] lg:text-lg max-md:w-full max-md:justify-center"
+              >
+                Let&apos;s Connect
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="w-full bg-[#fff] py-14 text-gray-900 md:py-27">
+      <div class="mx-auto max-w-[1280px] px-[28px] min-[1280px]:px-0">
+        <div class="mb-8 md:mb-10">
+          <span
+            class="mb-4 inline-block rounded-full border border-[#647E9BB2] px-3 py-1 text-[9px] font-semibold tracking-[0.12em] text-[#647E9B] uppercase"
+            >Testimonials</span
+          >
+          <h2 class="text-[46px] leading-[60px] font-bold md:text-[56px]">
+            Clients' success:<br />In their own words
+          </h2>
+          <p
+            class="mt-3 max-w-[480px] text-lg leading-[28px] text-[#111111]"
+          >
+            Discover how we've exceeded expectations, straight from the source
+          </p>
+          <p
+            class="mt-3 max-w-[520px] text-[16px] leading-[26px] text-[#647E9B]"
+          >
+            Our clients have seen remarkable success and satisfaction through
+            our innovative solutions that transform challenges into
+            opportunities and drive growth.
+          </p>
+        </div>
+
+        <!-- Desktop card -->
+        <div class="hidden md:block">
+          <div
+            class="relative flex md:gap-5 lg:gap-10 xl:gap-12 items-stretch justify-between rounded-md border border-[#E9EDF2] bg-white p-11 shadow-[0_2px_10px_rgba(16,24,40,0.06)]"
+          >
+            <div class="w-[58%] max-w-[654px]">
+              <p
+                class="text-[18px] leading-[36px] font-semibold text-[#1B2125] lg:text-[24px]"
+              >
+                Our +380.000 employees all over the world, no matter in which
+                country, must have the same competence profile. Synthesia helps
+                us develop engaging, more relevant &amp; localised training
+                content at scale a of larger company.
+              </p>
+              <div class="mt-7 flex items-center gap-3">
+                <img
+                  src="./images/firstprofile.jpg"
+                  alt="Johnny Andro"
+                  class="h-10 w-10 rounded-full object-cover"
+                />
+                <div>
+                  <p
+                    class="text-[13px] leading-[100%]! font-semibold text-[#1B2125]"
+                  >
+                    Johnny Andro
+                  </p>
+                  <p class="mt-1 text-[11px] leading-[100%]! text-[#6F7F95]">
+                    Director, Company
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative w-[42%] max-w-[450px]">
+              <img
+                src="./images/videoimage.jpg"
+                alt="Video testimonial"
+                class="h-full w-full rounded-[2px] object-cover"
+              />
+              <button
+                class="absolute left-4 bottom-4 flex h-8 w-8 items-center justify-center rounded-full bg-black/45 ring-1 ring-white/70"
+                aria-label="Play video"
+              >
+                <img
+                  src="./images/playtestimonial.svg"
+                  alt=""
+                  class="h-3.5 w-3.5"
+                />
+              </button>
+            </div>
+
+            <img
+              src="./images/quotetestimonial.svg"
+              alt=""
+              class="absolute -top-2 right-8 h-7 w-7"
+            />
+          </div>
+        </div>
+
+        <!-- Mobile card -->
+        <div class="md:hidden">
+          <div
+            class="relative rounded-md border border-[#E9EDF2] bg-white p-3 shadow-[0_2px_10px_rgba(16,24,40,0.06)]"
+          >
+            <img
+              src="./images/quotetestimonial.svg"
+              alt=""
+              class="absolute top-2 right-3 h-6 w-6"
+            />
+            <div class="relative overflow-hidden rounded-[3px]">
+              <img
+                src="./images/videoimage.jpg"
+                alt="Video testimonial"
+                class="h-full w-full object-cover"
+              />
+              <button
+                class="absolute left-2.5 bottom-2.5 flex h-7 w-7 items-center justify-center rounded-full bg-black/45 ring-1 ring-white/70"
+                aria-label="Play video"
+              >
+                <img
+                  src="./images/playtestimonial.svg"
+                  alt=""
+                  class="h-3 w-3"
+                />
+              </button>
+            </div>
+
+            <p
+              class="mt-4 text-[16px] leading-[1.45] font-semibold text-[#1B2125]"
+            >
+              Our +380.000 employees all over the world, no matter in which
+              country, must have the same competence profile. Synthesia helps us
+              develop engaging, more relevant &amp; localised training content
+              at scale a of larger company.
+            </p>
+
+            <div class="mt-4 flex items-center gap-2.5">
+              <img
+                src="./images/firstprofile.jpg"
+                alt="Johnny Andro"
+                class="h-8 w-8 rounded-full object-cover"
+              />
+              <div>
+                <p
+                  class="text-[12px] leading-[100%]! font-semibold text-[#1B2125]"
+                >
+                  Johnny Andro
+                </p>
+                <p class="mt-0.5 text-[10px] leading-[100%]! text-[#6F7F95]">
+                  Director, Company
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-8 flex flex-wrap items-center justify-between gap-x-7 gap-y-4 md:mt-8 md:justify-center md:gap-14"
+        >
+          <img
+            src="./images/xerox.jpg"
+            alt="Xerox"
+            class="h-7 w-auto object-contain"
+          />
+          <img
+            src="./images/nestle.jpg"
+            alt="Nestle"
+            class="h-5 w-auto object-contain opacity-80"
+          />
+          <img
+            src="./images/tele.jpg"
+            alt="Teleperformance"
+            class="h-[18px] w-auto object-contain opacity-80"
+          />
+          <img
+            src="./images/dupont.jpg"
+            alt="DuPont"
+            class="h-5 w-auto object-contain opacity-80"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- DevOps journey + CTA + Footer (gradient full-bleed; content max-w 1280 + gutters) -->
+    <section class="w-full pt-[110px] text-[#1B2125]">
+      <div id="devopsGradientShell" class="w-full">
+        <div class="relative z-10 mx-auto max-w-[1280px] px-7 xl:px-0">
+          <!-- DevOps: challenges grid (IoT-style shell) -->
+          <div class="w-full pb-10 md:pb-14">
+            <span
+              class="inline-flex rounded-full border border-[#C7CFDA] px-3 py-1 text-[10px] font-medium tracking-[0.04em] text-[#647E9B] md:text-xs"
+            >
+              SOLVING TECH CHALLENGE
+            </span>
+            <h2
+              class="mt-4 max-w-[920px] text-left text-[26px] font-bold text-[#010101] md:mt-5 md:text-[26px] lg:text-[28px]"
+            >
+              Understand the Possibilities &amp; Address your Challenges
+            </h2>
+
+            <!-- Desktop: 2×3 grid (+ dividers, no outer frame) -->
+            <div
+              class="relative mx-auto mt-8 hidden md:mt-10 md:grid md:grid-cols-2"
+            >
+              <div
+                class="pointer-events-none absolute inset-0 z-0"
+                aria-hidden="true"
+              >
+                <div
+                  class="absolute left-0 right-0 top-1/3 h-px -translate-y-1/2"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      rgba(206, 207, 215, 0) 0.96%,
+                      #cecfd7 40.58%,
+                      rgba(206, 207, 215, 0) 100%
+                    );
+                  "
+                ></div>
+                <div
+                  class="absolute left-0 right-0 top-2/3 h-px -translate-y-1/2"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      rgba(206, 207, 215, 0) 0.96%,
+                      #cecfd7 40.58%,
+                      rgba(206, 207, 215, 0) 100%
+                    );
+                  "
+                ></div>
+                <div
+                  class="absolute bottom-0 left-1/2 top-0 w-px -translate-x-1/2"
+                  style="
+                    background: linear-gradient(
+                      180deg,
+                      rgba(206, 207, 215, 0) 0.96%,
+                      #cecfd7 40.58%,
+                      rgba(206, 207, 215, 0) 100%
+                    );
+                  "
+                ></div>
+              </div>
+              <div class="relative z-10 p-6 md:p-8 lg:p-10">
+                <h3
+                  class="text-[17px] font-semibold leading-snug text-[#010101] lg:text-[18px]"
+                >
+                  Inefficient Processes Slowing You Down?
+                </h3>
+                <p
+                  class="mt-3 text-[14px] leading-[1.65] text-[#647E9B] lg:text-[15px]"
+                >
+                  Streamline your development with our automation strategies and
+                  watch your productivity skyrocket.
+                </p>
+              </div>
+              <div class="relative z-10 p-6 md:p-8 lg:p-10">
+                <h3
+                  class="text-[17px] font-semibold leading-snug text-[#010101] lg:text-[18px]"
+                >
+                  Struggling with System Downtime?
+                </h3>
+                <p
+                  class="mt-3 text-[14px] leading-[1.65] text-[#647E9B] lg:text-[15px]"
+                >
+                  Our continuous monitoring detects issues before they become
+                  problems, ensuring maximum uptime.
+                </p>
+              </div>
+              <div class="relative z-10 p-6 md:p-8 lg:p-10">
+                <h3
+                  class="text-[17px] font-semibold leading-snug text-[#010101] lg:text-[18px]"
+                >
+                  Need to Accelerate Time to Market?
+                </h3>
+                <p
+                  class="mt-3 text-[14px] leading-[1.65] text-[#647E9B] lg:text-[15px]"
+                >
+                  Our CI/CD practices facilitate rapid releases, so you can
+                  innovate and respond to market changes swiftly.
+                </p>
+              </div>
+              <div class="relative z-10 p-6 md:p-8 lg:p-10">
+                <h3
+                  class="text-[17px] font-semibold leading-snug text-[#010101] lg:text-[18px]"
+                >
+                  Facing Security Gaps?
+                </h3>
+                <p
+                  class="mt-3 text-[14px] leading-[1.65] text-[#647E9B] lg:text-[15px]"
+                >
+                  Build security into your software delivery process from the
+                  get-go with the DevOps approach.
+                </p>
+              </div>
+              <div class="relative z-10 p-6 md:p-8 lg:p-10">
+                <h3
+                  class="text-[17px] font-semibold leading-snug text-[#010101] lg:text-[18px]"
+                >
+                  Frustrated with Complexity?
+                </h3>
+                <p
+                  class="mt-3 text-[14px] leading-[1.65] text-[#647E9B] lg:text-[15px]"
+                >
+                  Simplify with our IaC and cloud management services, reducing
+                  errors and overhead.
+                </p>
+              </div>
+              <div class="relative z-10 p-6 md:p-8 lg:p-10">
+                <h3
+                  class="text-[17px] font-semibold leading-snug text-[#010101] lg:text-[18px]"
+                >
+                  Seeking Custom Solutions?
+                </h3>
+                <p
+                  class="mt-3 text-[14px] leading-[1.65] text-[#647E9B] lg:text-[15px]"
+                >
+                  Our team can customize strategies to meet your unique
+                  requirements effectively.
+                </p>
+              </div>
+            </div>
+
+            <!-- Mobile: stack + View more -->
+            <div class="mx-auto mt-8 max-w-[520px] md:hidden">
+              <div class="border-b border-[#D9DDEA] pb-6">
+                <h3
+                  class="text-[16px] font-semibold leading-snug text-[#010101]"
+                >
+                  Inefficient Processes Slowing You Down?
+                </h3>
+                <p class="mt-3 text-[14px] leading-[1.65] text-[#647E9B]">
+                  Streamline your development with our automation strategies and
+                  watch your productivity skyrocket.
+                </p>
+              </div>
+              <div class="border-b border-[#D9DDEA] py-6">
+                <h3
+                  class="text-[16px] font-semibold leading-snug text-[#010101]"
+                >
+                  Struggling with System Downtime?
+                </h3>
+                <p class="mt-3 text-[14px] leading-[1.65] text-[#647E9B]">
+                  Our continuous monitoring detects issues before they become
+                  problems, ensuring maximum uptime.
+                </p>
+              </div>
+              <div id="devopsJourneyExtra" class="hidden space-y-0">
+                <div class="border-b border-[#D9DDEA] py-6">
+                  <h3
+                    class="text-[16px] font-semibold leading-snug text-[#010101]"
+                  >
+                    Need to Accelerate Time to Market?
+                  </h3>
+                  <p class="mt-3 text-[14px] leading-[1.65] text-[#647E9B]">
+                    Our CI/CD practices facilitate rapid releases, so you can
+                    innovate and respond to market changes swiftly.
+                  </p>
+                </div>
+                <div class="border-b border-[#D9DDEA] py-6">
+                  <h3
+                    class="text-[16px] font-semibold leading-snug text-[#010101]"
+                  >
+                    Facing Security Gaps?
+                  </h3>
+                  <p class="mt-3 text-[14px] leading-[1.65] text-[#647E9B]">
+                    Build security into your software delivery process from the
+                    get-go with the DevOps approach.
+                  </p>
+                </div>
+                <div class="border-b border-[#D9DDEA] py-6">
+                  <h3
+                    class="text-[16px] font-semibold leading-snug text-[#010101]"
+                  >
+                    Frustrated with Complexity?
+                  </h3>
+                  <p class="mt-3 text-[14px] leading-[1.65] text-[#647E9B]">
+                    Simplify with our IaC and cloud management services,
+                    reducing errors and overhead.
+                  </p>
+                </div>
+                <div class="pt-6">
+                  <h3
+                    class="text-[16px] font-semibold leading-snug text-[#010101]"
+                  >
+                    Seeking Custom Solutions?
+                  </h3>
+                  <p class="mt-3 text-[14px] leading-[1.65] text-[#647E9B]">
+                    Our team can customize strategies to meet your unique
+                    requirements effectively.
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                id="devopsJourneyToggle"
+                class="mt-4 text-left text-[14px] font-semibold text-[#2D39F2] transition hover:text-[#1B19C7]"
+              >
+                View more
+              </button>
+            </div>
+          </div>
+
+          <!-- Image CTA: square below md, 3.95:1 from md up (same as iot.html) -->
+          <div class="pb-10 md:pb-12">
+            <div
+              class="relative isolate mx-auto max-h-[310px] w-full overflow-hidden rounded-[6px] md:max-h-auto md:rounded-[3px]"
+            >
+              <img
+                src="./images/webappservicemobile.jpg"
+                alt="DevOps consulting team"
+                class="absolute inset-0 h-full w-full object-cover object-right"
+              />
+              <div
+                class="absolute inset-0"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #121178 54.59%,
+                    rgba(18, 17, 120, 0) 88.07%
+                  );
+                "
+              ></div>
+              <div
+                class="relative z-10 flex h-full flex-col justify-center px-5 py-6 md:px-8 lg:px-12"
+              >
+                <div class="sm:max-w-[70%]">
+                  <h3
+                    class="font-bold leading-[1.2] text-white text-[28px] lg:text-[36px]"
+                  >
+                    Journey to DevOps Excellence Starts Here
+                  </h3>
+                  <p
+                    class="mt-3 text-[14px] leading-[1.55] text-white/90 md:mt-4 md:max-w-[480px] md:text-[18px]"
+                  >
+                    Our expert team is here to assist you in harnessing the full
+                    power of DevOps for your business.
+                  </p>
+                  <a
+                    href="#"
+                    class="mt-5 inline-flex items-center justify-center rounded-full bg-[#FF2F78] px-6 py-3 text-[14px] w-fit font-semibold text-white transition hover:bg-[#ff4b8a] md:mt-6 md:w-auto lg:px-8 lg:py-3.5 md:text-[18px]"
+                  >
+                    Set up a Consultation
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pb-6 pt-2 md:pt-4">
+            <div class="grid gap-7 md:grid-cols-[1.25fr_1fr_1fr]">
+              <div>
+                <img
+                  src="./images/logoblue.svg"
+                  alt="occamode"
+                  class="h-8 w-auto"
+                />
+                <p class="mt-1 text-[11px] leading-[100%]! text-[#5D2ED9]">
+                  Dream. Develop. Deliver.
+                </p>
+                <p
+                  class="mt-4 hidden max-w-[420px] text-[13px] leading-[1.55] text-[#647E9B] md:block"
+                >
+                  At Occamode, we embrace a deep tech philosophy, combining
+                  innovative methods and advanced technology to provide
+                  solutions that meet today's needs and address future
+                  challenges.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-6 md:col-span-2 md:grid-cols-3">
+                <div class="space-y-3 text-[13px] font-semibold text-[#1B2125]">
+                  <p><a href="./index.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Home</a></p>
+                  <p><a href="./approachPage.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Approach</a></p>
+                  <p><a href="./casestudies.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Case Studies</a></p>
+                  <p><a href="./about.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">About Us</a></p>
+                </div>
+                <div class="space-y-3 text-[12px] text-[#1B2125]">
+                  <p class="font-semibold">Service</p>
+                  <p><a href="./webservice.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Web Development</a></p>
+                  <p><a href="./mobile-app-service.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Mobile Development</a></p>
+                  <p><a href="./ui-ux.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">UI/UX Designing</a></p>
+                  <p class="md:hidden"><a href="./productEngineering.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Product Engineering</a></p>
+                  <p class="md:hidden"><a href="./iot.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">IOT Solutions</a></p>
+                  <p class="md:hidden">
+                    <a href="./devops.html" class="font-semibold text-[#2D39F2] no-underline" aria-current="page">DevOps</a>
+                  </p>
+                </div>
+                <div class="space-y-3 text-[12px] text-[#1B2125] max-md:hidden">
+                  <p class="opacity-0">Service</p>
+                  <p><a href="./productEngineering.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">Product Engineering</a></p>
+                  <p><a href="./iot.html" class="text-inherit no-underline transition hover:text-[#2D39F2]">IOT Solutions</a></p>
+                  <p>
+                    <a href="./devops.html" class="font-semibold text-[#2D39F2] no-underline" aria-current="page">DevOps</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p
+              class="mt-6 max-w-[420px] text-[13px] leading-[1.55] text-[#647E9B] md:hidden"
+            >
+              At Occamode, we embrace a deep tech philosophy, combining
+              innovative methods and advanced technology to provide solutions
+              that meet today's needs and address future challenges.
+            </p>
+
+            <div
+              class="mt-6 flex flex-col gap-4 border-t border-[#D9DDEA] pt-5 md:mt-7 md:flex-row md:items-end md:justify-between"
+            >
+              <div
+                class="grid w-full grid-cols-2 gap-x-6 gap-y-4 text-left sm:gap-x-10 md:max-w-[min(520px,46%)]"
+              >
+                <div class="min-w-0">
+                  <img src="./images/email.svg" alt="" class="h-4 w-4" />
+                  <p class="mt-1 text-xs font-semibold text-[#1B2125]">
+                    Email us
+                  </p>
+                  <p class="mt-1 text-[11px] text-[#1B2125]">
+                    <a href="mailto:hello@occamode.com" class="text-inherit no-underline transition hover:text-[#2D39F2]">hello@occamode.com</a>
+                  </p>
+                </div>
+                <div class="min-w-0">
+                  <img src="./images/map.svg" alt="" class="h-4 w-4" />
+                  <p class="mt-1 text-xs font-semibold text-[#1B2125]">
+                    Visit us
+                  </p>
+                  <p
+                    class="mt-1 max-w-[280px] text-[11px] leading-[1.4] text-[#1B2125]"
+                  >
+                    Occamode, Dholvich Walo, Givice, Ahmedabad, India, 329942
+                  </p>
+                </div>
+              </div>
+              <a
+                href="./contactus.html"
+                class="inline-flex h-10 w-full shrink-0 items-center justify-center rounded-full bg-[#1B19C7] px-10 text-xs font-semibold text-white no-underline transition hover:bg-[#1514a8] md:w-auto"
+              >
+                Contact Us
+              </a>
+            </div>
+
+            <div
+              class="mt-6 flex items-center justify-center gap-10 text-[#4D52E3] md:hidden"
+            >
+              <a href="#" aria-label="Facebook" class="opacity-95">
+                <img src="./images/facebook.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="Twitter" class="opacity-95">
+                <img src="./images/twitter.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="Instagram" class="opacity-95">
+                <img src="./images/instagram.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="LinkedIn" class="opacity-95">
+                <img src="./images/linkedin.svg" alt="" class="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#121178]">
+          <div
+            class="mx-auto flex max-w-[1280px] items-center justify-between px-7 py-2.5 text-[11px] text-white xl:px-0"
+          >
+            <div class="flex items-center gap-6">
+              <span>Privacy Policy</span>
+              <span class="text-white/70"
+                >©<span id="copyrightYear"></span> Occamode</span
+              >
+            </div>
+            <div class="hidden items-center gap-4 md:flex">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/facebook.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/twitter.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/instagram.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/linkedin.svg" alt="" class="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./megamenu.js"></script>
+  </body>
+</html>

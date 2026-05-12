@@ -1,0 +1,566 @@
+/* Poppins — load before Tailwind so weights are available for all utilities */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+/* Default UI font: applies site-wide via Preflight on `html` (`--default-font-family` → `--font-sans`) */
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Technology expertise tabs — hover shows same blue bar as active (all pages using #techStackTabs / #peTechStackTabs) */
+@layer utilities {
+  #techStackTabs [data-tech-tab]:hover,
+  #peTechStackTabs [data-pe-tech-tab]:hover {
+    border-bottom-color: #3d4bff;
+  }
+
+  @media (min-width: 768px) {
+    #techStackTabs [data-tech-tab]:hover,
+    #peTechStackTabs [data-pe-tech-tab]:hover {
+      border-left-color: #3d4bff;
+    }
+  }
+}
+
+/* Technology expertise grids — tile logo size (see main.js / mobile-app-service.js / casestudy.js) */
+#techStackGrid img,
+#peTechStackGrid img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#csTechGrid img {
+  max-height: 29px;
+}
+
+/* Roadmap horizontal scroll — phase detail modal (plain CSS: injected + static) */
+#roadmapDetailModal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+#roadmapDetailModal.roadmap-detail-modal--open {
+  display: flex;
+}
+
+#roadmapDetailModal .roadmap-detail-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 28, 33, 0.55);
+  cursor: default;
+}
+
+#roadmapDetailModal .roadmap-detail-modal__panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 560px;
+  max-height: min(90vh, 720px);
+  overflow-y: auto;
+  border-radius: 16px;
+  background: #fff;
+  padding: 2rem 1.75rem 2rem;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18);
+  font-family: var(--font-sans, "Poppins", sans-serif);
+}
+
+@media (min-width: 768px) {
+  #roadmapDetailModal .roadmap-detail-modal__panel {
+    padding: 2.5rem 2.5rem 2.25rem;
+  }
+}
+
+#roadmapDetailModal .roadmap-detail-modal__close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  height: 36px;
+  width: 36px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 9999px;
+  background: #eee;
+  color: #171c21;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+#roadmapDetailModal .roadmap-detail-modal__close:hover {
+  background: #e0e0e0;
+}
+
+#roadmapDetailModal .roadmap-detail-modal__num {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1;
+  color: #ff6633;
+}
+
+#roadmapDetailModal .roadmap-detail-modal__title {
+  margin: 0.75rem 0 0;
+  font-size: clamp(1.25rem, 3.5vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: #171c21;
+}
+
+#roadmapDetailModal .roadmap-detail-modal__list {
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#roadmapDetailModal .roadmap-detail-modal__list li {
+  margin-top: 1rem;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #647e9b;
+}
+
+#roadmapDetailModal .roadmap-detail-modal__list li:first-child {
+  margin-top: 0;
+}
+
+#roadmapDetailModal .roadmap-detail-modal__list strong {
+  color: #171c21;
+  font-weight: 600;
+}
+
+/* Pinned roadmap (GSAP / ScrollTrigger) — shared section background */
+.web-roadmap-section {
+  background: linear-gradient(
+    131.38deg,
+    rgba(255, 119, 0, 0.035) 14.4%,
+    rgba(246, 0, 28, 0.07) 85.15%
+  );
+}
+
+/* Roadmap track is full-bleed; card width = three columns within viewport gutters (matches 1280 content inset on xl) */
+@media (min-width: 768px) {
+  #webRoadmapSection #roadmapTrack > article {
+    flex: 0 0 auto;
+    width: calc(
+      (100vw - 2 * max(1.75rem, (100vw - 1280px) / 2) - 2.5rem) / 3
+    );
+    min-width: calc(
+      (100vw - 2 * max(1.75rem, (100vw - 1280px) / 2) - 2.5rem) / 3
+    );
+  }
+}
+
+/* ── Accordion progress bar (requires keyframes) ──────────────────── */
+@keyframes progressFill {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.accordion-progress {
+  @apply absolute top-0 left-0 h-[3px] w-0 rounded-sm bg-blue-600;
+}
+
+.accordion-progress.running {
+  animation: progressFill var(--progress-duration, 5s) linear forwards;
+}
+
+/* ── Accordion body (grid-rows transition) ────────────────────────── */
+.accordion-body {
+  @apply grid transition-[grid-template-rows] duration-350 ease-in-out;
+  grid-template-rows: 0fr;
+}
+
+.accordion-body.open {
+  grid-template-rows: 1fr;
+}
+
+.accordion-body > div {
+  @apply overflow-hidden;
+}
+
+/* DevOps “What we do” accordion — accent + chevron (all viewports, auto-cycle) */
+#devopsServicesAccordion .accordion-progress {
+  @apply bg-[#444CFC];
+}
+
+#devopsServicesAccordion .accordion-item:has(.accordion-body.open) .devops-acc-title {
+  @apply text-[#444CFC];
+}
+
+#devopsServicesAccordion .devops-acc-chevron {
+  @apply text-[#647E9B] transition-transform duration-300 ease-out;
+}
+
+#devopsServicesAccordion .accordion-item:has(.accordion-body.open) .devops-acc-chevron {
+  transform: rotate(180deg);
+  color: #444cfc;
+}
+
+#devopsServicesAccordion
+  .accordion-item:not(:has(.accordion-body.open)):hover
+  .devops-acc-title,
+#devopsServicesAccordion
+  .accordion-item:not(:has(.accordion-body.open)):hover
+  .devops-acc-chevron {
+  color: #444cfc;
+}
+
+/* IoT “Our services” accordion — same accent + chevron as DevOps */
+#iotServicesAccordion .accordion-progress {
+  @apply bg-[#444CFC];
+}
+
+#iotServicesAccordion .accordion-item:has(.accordion-body.open) .devops-acc-title {
+  @apply text-[#444CFC];
+}
+
+#iotServicesAccordion .devops-acc-chevron {
+  @apply text-[#647E9B] transition-transform duration-300 ease-out;
+}
+
+#iotServicesAccordion .accordion-item:has(.accordion-body.open) .devops-acc-chevron {
+  transform: rotate(180deg);
+  color: #444cfc;
+}
+
+#iotServicesAccordion
+  .accordion-item:not(:has(.accordion-body.open)):hover
+  .devops-acc-title,
+#iotServicesAccordion
+  .accordion-item:not(:has(.accordion-body.open)):hover
+  .devops-acc-chevron {
+  color: #444cfc;
+}
+
+/* ── Dot ring (pseudo-element, can't be done in pure Tailwind) ────── */
+.dot.active::after {
+  content: '';
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[15px] w-[15px] rounded-full border-[1.5px] border-[#1B2125] box-border;
+}
+
+/* ── Industries marquee (desktop horizontal) ─────────────────────── */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-track:hover { animation-play-state: paused; }
+
+/* ── Industries masonry rows (mobile horizontal) ─────────────────── */
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.masonry-row {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.masonry-row.reverse {
+  animation-name: marquee-reverse;
+}
+
+.masonry-row:hover { animation-play-state: paused; }
+
+/* ── About gallery marquee (mixed aspect strip) ───────────────────── */
+.about-gallery-window {
+  overflow: hidden;
+  max-width: none;
+}
+
+.about-gallery-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+.about-gallery-item {
+  flex: 0 0 auto;
+  /* height: 205px; */
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.about-gallery-item.wide {
+  aspect-ratio: 1.56 / 1;
+  height: 275px;
+}
+
+.about-gallery-item.tall {
+  aspect-ratio: 0.69 / 1;
+  height: 400px;
+}
+
+.about-gallery-track:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 767px) {
+  .about-gallery-window {
+    max-width: 100%;
+  }
+
+  .about-gallery-track {
+    gap: 8px;
+    animation-duration: 16s;
+  }
+
+  .about-gallery-item {
+    height: 76px;
+  }
+}
+
+/* ── IoT: Industry solutions — mobile carousel strip ─────────────────── */
+#iotIndustryScroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#iotIndustryScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile slider: fixed frame so intrinsic tall photos don’t stretch the strip */
+#iotIndustryScroll .iot-industry-slider-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 0.78; /* ~307×390 — match design spec */
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+#iotIndustryScroll .iot-industry-slider-img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.iot-industry-card-img {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  max-height: 480px;
+  aspect-ratio: 0.8125; /* 13 / 16 — aligns with 390×480 cap */
+  object-fit: cover;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Mega Menu — dropdown, sidebar, states
+   ═══════════════════════════════════════════════════════════ */
+
+/* Dropdown panel — show/hide */
+.mm-dropdown {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(6px);
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mm-dropdown.mm-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Small caret arrow */
+.mm-dropdown::before {
+  content: "";
+  @apply absolute bg-white;
+  top: -5px;
+  left: var(--mm-arrow-left, 28px);
+  right: var(--mm-arrow-right, auto);
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  z-index: 1;
+}
+
+/*
+ * Hover bridge — narrow strip below “Services” so the pointer can reach the
+ * dropdown without closing. The trigger <li> must be position: relative;
+ * otherwise this ::after’s containing block becomes a wider ancestor and
+ * left-0/right-0 spans the whole header, opening the mega menu from empty
+ * space under the nav bar.
+ */
+.mm-has-mega {
+  position: relative;
+}
+
+.mm-has-mega::after {
+  content: "";
+  @apply absolute left-0 right-0;
+  bottom: -24px;
+  height: 26px;
+  z-index: 199;
+}
+
+/* Dashed underline on Services text */
+.mm-has-mega > a {
+  @apply relative;
+}
+
+.mm-has-mega > a::after {
+  content: "";
+  @apply absolute inset-x-0;
+  bottom: -3px;
+  border-bottom: 1.5px dashed currentColor;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.mm-has-mega:hover > a::after {
+  opacity: 1;
+}
+
+/* ── Mobile sidebar ── */
+.mm-overlay {
+  @apply fixed inset-0 z-[9998];
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.mm-overlay.mm-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mm-sidebar {
+  @apply fixed top-0 right-0 bottom-0 z-[9999] flex flex-col overflow-y-auto bg-white;
+  width: 320px;
+  max-width: 85vw;
+  transform: translateX(100%);
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-overflow-scrolling: touch;
+}
+
+.mm-sidebar.mm-open {
+  transform: translateX(0);
+}
+
+/* Sidebar services accordion */
+.mm-sb-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.mm-sb-panel.mm-sb-expanded {
+  max-height: 600px;
+}
+
+.mm-sb-toggle-icon {
+  color: #647E9B;
+  transition: color 0.25s ease;
+}
+
+.mm-sb-expanded .mm-sb-toggle-icon {
+  color: #2D39F2;
+}
+
+.mm-sb-v-bar {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transform-origin: center;
+}
+
+.mm-sb-expanded .mm-sb-v-bar {
+  transform: scaleY(0);
+  opacity: 0;
+}
+
+body.mm-no-scroll {
+  overflow: hidden;
+}
+
+/* Contact CTA card — circular checkmarks + vertical connector (footer / contact blocks) */
+.contact-card-step-list {
+  list-style: none;
+}
+
+.contact-card-step-list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.contact-card-step-list__item:not(:last-child) {
+  padding-bottom: 0rem;
+}
+
+.contact-card-step-list__track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1.25rem;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.contact-card-step-list__dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 1.25rem; */
+  /* height: 1.25rem; */
+  flex-shrink: 0;
+  /* border-radius: 9999px; */
+  box-shadow: 0 0 0 1px rgba/(255, 255, 255, 0.22);
+}
+
+.contact-card-step-list__item:not(:last-child) .contact-card-step-list__track::after {
+  content: "";
+  flex: 1 1 auto;
+  width: 3px;
+  min-height: 20px;
+  /* margin-top: 5px; */
+  background: #1632a0;
+  border-radius: 9999px;
+  opacity: 0.95;
+}
+
+.contact-card-step-list__label {
+  flex: 1;
+  padding-top: 0.0625rem;
+  font-weight: 600;
+  line-height: 28px;
+  color: #fff;
+  font-size: 16px;
+  transform: translateY(-4.5px);
+}
+

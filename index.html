@@ -1,0 +1,2619 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OccaMode V2</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="w-full bg-white text-white antialiased overflow-x-hidden">
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full z-50">
+      <div
+        class="relative z-10 mx-auto max-w-[1280px] px-[28px] py-5 min-[1280px]:px-0"
+      >
+        <nav class="flex gap-4 items-center justify-between rounded-full">
+          <!-- Logo -->
+          <a href="/index.html" class="shrink-0">
+            <img src="/images/logo.svg" alt="Occamode" class="h-5 w-auto" />
+          </a>
+
+          <!-- Nav Links -->
+          <ul
+            class="hidden grow-1 lg:grow-0 lg:gap-8 items-center justify-between text-sm lg:text-base md:flex border border-[#647E9B66] rounded-full px-4 lg:px-8 py-2 bg-[#0201034D] backdrop-blur-[5px]"
+          >
+            <li>
+              <a
+                href="/index.html"
+                class="text-white transition hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <span
+                class="cursor-pointer text-white/60 transition hover:text-white"
+                >Services</span
+              >
+            </li>
+            <li>
+              <a
+                href="/approachPage.html"
+                class="text-white/70 transition hover:text-white"
+                >Approach</a
+              >
+            </li>
+            <li>
+              <a
+                href="/casestudies.html"
+                class="text-white/70 transition hover:text-white"
+                >Case-studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="/about.html"
+                class="text-white/70 transition hover:text-white"
+                >About Us</a
+              >
+            </li>
+          </ul>
+
+          <!-- Contact Button -->
+          <a
+            href="/contactus.html"
+            class="hidden border border-[#647E9B66] bg-[#0201034D] rounded-full px-6 py-2 text-sm lg:text-base text-white transition md:inline-block backdrop-blur-[5px]"
+          >
+            Contact Us
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button class="md:hidden" aria-label="Open menu">
+            <img src="/images/hamburger.svg" alt="Menu" class="h-6 w-6" />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full overflow-hidden">
+      <div class="w-full">
+        <!-- Desktop Hero -->
+        <div class="relative hidden aspect-[2.1] overflow-hidden md:block">
+          <img
+            src="./images/hero-bg.jpg"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div
+            class="absolute inset-x-0 bottom-10 lg:bottom-16 xl:bottom-36 z-10 flex items-center"
+          >
+            <div
+              class="mx-auto w-full max-w-[1280px] px-[28px] min-[1280px]:px-0"
+            >
+              <div class="max-w-xl">
+                <h1
+                  class="text-[36px] leading-[100%%] font-bold lg:text-[48px]"
+                >
+                  Beyond solutions,<br />
+                  We deliver
+                  <em class="font-bold not-italic text-[#FD5A2C]"
+                    >digital breakthrough</em
+                  >
+                </h1>
+                <p
+                  class="mt-2 lg:mt-6 max-w-md text-base leading-relaxed text-white opacity-87"
+                >
+                  We go beyond solving problems to achieve innovative digital
+                  transformations
+                </p>
+                <a
+                  href="#"
+                  class="mt-3 lg:mt-10 inline-block rounded-full bg-[#0000DC] px-8.5 py-3.5 text-base font-semibold text-white"
+                >
+                  Book a consultation
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Hero -->
+        <div class="relative aspect-[0.57] overflow-hidden md:hidden">
+          <img
+            src="./images/homeherobg.jpg"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div
+            class="absolute inset-x-0 bottom-36 z-10 px-[28px] min-[1280px]:px-0"
+          >
+            <div class="max-w-xs">
+              <h1 class="text-[36px] leading-[53px] font-light sm:text-[48px]">
+                Beyond solutions,<br />
+                We deliver
+                <em class="font-bold not-italic text-[##FD5A2C]"
+                  >digital<br />breakthrough</em
+                >
+              </h1>
+              <p class="mt-5 max-w-sm text-sm leading-relaxed text-white/70">
+                We go beyond solving problems to achieve innovative digital
+                transformations
+              </p>
+              <a
+                href="#"
+                class="mt-6 inline-block rounded-full bg-[#0000DC] px-7 py-3 text-sm font-semibold text-white"
+              >
+                Book a consultation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offerings Section -->
+    <section class="w-full bg-white py-16 text-gray-900 md:py-24">
+      <div class="mx-auto max-w-[1280px] px-[28px] min-[1280px]:px-0">
+        <!-- Badge + Heading -->
+        <div class="mb-10 max-w-xl lg:mb-20">
+          <span
+            class="mb-4 rounded-full border flex items-center justify-center w-fit border-[#444CFCCC] px-3 py-[5px] text-[11px] font-semibold text-[#444CFC] uppercase leading-[100%]!"
+            >Offerings</span
+          >
+          <h2
+            class="text-[32px] leading-[100%]!! text-[#010101] font-bold lg:text-[40px]"
+          >
+            Revolutionize your business with our signature services
+          </h2>
+          <p
+            class="mt-4 max-w-lg text-sm leading-relaxed text-[#647E9B] md:text-base"
+          >
+            Whether you're looking to streamline operations, enhance customer
+            experience, or innovate your products, we're here to help you make
+            it happen.
+          </p>
+        </div>
+
+        <!-- Two-column: Services + Slider -->
+        <div class="flex flex-col gap-[54px] lg:flex-row lg:gap-10">
+          <!-- LEFT: Services -->
+          <div class="w-full lg:w-[586px]">
+            <!-- Desktop: card layout -->
+            <div class="hidden flex-col gap-8 md:flex" id="servicesDesktop">
+              <div
+                class="rounded-2xl bg-white p-6 shadow-[0_3px_20px_rgba(16,24,40,0.06)] transition-all duration-500 hover:border-[#647E9B66] hover:scale-105"
+              >
+                <div class="flex items-start gap-7">
+                  <img src="./images/iot.svg" alt="" class="h-8 w-8 shrink-0" />
+                  <div class="min-w-0">
+                    <h3 class="text-[26px] font-bold">IoT Development</h3>
+                    <p class="mt-3 leading-relaxed text-[#647E9B]">
+                      Develop advanced IoT solutions for seamless connectivity
+                      and real-time insights, including edge computing, secure
+                      cloud integration, and dashboard development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rounded-2xl bg-white p-6 shadow-[0_3px_20px_rgba(16,24,40,0.06)] transition-all duration-500 hover:border-[#647E9B66] hover:scale-105"
+              >
+                <div class="flex items-start gap-7">
+                  <img
+                    src="./images/uiux.svg"
+                    alt=""
+                    class="h-8 w-8 shrink-0"
+                  />
+                  <div class="min-w-0">
+                    <h3 class="text-[26px] font-bold">UI/UX Designing</h3>
+                    <p class="mt-3 leading-relaxed text-[#647E9B]">
+                      Create engaging user interfaces and seamless experiences,
+                      designed from the ground up to engage users and drive
+                      conversion across digital platforms.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rounded-2xl bg-white p-6 shadow-[0_3px_20px_rgba(16,24,40,0.06)] transition-all duration-500 hover:border-[#647E9B66] hover:scale-105"
+              >
+                <div class="flex items-start gap-7">
+                  <img src="./images/pe.svg" alt="" class="h-8 w-8 shrink-0" />
+                  <div class="min-w-0">
+                    <h3 class="text-[26px] font-bold">Product Engineering</h3>
+                    <p class="mt-3 leading-relaxed text-[#647E9B]">
+                      Transform your products with our comprehensive engineering
+                      services, covering everything from hardware development to
+                      software solutions and cloud services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile: Accordion with progress bar -->
+            <div class="flex flex-col md:hidden" id="servicesAccordion">
+              <!-- Item 0 -->
+              <div
+                class="accordion-item relative border-t border-gray-200 py-4"
+                data-index="0"
+              >
+                <div class="accordion-progress"></div>
+                <button
+                  class="accordion-trigger flex w-full items-center gap-7 text-left"
+                >
+                  <img src="./images/iot.svg" alt="" class="h-7 w-7" />
+                  <span class="text-base font-bold">IoT Development</span>
+                </button>
+                <div class="accordion-body">
+                  <div>
+                    <p class="mt-5 text-sm leading-relaxed text-[#647E9B]">
+                      Develop advanced IoT solutions for seamless connectivity
+                      and real-time insights, including edge computing, secure
+                      cloud integration, and dashboard development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 1 -->
+              <div
+                class="accordion-item relative border-t border-gray-200 py-4"
+                data-index="1"
+              >
+                <div class="accordion-progress"></div>
+                <button
+                  class="accordion-trigger flex w-full items-center gap-7 text-left"
+                >
+                  <img src="./images/uiux.svg" alt="" class="h-7 w-7" />
+                  <span class="text-base font-bold">UI/UX Designing</span>
+                </button>
+                <div class="accordion-body">
+                  <div>
+                    <p class="mt-5 text-sm leading-relaxed text-[#647E9B]">
+                      Create engaging user interfaces and seamless experiences,
+                      designed from the ground up to engage users and drive
+                      conversion across digital platforms.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div
+                class="accordion-item relative border-t border-gray-200 py-4"
+                data-index="2"
+              >
+                <div class="accordion-progress"></div>
+                <button
+                  class="accordion-trigger flex w-full items-center gap-7 text-left"
+                >
+                  <img src="./images/pe.svg" alt="" class="h-7 w-7" />
+                  <span class="text-base font-bold">Product Engineering</span>
+                </button>
+                <div class="accordion-body">
+                  <div>
+                    <p class="mt-5 text-sm leading-relaxed text-[#647E9B]">
+                      Transform your products with our comprehensive engineering
+                      services, covering everything from hardware development to
+                      software solutions and cloud services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Case Study Slider -->
+          <div class="w-full lg:w-[55%] xl:w-[640px]">
+            <!-- Portfolio Carousel -->
+            <div
+              class="relative mb-6 overflow-hidden rounded-[20px] bg-[#FCF4F1]"
+              id="portfolioCarousel"
+            >
+              <!-- Sliding content area -->
+              <div
+                class="relative z-[2] overflow-hidden max-md:pr-0 max-md:pb-32"
+              >
+                <div
+                  class="flex transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
+                  id="sliderTrack"
+                >
+                  <!-- Slide 0 -->
+                  <div class="w-full h-full shrink-0 p-12">
+                    <div class="mb-10 h-10 w-[120px]">
+                      <img
+                        src="./images/hatch.svg"
+                        alt="Hatch"
+                        class="h-full w-full object-contain"
+                      />
+                    </div>
+                    <h4
+                      class="mb-4 text-2xl font-bold leading-[36px] text-[#232536] max-w-[75%]"
+                    >
+                      Custom software for a Wall Street brokerage company
+                    </h4>
+                    <p
+                      class="mb-5 text-base leading-relaxed text-[#232536] max-md:line-clamp-2 max-md:text-sm max-w-[360px]"
+                    >
+                      Finsweet has been a wonderful partner to work with. I have
+                      been a customer now for the past few months now and I have
+                      had nothing but positive experiences!
+                    </p>
+                    <div class="mb-26 flex max-w-[184px] flex-wrap gap-2">
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >EV Charging</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >Startup</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >Global Brand</span
+                      >
+                    </div>
+                    <a
+                      href="./casestudy.html#hatch"
+                      class="text-base font-semibold text-[#C5553F] transition-colors duration-300 hover:text-[#A04434]"
+                      >View more</a
+                    >
+                  </div>
+                  <!-- Slide 1 -->
+                  <div class="w-full shrink-0 py-12 px-12">
+                    <div class="mb-5 h-10 w-[120px]">
+                      <img
+                        src="./images/inszu.svg"
+                        alt="Inszu"
+                        class="h-full w-full object-contain"
+                      />
+                    </div>
+                    <h4
+                      class="mb-4 text-2xl font-bold leading-[1.3] text-[#232536] max-w-[75%]"
+                    >
+                      Digital platform for insurance management solutions
+                    </h4>
+                    <p
+                      class="mb-5 text-base leading-relaxed text-[#232536] max-md:line-clamp-2 max-md:text-sm max-w-[360px]"
+                    >
+                      A comprehensive digital ecosystem that streamlines
+                      insurance workflows, policy management, and claims
+                      processing for modern enterprises.
+                    </p>
+                    <div class="mb-26 flex max-w-[184px] flex-wrap gap-2">
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >Insurance</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >Enterprise</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >SaaS</span
+                      >
+                    </div>
+                    <a
+                      href="./casestudy.html#inszu"
+                      class="text-base font-semibold text-[#C5553F] transition-colors duration-300 hover:text-[#A04434]"
+                      >View more</a
+                    >
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="w-full shrink-0 p-12">
+                    <div class="mb-5 h-10 w-[120px]">
+                      <img
+                        src="./images/doctal.svg"
+                        alt="Doctal"
+                        class="h-full w-full object-contain"
+                      />
+                    </div>
+                    <h4
+                      class="mb-4 text-2xl font-bold leading-[1.3] text-[#232536] max-w-[75%]"
+                    >
+                      Healthcare documentation and patient management system
+                    </h4>
+                    <p
+                      class="mb-5 text-base leading-relaxed text-[#232536] max-md:line-clamp-2 max-md:text-sm max-w-[360px]"
+                    >
+                      A robust healthcare platform enabling seamless patient
+                      records management, appointment scheduling, and secure
+                      medical data exchange.
+                    </p>
+                    <div class="mb-26 flex max-w-[184px] flex-wrap gap-2">
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >Healthcare</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >B2B</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >MedTech</span
+                      >
+                    </div>
+                    <a
+                      href="./casestudy.html#dotcal"
+                      class="text-base font-semibold text-[#C5553F] transition-colors duration-300 hover:text-[#A04434]"
+                      >View more</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- BG image bottom-right (fixed, doesn't slide) -->
+              <img
+                src="./images/casestudy1web.jpg"
+                alt=""
+                class="absolute right-0 bottom-0 z-[1] rounded-br-[20px] object-cover object-right-bottom md:h-[60%] md:w-[45%] h-[35%] w-[55%]"
+              />
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="flex w-full items-center justify-between pr-3">
+              <div class="flex gap-3">
+                <button
+                  class="flex cursor-pointer items-center justify-center p-0 transition-opacity duration-300 hover:opacity-70"
+                  id="sliderPrev"
+                  aria-label="Previous slide"
+                >
+                  <img src="./images/previous.svg" alt="" class="h-10 w-10" />
+                </button>
+                <button
+                  class="flex cursor-pointer items-center justify-center p-0 transition-opacity duration-300 hover:opacity-70"
+                  id="sliderNext"
+                  aria-label="Next slide"
+                >
+                  <img src="./images/next.svg" alt="" class="h-10 w-10" />
+                </button>
+              </div>
+              <div class="flex items-center gap-2.5" id="sliderDots">
+                <button
+                  class="dot active relative h-1.5 w-1.5 cursor-pointer rounded-full bg-[#1B2125] p-0 transition-all duration-300"
+                  data-slide="0"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  class="dot relative h-1.5 w-1.5 cursor-pointer rounded-full bg-[#647E9B]/50 p-0 transition-all duration-300"
+                  data-slide="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  class="dot relative h-1.5 w-1.5 cursor-pointer rounded-full bg-[#647E9B]/50 p-0 transition-all duration-300"
+                  data-slide="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multifaceted Results Section -->
+    <section
+      class="w-full py-16 text-gray-900 lg:pb-[110px] lg:pt-42 [background:linear-gradient(143.38deg,rgba(0,229,128,0.08)_11.56%,rgba(3,68,45,0.08)_70.23%)]"
+    >
+      <div class="mx-auto max-w-[1280px] px-[28px] min-[1280px]:px-0">
+        <!-- Desktop Layout -->
+        <div class="hidden md:grid md:grid-cols-3 md:gap-5">
+          <!-- Heading area — col 1, spans rows 1-2 -->
+          <div
+            class="flex flex-col gap-4 justify-start pr-4 col-span-2 md:col-start-1 md:row-start-1 md:row-end-3 translate-y-[-60px]"
+          >
+            <span
+              class="inline-block w-fit rounded-full border border-[#009965]/70 px-4 py-1 text-[10px] font-semibold tracking-[0.15em] text-[#009965] uppercase"
+            >
+              Multifaceted Results
+            </span>
+            <h2 class="text-[32px] font-bold lg:text-[40px] leading-[60px]">
+              Expect Excellence with <br />
+              Every Collaboration
+            </h2>
+            <p class="max-w-sm text-sm font-normal text-[#647E9B] lg:text-base">
+              Explore how our approach to project execution consistently exceeds
+              expectations, ensuring remarkable outcomes.
+            </p>
+          </div>
+
+          <!-- Card: Minimalist Solution — col 3, row 1 -->
+          <div
+            class="relative isolate rounded-xl border border-gray-200 bg-white p-8 shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition duration-250 ease-out hover:-translate-y-[3px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] before:absolute before:left-[0.1px] before:top-[39px] before:h-[52px] before:w-1 before:rounded-none before:bg-[#FFB800] before:content-[''] md:col-start-3 md:row-start-1 min-h-[244px]"
+          >
+            <h3 class="inline-flex flex-col items-start text-[22px] font-bold">
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Minimalist</span
+              >
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Solution</span
+              >
+            </h3>
+            <p class="mt-4 text-base leading-relaxed text-[#647E9B]">
+              We remove the complexity, providing clear and assured solutions
+              that are customized to meet your specific needs.
+            </p>
+          </div>
+
+          <!-- Card: Ground-Breaking Approach — col 2, row 2 -->
+          <div
+            class="relative isolate rounded-xl border border-gray-200 bg-white p-8 shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition duration-250 ease-out hover:-translate-y-[3px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] before:absolute before:left-[0.1px] before:top-[39px] before:h-[52px] before:w-1 before:rounded-none before:bg-[#444CFC] before:content-[''] md:col-start-2 md:row-start-2 min-h-[244px]"
+          >
+            <h3 class="inline-flex flex-col items-start">
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Ground-Breaking</span
+              >
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Approach</span
+              >
+            </h3>
+            <p class="mt-4 text-base leading-relaxed text-[#647E9B]">
+              Our approach combines innovative techniques, industry expertise,
+              customized strategies, and continuous improvement for impactful
+              results.
+            </p>
+          </div>
+
+          <!-- Card: Business Growth — col 3, row 2 -->
+          <div
+            class="relative isolate rounded-xl border border-gray-200 bg-white p-8 shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition duration-250 ease-out hover:-translate-y-[3px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] before:absolute before:left-[0.1px] before:top-[39px] before:h-[52px] before:w-1 before:rounded-none before:bg-[#00E580] before:content-[''] md:col-start-3 md:row-start-2 min-h-[244px]"
+          >
+            <h3 class="inline-flex flex-col items-start">
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Business</span
+              >
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Growth</span
+              >
+            </h3>
+            <p class="mt-4 text-base leading-relaxed text-[#647E9B]">
+              Our solutions are designed to address your current needs and
+              seamlessly adapt to support your business growth throughout all
+              phases.
+            </p>
+          </div>
+
+          <!-- Card: Strong Rapport — col 1, row 3 -->
+          <div
+            class="relative isolate rounded-xl border border-gray-200 bg-white p-8 shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition duration-250 ease-out hover:-translate-y-[3px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] before:absolute before:left-[0.1px] before:top-[39px] before:h-[52px] before:w-1 before:rounded-none before:bg-[#FF4757] before:content-[''] md:col-start-1 md:row-start-3 min-h-[244px]"
+          >
+            <h3 class="inline-flex flex-col items-start">
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Strong</span
+              >
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Rapport</span
+              >
+            </h3>
+            <p class="mt-4 text-base leading-relaxed text-[#647E9B]">
+              Building lasting relationships on the pillars of trust and
+              transparency, we employ strategic tactics to meet your objectives.
+            </p>
+          </div>
+
+          <!-- Card: Full-Stack Solution — col 2, row 3 -->
+          <div
+            class="relative isolate rounded-xl border border-gray-200 bg-white p-8 shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition duration-250 ease-out hover:-translate-y-[3px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] before:absolute before:left-[0.1px] before:top-[39px] before:h-[52px] before:w-1 before:rounded-none before:bg-[#8B5CF6] before:content-[''] md:col-start-2 md:row-start-3 min-h-[244px]"
+          >
+            <h3 class="inline-flex flex-col items-start">
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Full-Stack</span
+              >
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Solution</span
+              >
+            </h3>
+            <p class="mt-4 text-base leading-relaxed text-[#647E9B]">
+              From backend to frontend, our comprehensive services promise
+              solid, impactful outcomes.
+            </p>
+          </div>
+
+          <!-- Card: Advanced Methodologies — col 3, row 3 -->
+          <div
+            class="relative isolate rounded-xl border border-gray-200 bg-white p-8 shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition duration-250 ease-out hover:-translate-y-[3px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] before:absolute before:left-[0.1px] before:top-[39px] before:h-[52px] before:w-1 before:rounded-none before:bg-[#FF6B35] before:content-[''] md:col-start-3 md:row-start-3 min-h-[244px]"
+          >
+            <h3 class="inline-flex flex-col items-start">
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Advanced</span
+              >
+              <span class="text-[22px] font-bold leading-[34px] text-[#1B2125]"
+                >Methodologies</span
+              >
+            </h3>
+            <p class="mt-4 text-base leading-relaxed text-[#647E9B]">
+              Our innovative methods and use of state-of-the-art technologies
+              ensure you stay ahead of your competitors, giving you a
+              competitive edge.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobile Layout -->
+        <div class="md:hidden">
+          <span
+            class="mb-5 inline-block w-fit rounded-full border border-emerald-500 px-4 py-1 text-[10px] font-semibold tracking-[0.15em] text-emerald-600 uppercase"
+          >
+            Multifaceted Results
+          </span>
+          <h2 class="text-[1.75rem] leading-[1.2] font-bold">
+            Expect Excellence with Every Collaboration
+          </h2>
+          <p class="mt-4 max-w-sm text-sm leading-relaxed text-[#647E9B]">
+            Explore how our approach to project execution consistently exceeds
+            expectations, ensuring remarkable outcomes.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-6" id="mobileResultCards">
+            <!-- Mobile card 1 -->
+            <div class="border-l-[3px] border-[#FFB800] pl-5">
+              <h3 class="text-base font-bold">Minimalist Solution</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[#647E9B]">
+                We remove the complexity, providing clear and assured solutions
+                that are customized to meet your specific needs.
+              </p>
+            </div>
+            <!-- Mobile card 2 -->
+            <div class="border-l-[3px] border-[#444CFC] pl-5">
+              <h3 class="text-base font-bold">Ground-Breaking Approach</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[#647E9B]">
+                Our approach combines innovative techniques, industry expertise,
+                customized strategies, and continuous improvement for impactful
+                results.
+              </p>
+            </div>
+            <!-- Mobile card 3 -->
+            <div class="border-l-[3px] border-[#00E580] pl-5">
+              <h3 class="text-base font-bold">Business Growth</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[#647E9B]">
+                Our solutions are designed to address your current needs and
+                seamlessly adapt to support your business growth throughout all
+                phases.
+              </p>
+            </div>
+            <!-- Mobile card 4 (hidden by default) -->
+            <div
+              class="hidden border-l-[3px] border-[#FF4757] pl-5"
+              data-extra-card
+            >
+              <h3 class="text-base font-bold">Strong Rapport</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[#647E9B]">
+                Building lasting relationships on the pillars of trust and
+                transparency, we employ strategic tactics to meet your
+                objectives.
+              </p>
+            </div>
+            <!-- Mobile card 5 (hidden by default) -->
+            <div
+              class="hidden border-l-[3px] border-[#8B5CF6] pl-5"
+              data-extra-card
+            >
+              <h3 class="text-base font-bold">Full-Stack Solution</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[#647E9B]">
+                From backend to frontend, our comprehensive services promise
+                solid, impactful outcomes.
+              </p>
+            </div>
+            <!-- Mobile card 6 (hidden by default) -->
+            <div
+              class="hidden border-l-[3px] border-[#FF6B35] pl-5"
+              data-extra-card
+            >
+              <h3 class="text-base font-bold">Advanced Methodologies</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[#647E9B]">
+                Our innovative methods and use of state-of-the-art technologies
+                ensure you stay ahead of your competition, giving you a
+                competitive edge.
+              </p>
+            </div>
+          </div>
+
+          <button
+            class="mt-6 cursor-pointer text-sm font-semibold text-emerald-600 transition hover:text-emerald-700"
+            id="viewMoreResultsBtn"
+          >
+            View more
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offerings Section 2 -->
+    <section class="w-full bg-white py-16 text-gray-900 md:py-24">
+      <div class="mx-auto max-w-[1280px] px-[28px] min-[1280px]:px-0">
+        <!-- Badge + Heading -->
+        <div class="mb-10 max-w-xl lg:mb-20">
+          <span
+            class="mb-4 rounded-full border flex items-center justify-center w-fit border-[#444CFCCC] px-3 py-[5px] text-[11px] font-semibold text-[#444CFC] uppercase leading-[100%]!"
+            >Offerings</span
+          >
+          <h2
+            class="text-[32px] leading-[100%]!! text-[#010101] font-bold lg:text-[40px]"
+          >
+            Broadening Horizons with <br />
+            Diverse Solutions
+          </h2>
+          <p
+            class="mt-4 max-w-lg text-sm leading-relaxed text-[#647E9B] md:text-base"
+          >
+            We apply extensive knowledge across various business verticals to
+            provide clients with meaningful insights and truly valuable
+            solutions.
+          </p>
+        </div>
+
+        <!-- Two-column: Services + Slider -->
+        <div class="flex flex-col gap-[54px] lg:flex-row lg:gap-10">
+          <!-- LEFT: Services -->
+          <div class="w-full lg:w-[586px]">
+            <!-- Desktop: card layout -->
+            <div class="hidden flex-col gap-8 md:flex" id="servicesDesktop2">
+              <div
+                class="rounded-2xl bg-white p-6 shadow-[0_3px_20px_rgba(16,24,40,0.06)] transition-all duration-500 hover:border-[#647E9B66] hover:scale-105"
+              >
+                <div class="flex items-start gap-7">
+                  <img src="./images/web.svg" alt="" class="h-8 w-8 shrink-0" />
+                  <div class="min-w-0">
+                    <h3 class="text-[26px] font-bold">Web Development</h3>
+                    <p class="mt-3 leading-relaxed text-[#647E9B]">
+                      Develop customized, high-performance web apps for various
+                      business needs, from healthcare to fin-tech, offering
+                      secure and full-stack solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rounded-2xl bg-white p-6 shadow-[0_3px_20px_rgba(16,24,40,0.06)] transition-all duration-500 hover:border-[#647E9B66] hover:scale-105"
+              >
+                <div class="flex items-start gap-7">
+                  <img
+                    src="./images/mobile.svg"
+                    alt=""
+                    class="h-8 w-8 shrink-0"
+                  />
+                  <div class="min-w-0">
+                    <h3 class="text-[26px] font-bold">
+                      Mobile App Development
+                    </h3>
+                    <p class="mt-3 leading-relaxed text-[#647E9B]">
+                      Develop user-friendly mobile apps with intuitive design,
+                      seamless data integrations, and cross-platform
+                      compatibility, customized to fit your business
+                      requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rounded-2xl bg-white p-6 shadow-[0_3px_20px_rgba(16,24,40,0.06)] transition-all duration-500 hover:border-[#647E9B66] hover:scale-105"
+              >
+                <div class="flex items-start gap-7">
+                  <img
+                    src="./images/devops.svg"
+                    alt=""
+                    class="h-8 w-8 shrink-0"
+                  />
+                  <div class="min-w-0">
+                    <h3 class="text-[26px] font-bold">DevOps</h3>
+                    <p class="mt-3 leading-relaxed text-[#647E9B]">
+                      Implement CI/CD pipelines, cloud infrastructure, and
+                      microservices architecture to streamline and automate
+                      software development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile: Accordion with progress bar -->
+            <div class="flex flex-col md:hidden" id="servicesAccordion2">
+              <!-- Item 0 -->
+              <div
+                class="accordion-item relative border-t border-gray-200 py-4"
+                data-index="0"
+              >
+                <div class="accordion-progress"></div>
+                <button
+                  class="accordion-trigger flex w-full items-center gap-7 text-left"
+                >
+                  <img src="./images/web.svg" alt="" class="h-7 w-7" />
+                  <span class="text-base font-bold">Web Development</span>
+                </button>
+                <div class="accordion-body">
+                  <div>
+                    <p class="mt-5 text-sm leading-relaxed text-[#647E9B]">
+                      Develop customized, high-performance web apps for various
+                      business needs, from healthcare to fin-tech, offering
+                      secure and full-stack solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 1 -->
+              <div
+                class="accordion-item relative border-t border-gray-200 py-4"
+                data-index="1"
+              >
+                <div class="accordion-progress"></div>
+                <button
+                  class="accordion-trigger flex w-full items-center gap-7 text-left"
+                >
+                  <img src="./images/mobile.svg" alt="" class="h-7 w-7" />
+                  <span class="text-base font-bold"
+                    >Mobile App Development</span
+                  >
+                </button>
+                <div class="accordion-body">
+                  <div>
+                    <p class="mt-5 text-sm leading-relaxed text-[#647E9B]">
+                      Develop user-friendly mobile apps with intuitive design,
+                      seamless data integrations, and cross-platform
+                      compatibility, customized to fit your business
+                      requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div
+                class="accordion-item relative border-t border-gray-200 py-4"
+                data-index="2"
+              >
+                <div class="accordion-progress"></div>
+                <button
+                  class="accordion-trigger flex w-full items-center gap-7 text-left"
+                >
+                  <img src="./images/devops.svg" alt="" class="h-7 w-7" />
+                  <span class="text-base font-bold">DevOps</span>
+                </button>
+                <div class="accordion-body">
+                  <div>
+                    <p class="mt-5 text-sm leading-relaxed text-[#647E9B]">
+                      Implement CI/CD pipelines, cloud infrastructure, and
+                      microservices architecture to streamline and automate
+                      software development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Case Study Slider -->
+          <div class="w-full lg:w-[55%] xl:w-[640px]">
+            <!-- Portfolio Carousel -->
+            <div
+              class="relative mb-6 overflow-hidden rounded-[20px] bg-[#FCF4F1]"
+              id="portfolioCarousel2"
+            >
+              <!-- Sliding content area -->
+              <div
+                class="relative z-[2] overflow-hidden max-md:pr-0 max-md:pb-32"
+              >
+                <div
+                  class="flex transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
+                  id="sliderTrack2"
+                >
+                  <!-- Slide 0 -->
+                  <div class="w-full h-full shrink-0 p-12">
+                    <div class="mb-10 h-10 w-[120px]">
+                      <img
+                        src="./images/doctal.svg"
+                        alt="Doctal"
+                        class="h-full w-full object-contain"
+                      />
+                    </div>
+                    <h4
+                      class="mb-4 text-2xl font-bold leading-[36px] text-[#232536] max-w-[75%]"
+                    >
+                      Improving the online web experience for International
+                      Hockey Federation
+                    </h4>
+                    <p
+                      class="mb-5 text-base leading-relaxed text-[#232536] max-md:line-clamp-2 max-md:text-sm max-w-[360px]"
+                    >
+                      Dotcal is the only design-first scheduling platform that
+                      allows to create beautiful booking pages for everyone. We
+                      worked on a strong &amp; outstanding branding.
+                    </p>
+                    <div class="mb-26 flex max-w-[184px] flex-wrap gap-2">
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >EV Charging</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >Startup</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >Global Brand</span
+                      >
+                    </div>
+                    <a
+                      href="./casestudy.html#dotcal"
+                      class="text-base font-semibold text-[#C5553F] transition-colors duration-300 hover:text-[#A04434]"
+                      >View more</a
+                    >
+                  </div>
+                  <!-- Slide 1 -->
+                  <div class="w-full shrink-0 py-12 px-12">
+                    <div class="mb-5 h-10 w-[120px]">
+                      <img
+                        src="./images/hatch.svg"
+                        alt="Hatch"
+                        class="h-full w-full object-contain"
+                      />
+                    </div>
+                    <h4
+                      class="mb-4 text-2xl font-bold leading-[1.3] text-[#232536] max-w-[75%]"
+                    >
+                      Building next-gen fintech solutions for global markets
+                    </h4>
+                    <p
+                      class="mb-5 text-base leading-relaxed text-[#232536] max-md:line-clamp-2 max-md:text-sm max-w-[360px]"
+                    >
+                      A cutting-edge financial platform that empowers businesses
+                      with seamless payment processing, analytics, and
+                      regulatory compliance tools.
+                    </p>
+                    <div class="mb-26 flex max-w-[184px] flex-wrap gap-2">
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >FinTech</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >Enterprise</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >SaaS</span
+                      >
+                    </div>
+                    <a
+                      href="./casestudy.html#hatch"
+                      class="text-base font-semibold text-[#C5553F] transition-colors duration-300 hover:text-[#A04434]"
+                      >View more</a
+                    >
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="w-full shrink-0 p-12">
+                    <div class="mb-5 h-10 w-[120px]">
+                      <img
+                        src="./images/inszu.svg"
+                        alt="Inszu"
+                        class="h-full w-full object-contain"
+                      />
+                    </div>
+                    <h4
+                      class="mb-4 text-2xl font-bold leading-[1.3] text-[#232536] max-w-[75%]"
+                    >
+                      Transforming logistics with real-time tracking platform
+                    </h4>
+                    <p
+                      class="mb-5 text-base leading-relaxed text-[#232536] max-md:line-clamp-2 max-md:text-sm max-w-[360px]"
+                    >
+                      An intelligent logistics management system providing
+                      real-time fleet tracking, route optimization, and
+                      automated delivery workflows.
+                    </p>
+                    <div class="mb-26 flex max-w-[184px] flex-wrap gap-2">
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >Logistics</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >B2B</span
+                      >
+                      <span
+                        class="rounded-full border border-[#CECFD7] px-3 py-1.5 text-xs font-medium text-[#232536]"
+                        >IoT</span
+                      >
+                    </div>
+                    <a
+                      href="./casestudy.html#inszu"
+                      class="text-base font-semibold text-[#C5553F] transition-colors duration-300 hover:text-[#A04434]"
+                      >View more</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- BG image bottom-right (fixed, doesn't slide) -->
+              <img
+                src="./images/casestudy2web.jpg"
+                alt=""
+                class="absolute right-0 bottom-0 z-[1] rounded-br-[20px] object-cover object-right-bottom md:h-[60%] md:w-[45%] h-[35%] w-[55%]"
+              />
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="flex w-full items-center justify-between pr-3">
+              <div class="flex gap-3">
+                <button
+                  class="flex cursor-pointer items-center justify-center p-0 transition-opacity duration-300 hover:opacity-70"
+                  id="sliderPrev2"
+                  aria-label="Previous slide"
+                >
+                  <img src="./images/previous.svg" alt="" class="h-10 w-10" />
+                </button>
+                <button
+                  class="flex cursor-pointer items-center justify-center p-0 transition-opacity duration-300 hover:opacity-70"
+                  id="sliderNext2"
+                  aria-label="Next slide"
+                >
+                  <img src="./images/next.svg" alt="" class="h-10 w-10" />
+                </button>
+              </div>
+              <div class="flex items-center gap-2.5" id="sliderDots2">
+                <button
+                  class="dot active relative h-1.5 w-1.5 cursor-pointer rounded-full bg-[#1B2125] p-0 transition-all duration-300"
+                  data-slide="0"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  class="dot relative h-1.5 w-1.5 cursor-pointer rounded-full bg-[#647E9B]/50 p-0 transition-all duration-300"
+                  data-slide="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  class="dot relative h-1.5 w-1.5 cursor-pointer rounded-full bg-[#647E9B]/50 p-0 transition-all duration-300"
+                  data-slide="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section
+      class="w-full py-16 text-gray-900 md:py-24 overflow-hidden [background:linear-gradient(131.74deg,rgba(162,188,223,0.09)_15.09%,rgba(39,58,99,0.09)_66.53%)]"
+    >
+      <div class="mx-auto max-w-[1280px] px-[28px] min-[1280px]:px-0">
+        <!-- Badge + Heading -->
+        <div class="mb-10 max-w-2xl md:mb-20">
+          <span
+            class="mb-5 inline-block rounded-full border border-[#647E9BB2] px-4 py-1 text-[11px] font-semibold tracking-widest text-[#647E9B] uppercase"
+            >Industries</span
+          >
+          <h2
+            class="text-[32px] leading-[60px]! text-[#010101] font-bold lg:text-[40px]"
+          >
+            Serving Diverse Industries <br />
+            with Unique Solutions
+          </h2>
+          <p
+            class="mt-4 max-w-[450px] text-sm leading-relaxed text-[#647E9B] md:text-base"
+          >
+            Occamode stands proud with a vast array of solutions offered to meet
+            the contemporary needs of diverse industries.
+          </p>
+        </div>
+      </div>
+
+      <!-- Desktop: Horizontal marquee (full-bleed; heading stays in container above) -->
+      <div class="hidden w-full overflow-hidden md:block">
+        <div class="marquee-track">
+          <!-- Set 1 -->
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/media.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Media &amp;<br />Entertainment</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/professional.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Professional<br />Services</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/transportation.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Transportation &amp;<br />Logistics</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/healthcare.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Healthcare</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/videoimage.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Cinema &amp;<br />Movies</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/financialservices.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Financial<br />Services</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/bulb.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Education</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/energyiot.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Energy &amp;<br />Utilities</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/hospitality %26 travel.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Hospitality &amp;<br />Travel</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/iiot.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Automotive</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/agricultureiot.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Agriculture</span
+              >
+            </div>
+          </div>
+          <!-- Set 2 (duplicate for seamless loop) -->
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/media.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Media &amp;<br />Entertainment</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/professional.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Professional<br />Services</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/transportation.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Transportation &amp;<br />Logistics</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/healthcare.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Healthcare</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/videoimage.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Cinema &amp;<br />Movies</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/financialservices.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Financial<br />Services</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/bulb.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Education</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/energyiot.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Energy &amp;<br />Utilities</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/hospitality %26 travel.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Hospitality &amp;<br />Travel</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/iiot.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Automotive</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative h-[420px] w-[280px] shrink-0 overflow-hidden rounded-2xl"
+          >
+            <img
+              src="./images/agricultureiot.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+            >
+              <span
+                class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                >Agriculture</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile: 3-row masonry with horizontal scroll -->
+      <div
+        class="mx-auto flex max-w-[1280px] flex-col gap-3 overflow-hidden px-[28px] min-[1280px]:px-0 md:hidden"
+      >
+        <!-- Row 1: scrolls left -->
+        <div class="overflow-hidden">
+          <div class="masonry-row" style="animation-duration: 25s">
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/media.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Media &amp;<br />Entertainment</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/professional.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Professional<br />Services</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/transportation.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Transportation &amp;<br />Logistics</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/healthcare.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Healthcare</span
+                >
+              </div>
+            </div>
+            <!-- duplicate -->
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/media.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Media &amp;<br />Entertainment</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/professional.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Professional<br />Services</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/transportation.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Transportation &amp;<br />Logistics</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/healthcare.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Healthcare</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: scrolls right (reverse) -->
+        <div class="overflow-hidden">
+          <div class="masonry-row reverse" style="animation-duration: 28s">
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/videoimage.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Cinema &amp;<br />Movies</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/financialservices.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Financial<br />Services</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/bulb.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Education</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/energyiot.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Energy &amp;<br />Utilities</span
+                >
+              </div>
+            </div>
+            <!-- duplicate -->
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/videoimage.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Cinema &amp;<br />Movies</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/financialservices.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Financial<br />Services</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/bulb.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Education</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/energyiot.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Energy &amp;<br />Utilities</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: scrolls left -->
+        <div class="overflow-hidden">
+          <div class="masonry-row" style="animation-duration: 22s">
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/hospitality %26 travel.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Hospitality &amp;<br />Travel</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/iiot.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Automotive</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/agricultureiot.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Agriculture</span
+                >
+              </div>
+            </div>
+            <!-- duplicate -->
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/hospitality %26 travel.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Hospitality &amp;<br />Travel</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/iiot.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Automotive</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative aspect-[3/2] w-[180px] shrink-0 overflow-hidden rounded-xl"
+            >
+              <img
+                src="./images/agricultureiot.jpg"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-6 pb-5 pt-10"
+              >
+                <span
+                  class="text-lg md:text-[24px] font-medium leading-[24px] md:leading-[36px]! text-white"
+                  >Agriculture</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="w-full bg-[#fff] py-14 text-gray-900 md:py-27">
+      <div class="mx-auto max-w-[1280px] px-[28px] min-[1280px]:px-0">
+        <div class="mb-8 md:mb-10">
+          <span
+            class="mb-4 inline-block rounded-full border border-[#647E9BB2] px-3 py-[5px] text-[11px] font-semibold text-[#647E9B] uppercase"
+            >Testimonials</span
+          >
+          <h2 class="text-[32px] leading-[60px] font-bold lg:text-[40px]">
+            Clients' success:<br />In their own words
+          </h2>
+          <p class="mt-3 max-w-[480px] text-lg leading-[28px] text-[#111111]">
+            Discover how we've exceeded expectations, straight from the source
+          </p>
+          <p
+            class="mt-3 max-w-[520px] text-[16px] leading-[26px] text-[#647E9B]"
+          >
+            Our clients have seen remarkable success and satisfaction through
+            our innovative solutions that transform challenges into
+            opportunities and drive growth.
+          </p>
+        </div>
+
+        <!-- Desktop card -->
+        <div class="hidden md:block">
+          <div
+            class="relative flex md:gap-5 lg:gap-10 xl:gap-12 items-stretch justify-between rounded-md border border-[#E9EDF2] bg-white p-11 shadow-[0_3px_20px_rgba(16,24,40,0.06)]"
+          >
+            <div class="w-[58%] max-w-[654px]">
+              <p
+                class="text-[18px] leading-[36px] font-semibold text-[#1B2125] lg:text-[24px]"
+              >
+                Our +380.000 employees all over the world, no matter in which
+                country, must have the same competence profile. Synthesia helps
+                us develop engaging, more relevant &amp; localised training
+                content at scale a of larger company.
+              </p>
+              <div class="mt-7 flex items-center gap-3">
+                <img
+                  src="./images/firstprofile.jpg"
+                  alt="Johnny Andro"
+                  class="h-10 w-10 rounded-full object-cover"
+                />
+                <div>
+                  <p
+                    class="text-[13px] leading-[100%]! font-semibold text-[#1B2125]"
+                  >
+                    Johnny Andro
+                  </p>
+                  <p class="mt-1 text-[11px] leading-[100%]! text-[#6F7F95]">
+                    Director, Company
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative w-[42%] max-w-[450px]">
+              <img
+                src="./images/videoimage.jpg"
+                alt="Video testimonial"
+                class="h-full w-full rounded-[2px] object-cover"
+              />
+              <button
+                class="absolute left-4 bottom-4 flex h-8 w-8 items-center justify-center rounded-full bg-black/45 ring-1 ring-white/70"
+                aria-label="Play video"
+              >
+                <img
+                  src="./images/playtestimonial.svg"
+                  alt=""
+                  class="h-3.5 w-3.5"
+                />
+              </button>
+            </div>
+
+            <img
+              src="./images/quotetestimonial.svg"
+              alt=""
+              class="absolute -top-2 right-8 h-7 w-7"
+            />
+          </div>
+        </div>
+
+        <!-- Mobile card -->
+        <div class="md:hidden">
+          <div
+            class="relative rounded-md border border-[#E9EDF2] bg-white p-3 shadow-[0_2px_10px_rgba(16,24,40,0.06)]"
+          >
+            <img
+              src="./images/quotetestimonial.svg"
+              alt=""
+              class="absolute top-2 right-3 h-6 w-6"
+            />
+            <div class="relative overflow-hidden rounded-[3px]">
+              <img
+                src="./images/videoimage.jpg"
+                alt="Video testimonial"
+                class="h-full w-full object-cover"
+              />
+              <button
+                class="absolute left-2.5 bottom-2.5 flex h-7 w-7 items-center justify-center rounded-full bg-black/45 ring-1 ring-white/70"
+                aria-label="Play video"
+              >
+                <img
+                  src="./images/playtestimonial.svg"
+                  alt=""
+                  class="h-3 w-3"
+                />
+              </button>
+            </div>
+
+            <p
+              class="mt-4 text-[16px] leading-[1.45] font-semibold text-[#1B2125]"
+            >
+              Our +380.000 employees all over the world, no matter in which
+              country, must have the same competence profile. Synthesia helps us
+              develop engaging, more relevant &amp; localised training content
+              at scale a of larger company.
+            </p>
+
+            <div class="mt-4 flex items-center gap-2.5">
+              <img
+                src="./images/firstprofile.jpg"
+                alt="Johnny Andro"
+                class="h-8 w-8 rounded-full object-cover"
+              />
+              <div>
+                <p
+                  class="text-[12px] leading-[100%]! font-semibold text-[#1B2125]"
+                >
+                  Johnny Andro
+                </p>
+                <p class="mt-0.5 text-[10px] leading-[100%]! text-[#6F7F95]">
+                  Director, Company
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-8 flex flex-wrap items-center justify-between gap-x-7 gap-y-4 md:mt-8 md:justify-center md:gap-14"
+        >
+          <img
+            src="./images/xerox.jpg"
+            alt="Xerox"
+            class="h-7 w-auto object-contain"
+          />
+          <img
+            src="./images/nestle.jpg"
+            alt="Nestle"
+            class="h-5 w-auto object-contain opacity-80"
+          />
+          <img
+            src="./images/tele.jpg"
+            alt="Teleperformance"
+            class="h-[18px] w-auto object-contain opacity-80"
+          />
+          <img
+            src="./images/dupont.jpg"
+            alt="DuPont"
+            class="h-5 w-auto object-contain opacity-80"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact + Footer Section -->
+    <section class="w-full pt-[110px] text-[#1B2125]">
+      <div
+        class="w-full"
+        style="
+          background: linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 50%,
+            #eaeafe99 50%,
+            #eaeafe99 100%
+          );
+        "
+      >
+        <div
+          class="relative z-10 mx-auto max-w-[1280px] px-[28px] min-[1280px]:px-0"
+        >
+          <!-- Contact card (no negative margin — avoids eating testimonials padding) -->
+          <div class="relative z-10">
+            <div
+              class="flex flex-col overflow-hidden rounded-md w-full bg-[#121178] p-[24px] text-white shadow-[0_16px_40px_rgba(11,14,80,0.35)] lg:min-h-[650px] lg:p-[80px]"
+              style="
+                background-image:
+                  radial-gradient(
+                    circle at 10% 100%,
+                    rgba(255, 255, 255, 0.12) 0px,
+                    rgba(255, 255, 255, 0) 220px
+                  ),
+                  radial-gradient(
+                    circle at 92% 95%,
+                    rgba(255, 255, 255, 0.12) 0px,
+                    rgba(255, 255, 255, 0) 240px
+                  ),
+                  url(&quot;./images/contactusBg.png&quot;);
+                background-size: auto, auto, cover;
+                background-position:
+                  10% 100%,
+                  92% 95%,
+                  right 10% top 10%;
+                background-repeat: no-repeat;
+              "
+            >
+              <div
+                class="flex min-h-0 flex-1 flex-col gap-6 md:justify-between md:gap-10 lg:flex-row lg:items-stretch"
+              >
+                <!-- Left content -->
+                <div class="w-full max-w-[490px]">
+                  <h3
+                    class="text-[28px] leading-[40px] md:leading-[54px] font-bold md:text-[36px]"
+                  >
+                    From Possibility to<br />Reality
+                  </h3>
+                  <p
+                    class="mt-3 max-w-[420px] leading-[24px] text-[#C7D2D8B8] md:text-base"
+                  >
+                    Contact our team to explore your business needs, discuss
+                    your project, and discover how we can assist in reaching
+                    your goal.
+                  </p>
+
+                  <ul
+                    class="contact-card-step-list mt-6 text-[13px] md:mt-5 md:text-sm"
+                  >
+                    <li class="contact-card-step-list__item">
+                      <span
+                        class="contact-card-step-list__track"
+                        aria-hidden="true"
+                      >
+                        <span class="contact-card-step-list__dot">
+
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="6.25" fill="white"/>
+                            <path d="M8.83353 11.5033L7.04187 9.71159C6.88909 9.55881 6.69465 9.48242 6.45853 9.48242C6.22242 9.48242 6.02798 9.55881 5.8752 9.71159C5.72242 9.86436 5.64604 10.0588 5.64604 10.2949C5.64604 10.531 5.72242 10.7255 5.8752 10.8783L8.2502 13.2533C8.41687 13.4199 8.61131 13.5033 8.83353 13.5033C9.05576 13.5033 9.2502 13.4199 9.41687 13.2533L14.1252 8.54492C14.278 8.39214 14.3544 8.1977 14.3544 7.96159C14.3544 7.72547 14.278 7.53103 14.1252 7.37825C13.9724 7.22548 13.778 7.14909 13.5419 7.14909C13.3058 7.14909 13.1113 7.22548 12.9585 7.37825L8.83353 11.5033ZM10.0002 18.3366C8.84742 18.3366 7.76409 18.1178 6.7502 17.6803C5.73631 17.2428 4.85437 16.6491 4.10437 15.8991C3.35437 15.1491 2.76062 14.2671 2.32312 13.2533C1.88562 12.2394 1.66687 11.156 1.66687 10.0033C1.66687 8.85047 1.88562 7.76714 2.32312 6.75325C2.76062 5.73936 3.35437 4.85742 4.10437 4.10742C4.85437 3.35742 5.73631 2.76367 6.7502 2.32617C7.76409 1.88867 8.84742 1.66992 10.0002 1.66992C11.153 1.66992 12.2363 1.88867 13.2502 2.32617C14.2641 2.76367 15.146 3.35742 15.896 4.10742C16.646 4.85742 17.2398 5.73936 17.6773 6.75325C18.1148 7.76714 18.3335 8.85047 18.3335 10.0033C18.3335 11.156 18.1148 12.2394 17.6773 13.2533C17.2398 14.2671 16.646 15.1491 15.896 15.8991C15.146 16.6491 14.2641 17.2428 13.2502 17.6803C12.2363 18.1178 11.153 18.3366 10.0002 18.3366Z" fill="#2C55F3"/>
+                            </svg>
+                            
+                        </span>
+                      </span>
+                      <span class="contact-card-step-list__label"
+                        >Initial Contact</span
+                      >
+                    </li>
+                    <li class="contact-card-step-list__item">
+                      <span
+                        class="contact-card-step-list__track"
+                        aria-hidden="true"
+                      >
+                        <span class="contact-card-step-list__dot">
+
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="6.25" fill="white"/>
+                            <path d="M8.83353 11.5033L7.04187 9.71159C6.88909 9.55881 6.69465 9.48242 6.45853 9.48242C6.22242 9.48242 6.02798 9.55881 5.8752 9.71159C5.72242 9.86436 5.64604 10.0588 5.64604 10.2949C5.64604 10.531 5.72242 10.7255 5.8752 10.8783L8.2502 13.2533C8.41687 13.4199 8.61131 13.5033 8.83353 13.5033C9.05576 13.5033 9.2502 13.4199 9.41687 13.2533L14.1252 8.54492C14.278 8.39214 14.3544 8.1977 14.3544 7.96159C14.3544 7.72547 14.278 7.53103 14.1252 7.37825C13.9724 7.22548 13.778 7.14909 13.5419 7.14909C13.3058 7.14909 13.1113 7.22548 12.9585 7.37825L8.83353 11.5033ZM10.0002 18.3366C8.84742 18.3366 7.76409 18.1178 6.7502 17.6803C5.73631 17.2428 4.85437 16.6491 4.10437 15.8991C3.35437 15.1491 2.76062 14.2671 2.32312 13.2533C1.88562 12.2394 1.66687 11.156 1.66687 10.0033C1.66687 8.85047 1.88562 7.76714 2.32312 6.75325C2.76062 5.73936 3.35437 4.85742 4.10437 4.10742C4.85437 3.35742 5.73631 2.76367 6.7502 2.32617C7.76409 1.88867 8.84742 1.66992 10.0002 1.66992C11.153 1.66992 12.2363 1.88867 13.2502 2.32617C14.2641 2.76367 15.146 3.35742 15.896 4.10742C16.646 4.85742 17.2398 5.73936 17.6773 6.75325C18.1148 7.76714 18.3335 8.85047 18.3335 10.0033C18.3335 11.156 18.1148 12.2394 17.6773 13.2533C17.2398 14.2671 16.646 15.1491 15.896 15.8991C15.146 16.6491 14.2641 17.2428 13.2502 17.6803C12.2363 18.1178 11.153 18.3366 10.0002 18.3366Z" fill="#2C55F3"/>
+                            </svg>
+                            
+                        </span>
+                      </span>
+                      <span class="contact-card-step-list__label"
+                        >Confidentiality Assurance</span
+                      >
+                    </li>
+                    <li class="contact-card-step-list__item">
+                      <span
+                        class="contact-card-step-list__track"
+                        aria-hidden="true"
+                      >
+                        <span class="contact-card-step-list__dot">
+
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="6.25" fill="white"/>
+                            <path d="M8.83353 11.5033L7.04187 9.71159C6.88909 9.55881 6.69465 9.48242 6.45853 9.48242C6.22242 9.48242 6.02798 9.55881 5.8752 9.71159C5.72242 9.86436 5.64604 10.0588 5.64604 10.2949C5.64604 10.531 5.72242 10.7255 5.8752 10.8783L8.2502 13.2533C8.41687 13.4199 8.61131 13.5033 8.83353 13.5033C9.05576 13.5033 9.2502 13.4199 9.41687 13.2533L14.1252 8.54492C14.278 8.39214 14.3544 8.1977 14.3544 7.96159C14.3544 7.72547 14.278 7.53103 14.1252 7.37825C13.9724 7.22548 13.778 7.14909 13.5419 7.14909C13.3058 7.14909 13.1113 7.22548 12.9585 7.37825L8.83353 11.5033ZM10.0002 18.3366C8.84742 18.3366 7.76409 18.1178 6.7502 17.6803C5.73631 17.2428 4.85437 16.6491 4.10437 15.8991C3.35437 15.1491 2.76062 14.2671 2.32312 13.2533C1.88562 12.2394 1.66687 11.156 1.66687 10.0033C1.66687 8.85047 1.88562 7.76714 2.32312 6.75325C2.76062 5.73936 3.35437 4.85742 4.10437 4.10742C4.85437 3.35742 5.73631 2.76367 6.7502 2.32617C7.76409 1.88867 8.84742 1.66992 10.0002 1.66992C11.153 1.66992 12.2363 1.88867 13.2502 2.32617C14.2641 2.76367 15.146 3.35742 15.896 4.10742C16.646 4.85742 17.2398 5.73936 17.6773 6.75325C18.1148 7.76714 18.3335 8.85047 18.3335 10.0033C18.3335 11.156 18.1148 12.2394 17.6773 13.2533C17.2398 14.2671 16.646 15.1491 15.896 15.8991C15.146 16.6491 14.2641 17.2428 13.2502 17.6803C12.2363 18.1178 11.153 18.3366 10.0002 18.3366Z" fill="#2C55F3"/>
+                            </svg>
+                            
+                        </span>
+                      </span>
+                      <span class="contact-card-step-list__label"
+                        >Consultation</span
+                      >
+                    </li>
+                    <li class="contact-card-step-list__item">
+                      <span
+                        class="contact-card-step-list__track"
+                        aria-hidden="true"
+                      >
+                        <span class="contact-card-step-list__dot">
+
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="6.25" fill="white"/>
+                            <path d="M8.83353 11.5033L7.04187 9.71159C6.88909 9.55881 6.69465 9.48242 6.45853 9.48242C6.22242 9.48242 6.02798 9.55881 5.8752 9.71159C5.72242 9.86436 5.64604 10.0588 5.64604 10.2949C5.64604 10.531 5.72242 10.7255 5.8752 10.8783L8.2502 13.2533C8.41687 13.4199 8.61131 13.5033 8.83353 13.5033C9.05576 13.5033 9.2502 13.4199 9.41687 13.2533L14.1252 8.54492C14.278 8.39214 14.3544 8.1977 14.3544 7.96159C14.3544 7.72547 14.278 7.53103 14.1252 7.37825C13.9724 7.22548 13.778 7.14909 13.5419 7.14909C13.3058 7.14909 13.1113 7.22548 12.9585 7.37825L8.83353 11.5033ZM10.0002 18.3366C8.84742 18.3366 7.76409 18.1178 6.7502 17.6803C5.73631 17.2428 4.85437 16.6491 4.10437 15.8991C3.35437 15.1491 2.76062 14.2671 2.32312 13.2533C1.88562 12.2394 1.66687 11.156 1.66687 10.0033C1.66687 8.85047 1.88562 7.76714 2.32312 6.75325C2.76062 5.73936 3.35437 4.85742 4.10437 4.10742C4.85437 3.35742 5.73631 2.76367 6.7502 2.32617C7.76409 1.88867 8.84742 1.66992 10.0002 1.66992C11.153 1.66992 12.2363 1.88867 13.2502 2.32617C14.2641 2.76367 15.146 3.35742 15.896 4.10742C16.646 4.85742 17.2398 5.73936 17.6773 6.75325C18.1148 7.76714 18.3335 8.85047 18.3335 10.0033C18.3335 11.156 18.1148 12.2394 17.6773 13.2533C17.2398 14.2671 16.646 15.1491 15.896 15.8991C15.146 16.6491 14.2641 17.2428 13.2502 17.6803C12.2363 18.1178 11.153 18.3366 10.0002 18.3366Z" fill="#2C55F3"/>
+                            </svg>
+                            
+                        </span>
+                      </span>
+                      <span class="contact-card-step-list__label"
+                        >Project Kick-Off</span
+                      >
+                    </li>
+                  </ul>
+
+                  <div
+                    class="mt-30 hidden max-w-[430px] border-t border-white/15 pt-3 md:block"
+                  >
+                    <div
+                      class="relative h-[80px] w-[140px] overflow-hidden rounded-sm"
+                    >
+                      <img
+                        src="./images/videothumbnail.jpg"
+                        alt=""
+                        class="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right form (desktop only) -->
+                <form
+                  class="hidden w-full max-w-[454px] flex-col gap-[22px] md:flex lg:min-h-0 lg:flex-1 lg:self-stretch"
+                >
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="w-full rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  />
+                  <input
+                    type="email"
+                    placeholder="email@any.com"
+                    class="w-full rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  />
+                  <div
+                    class="flex items-center gap-2 rounded-md bg-white px-[20px] py-[16px]"
+                  >
+                    <span class="text-sm text-[#1B2125]">+91</span>
+                    <span class="text-[#D5DCE6]">-</span>
+                    <input
+                      type="tel"
+                      placeholder="Phone number"
+                      class="min-h-0 min-w-0 w-full flex-1 border-0 bg-transparent py-0 text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                    />
+                    <span class="text-xs text-[#6A7380]">🇮🇳</span>
+                  </div>
+                  <textarea
+                    rows="3"
+                    placeholder="Tell us more about your project"
+                    class="w-full resize-none rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  ></textarea>
+                  <div class="w-full">
+                    <input
+                      id="indexContactFileDesktop"
+                      type="file"
+                      class="sr-only"
+                      multiple
+                    />
+                    <label
+                      for="indexContactFileDesktop"
+                      class="flex w-full cursor-pointer items-center gap-2 text-[16px] font-medium text-white/85"
+                    >
+                      <img
+                        src="./images/pin.svg"
+                        alt=""
+                        class="h-7 w-7 shrink-0 opacity-90"
+                        aria-hidden="true"
+                      />
+                      Attach your files
+                    </label>
+                  </div>
+                  <div class="w-full border-t border-white/15 pt-[22px]">
+                    <label
+                      class="flex items-center gap-2 text-base leading-[24px] text-white/60"
+                    >
+                      <input
+                        type="checkbox"
+                        class="h-5 w-5 rounded border-white/40 bg-transparent"
+                      />
+                      I agree to Terms &amp; Conditions of occamode
+                    </label>
+                  </div>
+                  <button
+                    type="button"
+                    class="h-14 w-full rounded-full text-base leading-[24px] font-semibold text-white transition hover:brightness-110"
+                    style="
+                      background:
+                        linear-gradient(0deg, #d92958, #d92958),
+                        linear-gradient(0deg, #ff2c65, #ff2c65);
+                    "
+                  >
+                    Schedule a Call
+                  </button>
+                </form>
+
+                <!-- Mobile CTA -->
+                <button
+                  type="button"
+                  data-contact-toggle="#homeMobileContactForm"
+                  class="mt-2 h-10 w-full shrink-0 rounded-full text-sm font-semibold text-white md:hidden"
+                  style="
+                    background:
+                      linear-gradient(0deg, #d92958, #d92958),
+                      linear-gradient(0deg, #ff2c65, #ff2c65);
+                  "
+                >
+                  Schedule a Call
+                </button>
+
+                <!-- Mobile form (opens on click) -->
+                <form
+                  id="homeMobileContactForm"
+                  class="hidden w-full max-w-[454px] flex flex-col gap-[22px] md:hidden"
+                >
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="w-full rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  />
+                  <input
+                    type="email"
+                    placeholder="email@any.com"
+                    class="w-full rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  />
+                  <div
+                    class="flex items-center gap-2 rounded-md bg-white px-[20px] py-[16px]"
+                  >
+                    <span class="text-sm text-[#1B2125]">+91</span>
+                    <span class="text-[#D5DCE6]">-</span>
+                    <input
+                      type="tel"
+                      placeholder="Phone number"
+                      class="min-h-0 min-w-0 w-full flex-1 border-0 bg-transparent py-0 text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                    />
+                    <span class="text-xs text-[#6A7380]">🇮🇳</span>
+                  </div>
+                  <textarea
+                    rows="3"
+                    placeholder="Tell us more about your project"
+                    class="w-full resize-none rounded-md border-0 bg-white px-[20px] py-[16px] text-sm text-[#1B2125] outline-none placeholder:text-[#99A5B4]"
+                  ></textarea>
+                  <div class="w-full">
+                    <input
+                      id="indexContactFileMobile"
+                      type="file"
+                      class="sr-only"
+                      multiple
+                    />
+                    <label
+                      for="indexContactFileMobile"
+                      class="flex w-full cursor-pointer items-center gap-2 text-[16px] font-medium text-white/85"
+                    >
+                      <img
+                        src="./images/pin.svg"
+                        alt=""
+                        class="h-7 w-7 shrink-0 opacity-90"
+                        aria-hidden="true"
+                      />
+                      Attach your files
+                    </label>
+                  </div>
+                  <div class="w-full border-t border-white/15 pt-[22px]">
+                    <label
+                      class="flex items-center gap-2 text-xs text-white/65"
+                    >
+                      <input
+                        type="checkbox"
+                        class="h-3.5 w-3.5 rounded border-white/40 bg-transparent"
+                      />
+                      I agree to Terms &amp; Conditions of occamode
+                    </label>
+                  </div>
+                  <button
+                    type="button"
+                    class="h-11 w-full rounded-full bg-[#FF2C78] text-sm font-semibold text-white"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer content -->
+          <div class="pb-11 md:pb-11 pt-10 md:pt-25">
+            <div
+              class="flex flex-col lg:flex-row items-start justify-between gap-10"
+            >
+              <div class="lg:max-w-[550px]">
+                <img
+                  src="./images/logoblue.svg"
+                  alt="occamode"
+                  class="h-7 w-auto"
+                />
+                <p
+                  class="mt-2.5 bg-clip-text text-[15px] leading-[24px] font-medium text-transparent [background-image:linear-gradient(90deg,#0000DC_0%,#8026DB_86%)]"
+                >
+                  Dream. Develop. Deliver.
+                </p>
+                <p
+                  class="mt-4.5 hidden max-w-[551px] text-base leading-[26px] font-normal text-[#647E9B] md:block"
+                >
+                  At Occamode, we embrace a deep tech philosophy, combining
+                  innovative methods and advanced technology to provide
+                  solutions that meet today's needs and address future
+                  challenges.
+                </p>
+              </div>
+
+              <div
+                class="grid grid-cols-2 mt-7 lg:mt-14 gap-6 md:col-span-2 md:grid-cols-3 lg:w-[50%] max-w-[550px]"
+              >
+                <div
+                  class="space-y-3 text-base leading-[28px] font-semibold text-[#1B2125]"
+                >
+                  <p>
+                    <a
+                      href="./index.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      aria-current="page"
+                      >Home</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./approachPage.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Approach</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./casestudies.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Case Studies</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./about.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >About Us</a
+                    >
+                  </p>
+                </div>
+                <div
+                  class="space-y-3 text-sm leading-[20px] font-medium text-[#1B2125]"
+                >
+                  <p class="font-semibold leading-[26px]">Service</p>
+                  <p>
+                    <a
+                      href="./webservice.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Web Development</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./mobile-app-service.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Mobile Development</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./ui-ux.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >UI/UX Designing</a
+                    >
+                  </p>
+                  <p class="md:hidden">
+                    <a
+                      href="./productEngineering.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Product Engineering</a
+                    >
+                  </p>
+                  <p class="md:hidden">
+                    <a
+                      href="./iot.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >IOT Solutions</a
+                    >
+                  </p>
+                  <p class="md:hidden">
+                    <a
+                      href="./devops.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >DevOps</a
+                    >
+                  </p>
+                </div>
+                <div
+                  class="space-y-3 text-sm leading-[20px] font-medium text-[#1B2125] max-md:hidden"
+                >
+                  <p class="opacity-0">Service</p>
+                  <p>
+                    <a
+                      href="./productEngineering.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >Product Engineering</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./iot.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >IOT Solutions</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="./devops.html"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >DevOps</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p
+              class="mt-6 max-w-[420px] text-[13px] leading-[1.55] text-[#647E9B] md:hidden"
+            >
+              At Occamode, we embrace a deep tech philosophy, combining
+              innovative methods and advanced technology to provide solutions
+              that meet today's needs and address future challenges.
+            </p>
+
+            <div
+              class="mt-6 flex flex-col gap-4 md:mt-14 md:flex-row md:items-end md:justify-between"
+            >
+              <div
+                class="grid w-full grid-cols-2 gap-x-6 gap-y-4 text-left sm:gap-x-10 md:max-w-[min(520px,46%)]"
+              >
+                <div class="min-w-0">
+                  <img src="./images/email.svg" alt="" class="h-9 w-6.5" />
+                  <p class="mt-1 font-bold text-[#1B2125]">Email us</p>
+                  <p
+                    class="mt-2 text-[14px] leading-[24px] font-medium text-[#1B2125]"
+                  >
+                    <a
+                      href="mailto:hello@occamode.com"
+                      class="text-inherit no-underline transition hover:text-[#2D39F2]"
+                      >hello@occamode.com</a
+                    >
+                  </p>
+                </div>
+                <div class="min-w-0">
+                  <img src="./images/map.svg" alt="" class="h-7.5 w-7.5" />
+                  <p class="mt-2 font-bold text-[#1B2125]">Visit us</p>
+                  <p
+                    class="mt-2 max-w-[280px] text-[14px] leading-[24px] font-medium text-[#1B2125]"
+                  >
+                    Occamode, Dholvich Walo, Givice, Ahmedabad, India, 329942
+                  </p>
+                </div>
+              </div>
+              <a
+                href="./contactus.html"
+                class="inline-flex h-10 w-full shrink-0 items-center justify-center rounded-full bg-[#0000DC] px-10 text-xs font-semibold text-white no-underline md:w-[200px]"
+              >
+                Contact Us
+              </a>
+            </div>
+
+            <div
+              class="mt-6 flex items-center justify-center gap-10 text-[#4D52E3] md:hidden"
+            >
+              <a href="#" aria-label="Facebook" class="opacity-95">
+                <img src="./images/facebook.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="Twitter" class="opacity-95">
+                <img src="./images/twitter.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="Instagram" class="opacity-95">
+                <img src="./images/instagram.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a href="#" aria-label="LinkedIn" class="opacity-95">
+                <img src="./images/linkedin.svg" alt="" class="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom legal bar -->
+        <div class="bg-[#121178]">
+          <div
+            class="mx-auto flex max-w-[1280px] items-center justify-between px-[28px] min-[1280px]:px-0 py-2.5 text-[14px] text-white"
+          >
+            <div class="flex items-center gap-6">
+              <span>Privacy Policy</span>
+              <span class="text-white/70"
+                >©<span id="copyrightYear"></span> Occamode</span
+              >
+            </div>
+            <div class="hidden items-center gap-9 md:flex">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/facebook.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/twitter.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/instagram.svg" alt="" class="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="opacity-90 hover:opacity-100"
+              >
+                <img src="./images/linkedin.svg" alt="" class="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Your scripts -->
+    <script src="./src/main.js"></script>
+    <script src="./megamenu.js"></script>
+  </body>
+</html>
